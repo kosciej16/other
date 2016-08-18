@@ -1,18 +1,19 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
+" Plugins {{{
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'davidhalter/jedi-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'mileszs/ack.vim'
+Plugin 'rking/ag.vim'
+"Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-repeat'
 
 "Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -31,84 +32,60 @@ Plugin 'vim-airline/vim-airline'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-" Don't try to be vi compatible
-set nocompatible
-
-" Helps force plugins to load correctly when it is turned back on below
-
-" Turn on syntax highlighting
+" }}}
+" Vimscript file settings ---------------------- {{{
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
+" Basic stuff {{{
 syntax on
-
-" Security
 set modelines=0
-
-" Show line numbers
 set number
-
-" Show file stats
 set ruler
-
-" Blink cursor on error instead of beeping (grr)
 set visualbell
-
 set wildmenu
 set wildmode=list:longest
-
+set wildignore=*.o,*~,*.pyc
 set laststatus=2
-
-" set relativenumber
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 set undofile
-
-" Encoding
+set undodir=~/.vim_runtime/temp_dirs/undodir
+set autoread
 set encoding=utf-8
-
-" Whitespace
-set textwidth=119
-set formatoptions=tcqrn1
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set noshiftround
-
-" Cursor motion
+set whichwrap+=<,>,h,l
+set lazyredraw
+set foldcolumn=1
 set scrolloff=3
 set backspace=indent,eol,start
-set matchpairs+=<:> " use % to jump between pairs
-runtime! macros/matchit.vim
-
-"doesnt work
-"au FocusLost * :wa
-
-
-" Move up/down editor lines
-nnoremap j gj
-nnoremap k gk
-
-" Allow hidden buffers
+set matchpairs+=<:>
 set hidden
-
-" Rendering
 set ttyfast
-
-" Status bar
-set laststatus=2
-
-" Last line
 set showmode
 set showcmd
-
-" Searching
+set autoindent
+set smartindent
+set wrap
+set nolist
+set nrformats=
+set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·
+nnoremap j gj
+nnoremap k gk
+map ; :
+let mapleader = "\<Space>"
+" }}}
+" Whitespace {{{
+set textwidth=119
+set formatoptions=tcqrn1
+set tabstop=4
+set shiftwidth=2
+set softtabstop=8
+set expandtab
+set smarttab
+set noshiftround
+" }}}
+" Searching {{{
 nnoremap / /\v
 vnoremap / /\v
 set hlsearch
@@ -117,20 +94,8 @@ set ignorecase
 set smartcase
 set showmatch
 set gdefault
-
-" Remap help key.
-inoremap <F1> <ESC>:set invfullscreen<CR>a
-nnoremap <F1> :set invfullscreen<CR>
-vnoremap <F1> :set invfullscreen<CR>
-
-" Visualize tabs and newlines
-set listchars=tab:▸\ ,eol:¬
-" Uncomment this to enable by default:
-" set list " To enable by default
-" Or use your leader key + l to toggle on/off
-map <leader>l :set list!<CR> " Toggle tabs and EOL
-
-" Color scheme (terminal)
+" }}}
+" Color scheme {{{
 set t_Co=256
 set background=dark
 let g:solarized_termcolors=256
@@ -139,57 +104,74 @@ let g:solarized_termtrans=1
 " in ~/.vim/colors/ and uncomment:
 " colorscheme solarized
 "
-let mapleader = "\<Space>"
-
-set hidden
-
-" To open a new empty buffer
-" This replaces :tabnew which I used to bind to this mapping
-nmap <leader>T :enew<cr>
-
-" Move to the next buffer
+" }}}
+" buffers {{{
 nmap <leader>l :bnext<CR>
-
-" Move to the previous buffer
 nmap <leader>h :bprevious<CR>
-
-" Close the current buffer and move to the previous one
-" This replicates the idea of closing a tab
 nmap <leader>q :bp <BAR> bd #<CR>
-
-" Show all open buffers and their status
 nmap <leader>bl :ls<CR>
-
-set pastetoggle=<F2>
-
+" }}}
+" other stuff {{{
 let g:jedi#smart_auto_mappings = 0
+let g:jedi#completions_enabled = 0
 
-
-inoremap jk <ESC>
+" Visual mode pressing * or # searches for the current selection
+vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
+vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
+noremap <leader>l :set list!<CR> " Toggle tabs and EOL
+" Switch CWD to the directory of the open buffer
+noremap <leader>cd :cd %:p:h<cr>:pwd<cr>
+vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
 nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <leader>a :Ack<space>
-map ; :
-" Jump to previous function name
-nnoremap gd ?def <cr>w:noh<cr>
+cnoremap w!! w !sudo tee > /dev/null %
 
+" Easy window navigation
 noremap <C-H> <C-W>h
 noremap <C-K> <C-W>k
 noremap <C-J> <C-W>j
 noremap <C-L> <C-W>l
+inoremap jk <ESC>
+inoremap <C-e> <Esc>A
+inoremap <C-a> <Esc>I
+cnoremap <C-A>		<Home>
+cnoremap <C-E>		<End>
+nnoremap ' `
+nnoremap ` '
+nnoremap Y y$
+" Edit the vimrc file
+nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
+nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
+" Clears the search register
+nnoremap <silent> <leader>/ :nohlsearch<CR>
+" Jump to matching pairs easily, with Tab
+nnoremap <Tab> %
+vnoremap <Tab> %
 
 noremap x "_x
 vnoremap p "_dP
 
 iabbrev @@ # author: Krystian Dowolski (krystian.dowolski@dealavo.com)
 
-
-" to help learn new macros
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+" Reselect text that was just pasted with ,v
+nnoremap <leader>v V`]
+" }}}
+" Ag config {{{
+nnoremap <leader>a :Ag<space>
+vnoremap <silent> <leader>a :call VisualSelection('gv', '')<CR>
+map <leader>cc :botright cope<cr>
+map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
+map <leader>n :cn<cr>
+map <leader>p :cp<cr>
+" }}}
+" to help learn new macros {{{
 inoremap <ESC> <nop>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-
+" }}}
+" Airline config {{{
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
@@ -203,5 +185,49 @@ nmap <leader>6 <Plug>AirlineSelectTab6
 nmap <leader>7 <Plug>AirlineSelectTab7
 nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
+" }}}
+" autopaste {{{
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
+" }}}
+" functions {{{
+function! HasPaste()
+    if &paste
+        return 'PASTE MODE  '
+    endif
+    return ''
+endfunction
+
+function! CmdLine(str)
+    exe "menu Foo.Bar :" . a:str
+    emenu Foo.Bar
+    unmenu Foo
+endfunction 
+
+function! VisualSelection(direction, extra_filter) range
+    let l:saved_reg = @"
+    execute "normal! vgvy"
+
+    let l:pattern = escape(@", '\\/.*$^~[]')
+    let l:pattern = substitute(l:pattern, "\n$", "", "")
+
+    if a:direction == 'gv'
+        call CmdLine("Ag \"" . l:pattern . "\" " )
+    elseif a:direction == 'replace'
+        call CmdLine("%s" . '/'. l:pattern . '/')
+    endif
+
+    let @/ = l:pattern
+    let @" = l:saved_reg
+endfunction
+" }}}
 
 
