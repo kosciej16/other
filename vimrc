@@ -26,6 +26,9 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'chase/vim-ansible-yaml'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'easymotion/vim-easymotion'
+" Plugin 'mjbrownie/pythoncomplete.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -92,6 +95,8 @@ vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
 " Copy
 vnoremap <C-c> "+y
+" Cut
+vnoremap <C-x> "+d
 " }}}
 " Whitespace {{{
 set textwidth=119
@@ -143,7 +148,7 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 noremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
 nnoremap <leader>w <C-w>v<C-w>l
-cnoremap W w !sudo tee > /dev/null % <CR>L
+cnoremap w!! w !sudo tee > /dev/null % <CR>L
 " open and close quickfix window
 nnoremap <leader>co :copen<CR>
 nnoremap <leader>cq :cclose<CR>
@@ -190,12 +195,13 @@ nnoremap , za
 let g:jedi#smart_auto_mappings = 1
 let g:jedi#completions_enabled = 1
 let g:jedi#goto_definitions_command = "<leader>d"
-let g:jedi#goto_assignments_command = "<leader>jg"
-let g:jedi#usages_command= "<leader>ju"
+let g:jedi#goto_assignments_command = "<leader>ig"
+let g:jedi#usages_command= "<leader>iu"
 " }}}
 " Ag config {{{
 let g:ag_working_path_mode="a"
 nnoremap <leader>a :Ag!<space>
+nnoremap <leader>ar :Ag!<space><C-r><C-w><CR>
 vnoremap <silent> <leader>a :call VisualSelection('gv', '')<CR>
 let g:ag_max_line_len = 200
 " map <leader>cc :botright cope<cr>
@@ -348,6 +354,24 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_
 nnoremap <F8> :SyntasticCheck<CR>
 " :SyntasticToggleMode<CR>
 " }}}
+" easymotion config {{{
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+" nmap s <Plug>(easymotion-overwin-f)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+" }}}
 " autopaste {{{
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
@@ -454,7 +478,7 @@ function! WatchForChanges(bufname, ...)
   let autoread    = has_key(options, 'autoread')    ? options['autoread']    : 0
   let toggle      = has_key(options, 'toggle')      ? options['toggle']      : 0
   let disable     = has_key(options, 'disable')     ? options['disable']     : 0
-  let more_events = has_key(options, 'more_events') ? options['more_events'] : 1
+  let more_events = has_key(options, 'more_events') ? options['more_events'] : 0 "WARNING changed from 1
   let while_in_this_buffer_only = has_key(options, 'while_in_this_buffer_only') ? options['while_in_this_buffer_only'] : 0
   if while_in_this_buffer_only
     let event_bufspec = a:bufname
@@ -526,6 +550,15 @@ endfunction
 let autoreadargs={'autoread':1}
 execute WatchForChanges("*",autoreadargs)
 " }}}
-autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+" {{{ Relative number
 
-nmap <F6> :<C-U>silent make %<CR>:redraw!<CR>
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
+" }}}
