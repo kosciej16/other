@@ -13,7 +13,7 @@ Plugin 'rking/ag.vim'
 "Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
-"Plugin 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-repeat'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
@@ -83,6 +83,7 @@ set smartindent
 set wrap
 set nolist
 set nrformats=
+set tags=tags;/
 set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·
 set diffopt+=vertical
 nnoremap j gj
@@ -175,14 +176,6 @@ nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
 nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 " Clears the search register
 nnoremap <silent> <leader>/ :nohlsearch<CR>
-
-" Map auto complete of (, ", ', [
-inoremap $1 ()<esc>i
-inoremap $2 []<esc>i
-inoremap $3 {}<esc>i
-inoremap $4 {<esc>o}<esc>O
-inoremap $q ''<esc>i
-inoremap $e ""<esc>i
 
 iabbrev @@ # author: Krystian Dowolski (krystian.dowolski@dealavo.com)
 
@@ -363,7 +356,6 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 " or
 " `s{char}{char}{label}`
 " Need one more keystroke, but on average, it may be more comfortable.
-nmap s <Plug>(easymotion-overwin-f2)
 
 " Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
