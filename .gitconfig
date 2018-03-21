@@ -1,0 +1,13 @@
+[alias]
+	co = checkout
+    ci = commit
+    cm = commit --amend
+    br = branch
+    st = status -s
+    cherry = cherry-pick
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[user]
+	email = kd305513@gmail.com
+	name = kosciej
+[push]
+	default = matching
