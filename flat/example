@@ -1,0 +1,15 @@
+[general]
+url=http://www.gumtree.pl/s-mieszkania-i-domy-do-wynajecia/warszawa/v1c9008l3200008p1
+offers=//div[@class="view"]//a[@class="href-link"]/@href
+
+[smtp]
+smtp=smtp.gmail.com
+port=587
+from=
+to=
+username=
+password=
+
+[rule1]
+xpath=//div[@class="vip-details"]//a[position()=1]/text()
+word=wola,mokotów
