@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 "Plugin 'klen/python-mode'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'nakamuray/jedi-rpc.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
 "Plugin 'mileszs/ack.vim'
@@ -89,7 +90,8 @@ set diffopt+=vertical
 nnoremap j gj
 nnoremap k gk
 map ; :
-let mapleader = "\<Space>"
+" let mapleader = "\<Space>"
+let mapleader = " "
 " Save with ctrl-s
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
@@ -98,6 +100,8 @@ inoremap <silent> <C-S>         <C-O>:update<CR>
 vnoremap <C-c> "+y
 " Cut
 vnoremap <C-x> "+d
+" Paste
+inoremap <C-v> <C-r>+
 " }}}
 " Whitespace {{{
 set textwidth=119
@@ -183,6 +187,14 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " Reselect text that was just pasted with ,v
 nnoremap <leader>v V`]
 nnoremap , za
+
+" Copy file to buffer
+nmap <leader>ff :let @+ = expand("%")<CR>
+nmap <leader>fp :let @+ = expand("%:p")<CR>
+nmap <leader>fd :let @+ = expand("%:h")<CR>
+nmap <leader>fi :let @+ = "from " . substitute(expand("%:r"),"/",".","g") . " import "<CR>
+
+nnoremap <C-n> set relativenumber!
 " }}}
 " jedi config {{{
 let g:jedi#smart_auto_mappings = 1
@@ -190,6 +202,7 @@ let g:jedi#completions_enabled = 1
 let g:jedi#goto_definitions_command = "<leader>d"
 let g:jedi#goto_assignments_command = "<leader>ig"
 let g:jedi#usages_command= "<leader>iu"
+
 " }}}
 " Ag config {{{
 let g:ag_working_path_mode="a"
@@ -283,7 +296,7 @@ let NERDTreeShowFiles=1
 let NERDTreeShowHidden=1
 
 " Quit on opening files from the tree
-let NERDTreeQuitOnOpen=0
+let NERDTreeQuitOnOpen=1
 
 " Highlight the selected entry in the tree
 let NERDTreeHighlightCursorline=1
@@ -318,7 +331,8 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
-nmap <C-_> <Plug>NERDCommenterToggle
+nmap <C-_> <Plug>NERDCommenterInvert
+vmap <C-_> <Plug>NERDCommenterInvert
 " }}}
 " ultisnips config {{{
  " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -542,15 +556,6 @@ endfunction
 let autoreadargs={'autoread':1}
 execute WatchForChanges("*",autoreadargs)
 " }}}
-" {{{ Relative number
-
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-
-nnoremap <C-n> :call NumberToggle()<cr>
+" {{{ WORK
+set noexpandtab
 " }}}
