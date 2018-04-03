@@ -6,29 +6,28 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-"Plugin 'klen/python-mode'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'nakamuray/jedi-rpc.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
-"Plugin 'mileszs/ack.vim'
-Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'tpope/vim-repeat'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-fugitive'
 Plugin 'fisadev/vim-isort'
 Plugin 'nvie/vim-flake8'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'chase/vim-ansible-yaml'
-Plugin 'derekwyatt/vim-scala'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'majutsushi/tagbar'
+" Plugin 'kchmck/vim-coffee-script'
+" Plugin 'chase/vim-ansible-yaml'
+" Plugin 'derekwyatt/vim-scala'
 " Plugin 'mjbrownie/pythoncomplete.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -53,6 +52,8 @@ augroup filetype_vim
 augroup END
 " }}}
 " Basic stuff {{{
+let mapleader = " "
+" let mapleader = "\<Space>"
 syntax on
 set modelines=0
 set number
@@ -77,6 +78,7 @@ set backspace=indent,eol,start
 set matchpairs+=<:>
 set hidden
 set ttyfast
+set timeout timeoutlen=1000 ttimeoutlen=50
 set showmode
 set showcmd
 set autoindent
@@ -90,8 +92,7 @@ set diffopt+=vertical
 nnoremap j gj
 nnoremap k gk
 map ; :
-" let mapleader = "\<Space>"
-let mapleader = " "
+nnoremap <leader>; ;
 " Save with ctrl-s
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
@@ -155,8 +156,22 @@ vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
 nnoremap <leader>w <C-w>v<C-w>l
 cnoremap w!! w !sudo tee > /dev/null % <CR>L
 " open and close quickfix window
-nnoremap <leader>co :copen<CR>
-nnoremap <leader>cq :cclose<CR>
+nnoremap <C-q> :call <SID>QuickfixToggle()<cr>
+
+let g:quickfix_is_open = 0
+
+function! s:QuickfixToggle()
+    if g:quickfix_is_open
+        cclose
+        let g:quickfix_is_open = 0
+        execute g:quickfix_return_to_window . "wincmd w"
+    else
+        let g:quickfix_return_to_window = winnr()
+        copen
+        let g:quickfix_is_open = 1
+    endif
+endfunction
+" }}}
 
 " Easy window navigation
 noremap <C-H> <C-W>h
@@ -189,31 +204,44 @@ nnoremap <leader>v V`]
 nnoremap , za
 
 " Copy file to buffer
-nmap <leader>ff :let @+ = expand("%")<CR>
-nmap <leader>fp :let @+ = expand("%:p")<CR>
-nmap <leader>fd :let @+ = expand("%:h")<CR>
-nmap <leader>fi :let @+ = "from " . substitute(expand("%:r"),"/",".","g") . " import "<CR>
+noremap <leader>ff :let @+ = expand("%")<CR>
+noremap <leader>fp :let @+ = expand("%:p")<CR>
+noremap <leader>fd :let @+ = expand("%:h")<CR>
+noremap <leader>fi :let @+ = "from " . substitute(expand("%:r"),"/",".","g") . " import "<CR>
 
 nnoremap <C-n> set relativenumber!
-" }}}
-" jedi config {{{
-let g:jedi#smart_auto_mappings = 1
-let g:jedi#completions_enabled = 1
-let g:jedi#goto_definitions_command = "<leader>d"
-let g:jedi#goto_assignments_command = "<leader>ig"
-let g:jedi#usages_command= "<leader>iu"
+" Pull word under cursor into LHS of a substitute
+nnoremap <leader>z :%s#\<<C-r>=expand("<cword>")<CR>\>#
+nnoremap <leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 
+" nmap <C-l> :redraw!<CR>
 " }}}
 " Ag config {{{
+if executable('ag')
+   " Use ag over grep
+   set grepprg=ag\ --nogroup\ --nocolor
+endif
+
+" Define "Ag" command
+command! -nargs=+ -complete=file -bar Ag silent! grep! <args> | cwindow | redraw!
+vnoremap <leader>a y:Ag <c-r><cr>:cw<cr>
+nnoremap <leader>a :Ag <c-r><c-w>
+nnoremap K *N:grep! "\b<c-r><c-w>\b"<cr>:cw<cr>
+
+" Allow quick additions to the spelling dict
+nnoremap <leader>g :spellgood <c-r><c-w>
+
+
+" bind \ (backward slash) to grep shortcut
+nnoremap \ :Ag<SPACE>
+
 let g:ag_working_path_mode="a"
-nnoremap <leader>a :Ag!<space>
-nnoremap <leader>ar :Ag!<space><C-r><C-w><CR>
-vnoremap <silent> <leader>a :call VisualSelection('gv', '')<CR>
 let g:ag_max_line_len = 200
+" vnoremap <silent> <leader>a :call VisualSelection('gv', '')<CR>
 " map <leader>cc :botright cope<cr>
 " map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
-map <leader>n :cn<cr>
-map <leader>p :cp<cr>
+" map <leader>n :cn<cr>
+" map <leader>p :cp<cr>
 " don't wrap results
 autocmd FileType qf setlocal nowrap
 " }}}
@@ -423,6 +451,8 @@ endfunction
 " }}}
 " smooth scrolling {{{
 set mouse=a
+nnoremap <C-e> 2<C-e>
+nnoremap <C-y> 2<C-y>
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
@@ -432,14 +462,14 @@ function! SmoothScroll(up)
     else
         let scrollaction=""
     endif
-    exec "normal " . scrollaction
+    exec "normal! " . scrollaction
     redraw
     let counter=1
     while counter<&scroll
         let counter+=1
         sleep 10m
         redraw
-        exec "normal " . scrollaction
+        exec "normal! " . scrollaction
     endwhile
 endfunction
 
@@ -556,6 +586,39 @@ endfunction
 let autoreadargs={'autoread':1}
 execute WatchForChanges("*",autoreadargs)
 " }}}
-" {{{ WORK
+" Pulse {{{
+" nnoremap n n:call PulseCursorLine()<cr>
+" nnoremap N N:call PulseCursorLine()<cr>
+
+function! PulseCursorLine()
+    setlocal cursorline
+
+    redir => old_hi
+        silent execute 'hi CursorLine'
+    redir END
+    let old_hi = split(old_hi, '\n')[0]
+    let old_hi = substitute(old_hi, 'xxx', '', '')
+
+    hi CursorLine guibg=#3a3a3a
+    redraw
+    sleep 14m
+
+    hi CursorLine guibg=#4a4a4a
+    redraw
+    sleep 10m
+
+    hi CursorLine guibg=#3a3a3a
+    redraw
+    sleep 14m
+
+    hi CursorLine guibg=#2a2a2a
+    redraw
+    sleep 10m
+
+    execute 'hi ' . old_hi
+    setlocal nocursorline
+endfunction
+" }}}
+" WORK {{{
 set noexpandtab
 " }}}
