@@ -204,12 +204,13 @@ nnoremap <leader>v V`]
 nnoremap , za
 
 " Copy file to buffer
-noremap <leader>ff :let @+ = expand("%")<CR>
+noremap <leader>fa :let @+ = expand("%")<CR>
+noremap <leader>ff :let @+ = expand("%:t")<CR>
 noremap <leader>fp :let @+ = expand("%:p")<CR>
 noremap <leader>fd :let @+ = expand("%:h")<CR>
 noremap <leader>fi :let @+ = "from " . substitute(expand("%:r"),"/",".","g") . " import "<CR>
 
-nnoremap <C-n> set relativenumber!
+nnoremap <C-n> :set relativenumber!
 " Pull word under cursor into LHS of a substitute
 nnoremap <leader>z :%s#\<<C-r>=expand("<cword>")<CR>\>#
 nnoremap <leader>W :%s/\s\+$//<CR>:let @/=''<CR>
@@ -223,13 +224,16 @@ if executable('ag')
 endif
 
 " Define "Ag" command
+" command! -nargs=+ -complete=file -bar Ag silent! grep! <args> | !awk '{ if (length($0) < 100) print }' | cwindow | redraw!
 command! -nargs=+ -complete=file -bar Ag silent! grep! <args> | cwindow | redraw!
-vnoremap <leader>a y:Ag <c-r><cr>:cw<cr>
-nnoremap <leader>a :Ag <c-r><c-w>
+" command! -nargs=+ -complete=file -bar Ag silent! grep! <args>
+vnoremap <leader>a y:grep! <c-r><cr>:cw<cr> 
+nnoremap <leader>aa :Ag <c-r><c-w><CR>
+nnoremap <leader>af :Ag %:t:r<CR>
 nnoremap K *N:grep! "\b<c-r><c-w>\b"<cr>:cw<cr>
 
 " Allow quick additions to the spelling dict
-nnoremap <leader>g :spellgood <c-r><c-w>
+" nnoremap <leader>g :spellgood <c-r><c-w>
 
 
 " bind \ (backward slash) to grep shortcut
