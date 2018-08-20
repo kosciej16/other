@@ -1,0 +1,36 @@
+Nauczymy się trochę vima!
+
+Zadanie jest proste, musisz wyedytować plik 'from' do postaci 'to' (nie trzeba wychodzić na końcu z trybu insert)
+w jak najmniejszej liczbie naciśnięć.
+Binarka vim oczekuje do wczytania takiego ciągu znaków, jeśli będzie poprawna, dostaniesz hasło
+
+Odpal to poleceniem vim -w result -O from to
+W pliku result zostaną nagrywane naciśnięcia
+Na końcu skopiuj zawartość pliku i odpal ./vim
+
+Kilka uwag:
+Do wychodzenia z trybu insert korzystamy z macro jk
+Do każdego ze skrótów jest dostępna pomoc (np :h *)
+Przydatne mogą być klawisze:
+* (potem n/N)
+ctrl-a 
+p(aste)
+c(hange)
+d(elete)
+
+movement commandss (np iw - inner word)
+
+po c/d vim oczekuje właśnie movement command. I tak
+
+ciw - change word
+di{ - delete innner {
+
+
+Pamiętaj, że przed komendami możesz dać liczbę
+dd - usuń linię
+5dd - usuń 5 linii
+
+Oraz to, że usunięcie czegoś wrzuca to do bufora, z którego później następuje wklejanie przez p
+
+Nie zapominaj o użwywaniu kropki! (:h .)
+

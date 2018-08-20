@@ -1,0 +1,10 @@
+def funkcja(int a, int b):
+	usun mnie
+	zamien mnie
+	z nia
+    int c = jakas_tablica[0]
+    int d = jakas_tablica[1]
+    a*b*c*d
+
+funkcja()
+funkcja()

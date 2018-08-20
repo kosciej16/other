@@ -1,0 +1,9 @@
+def nowa_nazwa():
+	z nia
+	zamien mnie
+    int c = jakas_tablica[1]
+    int d = jakas_tablica[2]
+    return a*b*c*d
+
+nowa_nazwa()
+nowa_nazwa()
