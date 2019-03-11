@@ -1,0 +1,32 @@
+\documentclass{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{geometry}
+
+\newcommand{\pluseq}{\mathrel{+}=}
+
+\title{Złożoność obliczeniowa 1.1}
+\author{Krystian Dowolski}
+
+\begin{document}
+	\maketitle
+    Niech MT będzie standardową maszyną Turinga akceptującą dany język. Oznaczmy przez Q jej stany, i przez $\delta$
+    jej funkcję przejścia i przez k maksymalną długość słowa zapisanego na taśmie. Tworzymy maszynę MMT
+    $$ Q' = \{(q, i, j, nextRound): q\in Q, i,j\in \mathbb{N}, i,j\leq k, nextRound\in \{0,1\}\}$$
+    j oznacza aktualną pozycję głowicy (licząc od pierwszego symbolu), i - ile musimy jeszcze się przesunąć, żeby
+    głowica była w odpowiednim miejscu. nextRound natomiast jest flagą mówiącą, czy zaczęliśmy kolejne przejście od
+    początku taśmy.\\
+    Idea jest taka, że gdy MT wykonuje przejście ze stanu $q_1$ (i symbolu a) do $q_2$ (wpisując symbol b) i przesuwa głowicę,
+    my wchodzimy w stan, którego zadaniem jest poczekać, aż MMT ustawi głowicę w miejscu, w którym powinna być dla MT. Dlatego najpierw
+    dodajemy
+    $$\delta' = ((q_1, 0, j, 1), a) = ((q_2, j+\{-1,0,1\}^*, 0, 0), b)$$
+    gdzie * to -1 dla przesunięcia w lewo, 0 gdy brak przesunięcia i 1 dla przesunięcia w prawo.\\
+    Gdy nextRound = 0, zwyczajnie przepychamy głowicę dalej bez zmian, dopóki nie natrafimy na $\bot$ tj.
+    $$\delta' \pluseq((q, i, j, 1), a) = ((q, i, j, 1, a)), a\in \Gamma \setminus \bot $$
+    $$\delta' \pluseq ((q, i, 0, 1), \bot) = ((q, i-1, 1, 0), \bot), i > 0$$
+    Kiedy nextRound jest ustawione na 1, zbijamy i w każdym ruchu:
+    $$\delta' \pluseq ((q, i, j, 0), a) = ((q, i-1, j+1, 0), a), i > 0 $$
+
+\end{document}

@@ -1,0 +1,20 @@
+\documentclass{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\advance\day by -1
+
+\title{Zadanie domowe nr 5 z PMATu}
+\author{Karolina Gabara gr. 2}
+
+\begin{document}
+	\maketitle
+	\section*{Czy funkcja $f(<m,n>)=2^m(2n+1)-1$ jest różnowartościowa?}
+		Załóżmy, że $f(<n_1,m_2>)=f(<n_3,m_4>)$ (bez straty na ogólności załóżmy, że $n_1 \geq n_3$). Znaczy to też, że $2^{m_2}(2n_1+1)-1=2^{m_4}(2n_3+1)-1$, czyli $2^{m_2-m_4}(2n_1+1)=(2n_3+1)$. Jeśli $m_2>m_4$ to lewa strona równania jest parzysta, podczas gdy prawa strona równania jest nieparzysta, czyli dochodzimy do sprzeczności. Natomiast jeżeli $m_2=m_4$ to $2^{m_2-m_4}$, czyli $2n_1+1=2n_3+1$, co jest prawdziwe jedynie, gdy $n_1=n_3$. Tak więc $f(<n_1,m_2>)=f(<n_3,m_4>)$ tylko wtedy, gdy $m_2=m_4$ oraz $n_1=n_3$.
+	\section*{Czy funkcja $f(<m,n>)=2^m*(2n+1)-1$ jest "na"?}
+		Każdą, ale to każdą liczbę naturalną $x \geq 2$, jesteśmy w stanie rozpisać na czynniki pierwsze $x = 2^m(3^a5^b7^c11^d13^e17^g \ldots)$. Ponieważ $2$ jest jedyną liczbą pierwszą, która jest parzysta (dzieje się tak dlatego, że każda inna liczba parzysta większa od $2$ musi być podzielna przez $2$, na mocy definicji podzielności), to $(3^a5^b7^c11^d13^e17^g \ldots)$ jest nieparzyste, czyli możemy je zapisać w postaci $2n+1$, gdzie $n \in N$. Dodatkowo $1=2^0(2*0+1)$, więc każdą liczbę naturalną nie mniejszą niż $1$ jesteśmy w stanie zapisać w postaci $x = 2^m(2n+1)$. \\
+		Każdą liczbę naturalną $y$ jesteśmy w stanie zapisać w postaci $y=x-1$, gdzie $x \in N \wedge x \geq 1$, czyli także w postaci $y = 2^m(2n+1)-1$. Czyli funkcja podana w poleceniu jest "na".
+	\section*{Czy $N\times N:N$ są równoliczne?}
+		Ponieważ funkcja $f: N\times N \longrightarrow N$ jest różnowartościowa i "na", to zbiory te zdecydowanie powinny być równoliczne.
+\end{document} 

@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+
+\author{Krystian Dowolski}
+
+\begin{document}
+  \maketitle
+  \pagenumbering{arabic}
+
+$$ D_1 = D(a,b) \quad R_1(1, \emptyset) = baR_1 \cup b $$
+$$ D_4 = D(a,b) \quad R_4(\emptyset, 1) = baR_4 \cup b $$
+$$ D_2 = D(b,c,d) \quad R_2(1, \emptyset) = (b|d)cR_2 \cup (b|d) $$
+$$ D_5 = D(b,c,d) \quad R_5(\emptyset, 1) = (b|d)cR_5 \cup (b|d) $$
+$$ D_3 = D(d,e) \quad R_3(1_,\emptyset) = deR_3 \cup d $$
+$$ D_6 = D(d,e) \quad R_6(\emptyset, 1) = deR_6 \cup d $$
+
+$R_1$ i $R_4$ mają taką samą dziedzinę i taki sam język, dlatego:
+$$ R_1 || R_4 = baR_{14} \cup b $$
+Analogicznie:
+$$ R_2 || R_5 = (b|d)cR_{25} \cup (b|d) $$
+$$ R_3 || R_6 = deR_{36} \cup d $$
+$R_{14}$ i $R_{36}$ mają niezależnie dziedziny, więc
+$$ R_{14}||R_{36} = badeR_{1346} \cup bdeR_{1346} \cup dbaR_{1346} \cup bd \quad D_{1346} = D(a,b,d,e) $$
+Zostało obliczyć:
+$$ R_{1346} || R_{25} = (badeR_{1346} \cup bdeR_{1346} \cup dbaR_{1346} \cup bd) || ((b|d)c(b|d)cR_{25} \cup (b|d)c(b|d) \cup (b|d)) $$
+(W drugim nawiasie od razu jednokrotnie rozwinęliśmy $R_{25}$)\\
+Po wymnożeniu wszystkiego i usunięciu niesynchronizujących się wyrazów otrzymujemy:
+$$ R = bacdecR \cup bacR \cup decR \cup bcd = bacR \cup decR \cup bcd $$
+Gdzie $R = R_{123456} \quad D_{123456} = D(a,b,c,d,e)$
+\end{document}
