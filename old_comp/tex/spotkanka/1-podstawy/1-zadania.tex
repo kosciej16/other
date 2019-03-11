@@ -1,0 +1,103 @@
+\documentclass{article}
+%
+\usepackage{bridge_macros}
+\usepackage{tabularx}
+%
+\begin{document}
+\textbf{ 
+\begin{itemize}
+	\item Która z podanych licytacji jest prawidłowa?
+	\item Jeśli nie jest, przez którą odzywką?
+	\item Kto rozgrywa? Ile musi wziąć lew?
+	\\[0.5in]
+\end{itemize}
+}
+
+\begin{multicols*}{2}
+\begin{enumerate}
+	\item 
+		\setlength\itemsep{2em}
+		\begin{bidding}
+			1\h\> pas\> 2\h\> pas\\
+			pas\> pas\>
+		\end{bidding}
+	\item 
+		\begin{bidding}
+			1\c\> pas\> 1\s\> pas\\
+			1\h\> pas\> 3BA\> pas\\
+			pas\> pas\>
+		\end{bidding}
+	\item 
+		\begin{bidding}
+			pas\> pas\> pas\> pas\\
+			1BA\> pas\> pas\> pas
+		\end{bidding}
+	\item 
+		\begin{bidding}
+			1\c\> x\> pas\> xx\\
+			1BA\> pas\> pas\> pas\\
+		\end{bidding}
+	\item 
+		\begin{bidding}
+			1\s\> pas\> x\> pas\\
+			3\s\> pas\> 4\s\> pas\\
+			pas\> pas\>
+		\end{bidding}
+	\item 
+		\begin{bidding}
+			1\c\> 1\d\> 1\h\> 1\s\\
+			1BA\> 2\c\> pas\> pas\\
+			pas\> 
+		\end{bidding}
+\end{enumerate}
+\vfill\null
+\columnbreak
+\begin{itemize}
+	\item Która z podanych licytacji jest prawidłowa?
+	\item Jeśli nie jest, przez którą odzywką?
+	\item Kto rozgrywa? Ile musi wziąć lew?
+\end{itemize}
+\end{multicols*}
+
+\newpage
+\begin{tabularx}{\textwidth}{l X}
+	\begin{bidding}
+	\end{bidding} & b \\
+	a & b \\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{X X}
+	\begin{bidding}
+		1\h\> pas\> 2\h\> pas\\
+		pas\> pas\>
+	\end{bidding} & \vspace{10px} \begin{itemize}
+		\item Pierwszy
+		\item Drugi
+		\item Trzeci
+		\item Trzeci
+	\end{itemize}\\
+	\begin{bidding}
+		1\h\> pas\> 2\h\> pas\\
+		pas\> pas\>
+	\end{bidding} & dupa\\
+	Zapisy pod numerem: & 794150203\\
+	Lub mailowo na adres: & szkola.brydza@gmail.com\\
+\end{tabularx}
+% \begin{tabularx}{\textwidth}{X r}
+% \begin{enumerate}
+	% \item
+		% \setlength\itemsep{2em}
+		% \begin{bidding}
+			% 1\h\> pas\> 2\h\> pas\\
+			% pas\> pas\>
+		% \end{bidding} & dupa\\
+	% \item
+		% \begin{bidding}
+			% 1\c\> pas\> 1\s\> pas\\
+			% 1\h\> pas\> 3BA\> pas\\
+			% pas\> pas\>
+		% \end{bidding} & dupa \\
+% \end{enumerate}
+% \end{tabularx}
+\end{document}
+%
+

@@ -1,0 +1,115 @@
+\documentclass[10pt,a4paper]{protocol}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Bright}{HTML}{58318F}
+\definecolor{Green}{HTML}{319866}
+\definecolor{Black}{HTML}{111111}
+\definecolor{LightGrey}{HTML}{515c50}
+\colorlet{heading}{Green}
+\colorlet{accent}{Bright}
+\colorlet{emphasis}{Black}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \risk if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faSpinner}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Misja 1}
+\tagline{Kryptonim 'Impreza u Ryśka'}
+\logo{5.5cm}{"abc2"}
+
+
+
+%% Make the header extend all the way to the right, if you want.
+\docinfo{%
+  Wbić na domówkę nieznajomych
+  % Deadline: Niedziela 18.11.2018 godzina 23:59
+}
+
+\purpose{
+	\begin{itemize}
+		\item Drewno
+		\item Pasztecik
+	\end{itemize}
+} % add a short discription of the purpose for this protocol
+%% Provide the file name containing the sidebar contents as an optional parameter to \need.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \need title in the "main" bar.
+\begin{fullwidth}
+\makeheader
+\end{fullwidth}
+
+\need[materials]{Plan}
+
+\step{1}{Znaleźć grupkę wyglądającą na taką, co doprowadzi nas do celu}{50}
+\begin{itemize}
+	\item Szukamy na mieście
+	\item Szukamy w parku
+	\item Szukamy w Macu
+	\item Szukamy na sympatia.pl
+\end{itemize}
+\divider
+
+\step{2}{Niepostrzeżenie poznać imię organizatora}{10}
+\begin{itemize}
+	\item Hipnoza
+	\item Szantaż
+	\item Czytanie w myślach
+	\item Zapytać
+\end{itemize}
+\divider
+
+\step{3}{Dotrzeć pod docelowy adres}{5}
+\begin{itemize}
+	\item Iść z grupą
+	\item Śledzić
+	\item Wyciągnąć w punkcie 2 i pojechać rowerem
+	\item Zadzwonić do organizatora z prośbą, by po nas wyszedł
+\end{itemize}
+\divider
+
+\step{4}{Wbić na imprezę}{20}
+\begin{itemize}
+	\item Skorzystać z wcześniej zakupionych ciastek
+	\item Użyć zdobytych informacji, aby podszyć się pod znajomego z przedszkola
+	\item Powiedzieć, że jest za głośno i zaraz wezwiemy policję, jeśli nas nie wpuszczą
+	\item Wejść niepostrzeżenie razem z grupą
+\end{itemize}
+\divider
+
+\step{5}{Zrobić furorę}{0}
+\begin{itemize}
+	\item Śmieszne żarty
+	\item Sztuczki karciane
+	\item Oświadczyny
+	\item Opowieści o naszej głupocie
+\end{itemize}
+\divider
+\begin{tikzpicture}[remember picture,overlay]
+	\node[xshift=10mm,yshift=-60mm,anchor=north west] at (current page.north west){%
+	\includegraphics[angle=30,width=200mm]{../secret}};
+\end{tikzpicture}
+
+\clearpage
+
+
+\end{document}

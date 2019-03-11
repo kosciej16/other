@@ -1,0 +1,5 @@
+arecordmidi -l
+arecordmidi --port 20 skrzypek
+wildmidi skrzypek
+timidity skrzypek -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k som.mp3
+

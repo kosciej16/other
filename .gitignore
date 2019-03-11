@@ -1,1 +1,9 @@
 *.un~
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.bbl
+*.bcf
+*.blg
