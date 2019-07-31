@@ -3,3 +3,41 @@ arecordmidi --port 20 skrzypek
 wildmidi skrzypek
 timidity skrzypek -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k som.mp3
 
+fdisk/gdisk - create partition
+mkfs.fat -F32 - dla GUID Partition Table
+mkfs.ext4 - linux filesystem
+mkswap - swap partition
+
+
+[i] = interface
+ip link - interfaces
+ip address (show) - show ip
+iw [i] link - show SSID connected with
+
+
+wpa_supplicant -B -i wlp2s0 -c <(wpa_passphrase SSID passwd) - 
+
+/etc/systemd/network/*.link -j
+complete - bash complete
+
+yaourt - more than pacman
+
+epiphany - defualt Gnome browser
+
+echo $XDG_SESSION_TYPE - wayland/x11
+
+ls -l /etc/systemd/system/display-manager.service - change display manager (lightdm/gdm)
+
+dbus-run-session -- gnome-shell --display-server --wayland
+
+gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled - enable touchpad gnome
+gsettings set org.gnome.desktop.peripherals.touchpad click-method areas - enable right click
+
+netctl start profile (in /etc/netctl/*) - run configured network
+
+pactl set-sink-volume @DEFAULT_SINK@ +5% - volume up
+
+in .bashrc to get same directory in new terminal tab
+. /etc/profile.d/vte.sh
+
+app switcher - alt tab
