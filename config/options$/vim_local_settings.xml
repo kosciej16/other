@@ -1,0 +1,191 @@
+<application>
+  <component name="VimLocalSettings">
+    <state version="5" />
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/AddBikeActivity.kt" timestamp="1567693428885">
+        <mark key="'" line="20" column="68" />
+        <mark key="[" line="20" column="59" />
+        <mark key="]" line="19" column="71" />
+        <mark key="^" line="19" column="71" />
+        <mark key="." line="20" column="71" />
+      </file>
+      <file name="/Dummy.txt" timestamp="1567688592690">
+        <mark key="[" line="0" column="1" />
+        <mark key="]" line="0" column="0" />
+        <mark key="^" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/res/xml/searchable.xml" timestamp="1567685706141">
+        <mark key="'" line="0" column="18" />
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="4" column="12" />
+        <mark key="." line="4" column="12" />
+        <mark key="^" line="4" column="12" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/MainActivity.kt" timestamp="1567787385661">
+        <mark key="'" line="45" column="19" />
+        <mark key="[" line="48" column="48" />
+        <mark key="]" line="49" column="31" />
+        <mark key="." line="49" column="31" />
+        <mark key="^" line="49" column="31" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/ring.kt" timestamp="1567677399434">
+        <mark key="[" line="7" column="32" />
+        <mark key="]" line="7" column="35" />
+        <mark key="." line="7" column="35" />
+        <mark key="^" line="7" column="35" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/res/layout/new_ring.xml" timestamp="1567688693854">
+        <mark key="[" line="8" column="0" />
+        <mark key="]" line="31" column="15" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/build.gradle" timestamp="1567776271204">
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="34" column="74" />
+        <mark key="]" line="36" column="0" />
+        <mark key="^" line="36" column="0" />
+        <mark key="." line="36" column="0" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/SyncBikesTask.kt" timestamp="1567787376405">
+        <mark key="[" line="13" column="0" />
+        <mark key="]" line="13" column="0" />
+        <mark key="." line="13" column="0" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/res/layout/item.xml" timestamp="1567690036479">
+        <mark key="[" line="20" column="30" />
+        <mark key="]" line="20" column="30" />
+        <mark key="^" line="8" column="41" />
+        <mark key="." line="20" column="32" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/myAdapter.kt" timestamp="1567767412173">
+        <mark key="'" line="17" column="0" />
+        <mark key="[" line="40" column="27" />
+        <mark key="]" line="40" column="27" />
+        <mark key="." line="40" column="27" />
+        <mark key="^" line="43" column="61" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/res/layout/content_main.xml" timestamp="1567690631352">
+        <mark key="[" line="21" column="30" />
+        <mark key="]" line="22" column="36" />
+        <mark key="." line="22" column="36" />
+        <mark key="^" line="22" column="36" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/AndroidManifest.xml" timestamp="1567778078012">
+        <mark key="[" line="4" column="0" />
+        <mark key="]" line="5" column="16" />
+        <mark key="^" line="19" column="0" />
+        <mark key="." line="4" column="0" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/Bike.kt" timestamp="1567691532138">
+        <mark key="[" line="4" column="38" />
+        <mark key="]" line="4" column="38" />
+        <mark key="." line="4" column="38" />
+        <mark key="^" line="4" column="38" />
+      </file>
+      <file name="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" timestamp="1567679394295">
+        <mark key="'" line="9" column="25" />
+        <mark key="[" line="15" column="30" />
+        <mark key="]" line="15" column="33" />
+        <mark key="^" line="15" column="33" />
+        <mark key="." line="15" column="33" />
+      </file>
+      <file name="/fragment.java" timestamp="1567690826199">
+        <mark key="[" line="0" column="0" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="9" column="25" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" />
+      <jump line="3" column="18" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/res/xml/searchable.xml" />
+      <jump line="9" column="37" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/res/layout/content_main.xml" />
+      <jump line="14" column="0" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/MainActivity.kt" />
+      <jump line="20" column="68" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/AddBikeActivity.kt" />
+      <jump line="25" column="16" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/MainActivity.kt" />
+      <jump line="6" column="32" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/myAdapter.kt" />
+      <jump line="11" column="17" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/myAdapter.kt" />
+      <jump line="25" column="0" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/myAdapter.kt" />
+      <jump line="12" column="0" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/myAdapter.kt" />
+      <jump line="43" column="27" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/myAdapter.kt" />
+      <jump line="24" column="0" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/myAdapter.kt" />
+      <jump line="17" column="0" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/myAdapter.kt" />
+      <jump line="32" column="74" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/MainActivity.kt" />
+      <jump line="34" column="25" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/MainActivity.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/build.gradle" />
+      <jump line="30" column="0" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/MainActivity.kt" />
+      <jump line="67" column="33" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/MainActivity.kt" />
+      <jump line="70" column="0" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/MainActivity.kt" />
+      <jump line="43" column="0" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/MainActivity.kt" />
+      <jump line="45" column="19" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/MainActivity.kt" />
+      <jump line="9" column="15" filename="$USER_HOME$/AndroidStudioProjects/MyApplication/app/src/main/java/com/example/myapplication/myAdapter.kt" />
+    </jumps>
+    <registers>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICBra2sK</text>
+      </register>
+      <register name="+" type="4">
+        <text>NetworkOnMainThreadException</text>
+      </register>
+      <register name="-" type="4">
+        <text>[0:20])</text>
+      </register>
+      <register name="/" type="4">
+        <text>ringN</text>
+      </register>
+      <register name="0" type="4">
+        <text encoding="base64">QXJyYXlMaXN0PEJpa2U+KCk=</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICBra2sK</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICBMb2cuZSgiYWJjIiwgbm9kZS50YWtlKDMwMCkpCg==</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICA8dXNlcy1wZXJtaXNzaW9uIGFuZHJvaWQ6bmFtZT0iYW5kcm9pZC5wZXJtaXNzaW9uLklOVEVSTkVUIi8+Cg==</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgPHVzZXMtcGVybWlzc2lvbiBhbmRyb2lkOm5hbWU9ImFuZHJvaWQucGVybWlzc2lvbi5JTlRFUk5FVCIvPgo=</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICA8dXNlcy1wZXJtaXNzaW9uIGFuZHJvaWQ6bmFtZT0iYW5kcm9pZC5wZXJtaXNzaW9uLklOVEVSTkVUIi8+Cg==</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIDx1c2VzLXBlcm1pc3Npb24gYW5kcm9pZDpuYW1lPSJhbmRyb2lkLnBlcm1pc3Npb24uSU5URVJORVQiLz4K</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICBzeW5jKCkK</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICB2YWwgZG9jIDogRG9jdW1lbnQgPSBKc291cC5jb25uZWN0KCJodHRwczovL3d3dy52ZXR1cmlsby53YXcucGwvbWFwYS1zdGFjamkvIikuZ2V0KCkKICAgICAgICB2YWwgbm9kZSA9IGdldE5vZGVXaXRoQmlrZXMoZG9jKQogICAgICAgIExvZy5lKCJhYmMiLCBub2RlKQo=</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgIH0K</text>
+      </register>
+      <register name=":" type="4">
+        <text>%s/ringN/bikeN</text>
+      </register>
+    </registers>
+    <search>
+      <last-search>ringN</last-search>
+      <last-offset />
+      <last-pattern>ringN</last-pattern>
+      <last-replace>bikeN</last-replace>
+      <last-substitute>ringN</last-substitute>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search>
+        <entry>ring</entry>
+        <entry>ringN</entry>
+      </history-search>
+      <history-cmd>
+        <entry>%s/ringN/bikeN</entry>
+        <entry>.update</entry>
+        <entry>update</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+</application>
