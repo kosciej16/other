@@ -1,3 +1,0 @@
-DIR=${2:-virt}
-
-source ~/$DIR/$1/bin/activate
