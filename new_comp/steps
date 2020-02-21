@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# i3
+
+function i3 () {
+    i3_DIR=~/.config/i3
+
+    sudo apt install i3 i3blocks
+    pip install i3ipc
+
+    # xorg
+    sudo cp i3/xorg/90-touchpad.conf /etc/X11/xorg.conf.d/
+
+    # screenshots
+    sudo apt install scrot
+}
+
+function logkeys () {
+    git clone git@github.com:kernc/logkeys.git
+    cd logkeys/
+    ./autogen.sh 
+    cd build 
+    ../configure 
+    make
+    sudo make install
+
+#TODO run
+}
+
+
+function vim () {
+    ROOT_NVIM_DIR="~/.config/nvim"
+#TODO hardlinks
+}
+
+
+function khal () {
+    pip install git+git://github.com/pimutils/khal.git
+    python -m venv ~/virt/vdirsyncer_env
+    ~/virt/vdirsyncer_env/bin/pip install vdirsyncer
+    ~/virt/vdirsyncer_env/bin/pip install vdirsyncer[google]
+    echo 'alias vdirsyncer="~/virt/vdirsyncer_env/bin/vdirsyncer"' >> ~/.bashrc
+}
