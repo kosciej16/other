@@ -1,0 +1,5 @@
+#!/bin/bash
+
+data=$1
+url=$2
+curl -X POST -H @token --data @$data "$url"

@@ -1,0 +1,5 @@
+[user]
+	email = krystian.dowolski@hitachivantara.com
+	name = "Krystian Dowolski"
+[credential]
+	helper = !aws --profile 466244873177_AWSAdministratorAccess codecommit credential-helper $@

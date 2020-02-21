@@ -1,0 +1,8 @@
+#!/bin/bash
+
+f=lambdas/dummy
+echo x >> $f
+git add $f
+git commit --amend --no-edit
+git push -f
+

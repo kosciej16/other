@@ -1,0 +1,10 @@
+{
+    "Name": "nazwa",
+    "GDIProperties": {
+        "GDIOwnerArea": "",
+        "GDIBasinAssetBusProject": "",
+        "GDILegalEntity": "",
+        "GDIActivity": ""
+    },
+    "Users": ["a", "b"]
+}

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rm -rf venv/lib/python3.6/site-packages/sdu_*
+for f in $(find . -name setup.py); do 
+    if grep -q git $f; then
+        echo $f
+        pip install -e $(dirname $f)
+    fi
+done

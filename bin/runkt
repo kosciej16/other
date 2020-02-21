@@ -1,0 +1,2 @@
+kotlinc $1 -include-runtime -d ${1%%.kt}.jar
+java -jar ${1%%.kt}.jar

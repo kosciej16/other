@@ -1,0 +1,5247 @@
+{
+  "coc-python|/home/kosciej": {
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService": []
+  },
+  "coc-python|global": {
+    "INTERPRETERS_CACHE_v3_CondaEnvFileService": [],
+    "INTERPRETERS_CACHE_v3_VirtualEnvService": [],
+    "INTERPRETERS_CACHE_v3_CondaEnvService": [],
+    "/usr/bin/python2.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/bin/python2.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.17-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 17,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.17-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "e057c72ec74ca730aa216177342b91f2cb3f3f7d920da15681a605dcbf5af764552b9bd94e74de34a5daad765edfa54c7c74841c1eff33a111729c680884c2ae"
+      },
+      "expiry": 1582374082585
+    },
+    "/usr/bin/python2.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/bin/python2",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.17-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 17,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.17-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "affe648dfe4ee31c430839047fb7b39f336add0cb3b401155a8fce4d7c88c884e08ddb485c8f6916abf5e58c31c28c77342b4e3ca18b4b044a8b004942a30057"
+      },
+      "expiry": 1582374082594
+    },
+    "/usr/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "0c7d862efc1ce85bf7bb3b6c2a17eeaaadfdd55d4c13b9da3a827533facbb1717f03b58c2225b7fd3a424de5a17a5735cb470c4b142ee522edae6f1b3019bd78"
+      },
+      "expiry": 1582374082596
+    },
+    "/usr/bin/python3.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13"
+      },
+      "expiry": 1582374082618
+    },
+    "/usr/bin/python3.6.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "7145872d11b9aeab6f0f7444e444a372e9e7ef7c9eb3e49291d6a9fb07b20480c4f0cdb010edd188396162464a7d90580cbd5945c8bbf10fc3adb5d4fbe681bf"
+      },
+      "expiry": 1582374082621
+    },
+    "/usr/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "d88e355c05a9e69c2a366b7a097817eabedcbe893465b8fd1504a3415f3ac43a6685b6f5821f06958f0d0e65aa2a39fe16e42bf0d975514c1569a98b30cdbed9"
+      },
+      "expiry": 1582374082623
+    },
+    "INTERPRETERS_CACHE_v3_CurrentPathService": [
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "7145872d11b9aeab6f0f7444e444a372e9e7ef7c9eb3e49291d6a9fb07b20480c4f0cdb010edd188396162464a7d90580cbd5945c8bbf10fc3adb5d4fbe681bf",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "d88e355c05a9e69c2a366b7a097817eabedcbe893465b8fd1504a3415f3ac43a6685b6f5821f06958f0d0e65aa2a39fe16e42bf0d975514c1569a98b30cdbed9",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python2",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.17-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 17,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.17-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "affe648dfe4ee31c430839047fb7b39f336add0cb3b401155a8fce4d7c88c884e08ddb485c8f6916abf5e58c31c28c77342b4e3ca18b4b044a8b004942a30057",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "0c7d862efc1ce85bf7bb3b6c2a17eeaaadfdd55d4c13b9da3a827533facbb1717f03b58c2225b7fd3a424de5a17a5735cb470c4b142ee522edae6f1b3019bd78",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "0c7d862efc1ce85bf7bb3b6c2a17eeaaadfdd55d4c13b9da3a827533facbb1717f03b58c2225b7fd3a424de5a17a5735cb470c4b142ee522edae6f1b3019bd78",
+        "type": "Unknown"
+      }
+    ],
+    "InterpreterAutoSeletionRule-currentPath": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown"
+    },
+    "preferredGlobalPyInterpreter": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_KnownPathsService": [
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "0c7d862efc1ce85bf7bb3b6c2a17eeaaadfdd55d4c13b9da3a827533facbb1717f03b58c2225b7fd3a424de5a17a5735cb470c4b142ee522edae6f1b3019bd78",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python2",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.17-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 17,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.17-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "affe648dfe4ee31c430839047fb7b39f336add0cb3b401155a8fce4d7c88c884e08ddb485c8f6916abf5e58c31c28c77342b4e3ca18b4b044a8b004942a30057",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python2.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.17-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 17,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.17-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "e057c72ec74ca730aa216177342b91f2cb3f3f7d920da15681a605dcbf5af764552b9bd94e74de34a5daad765edfa54c7c74841c1eff33a111729c680884c2ae",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "d88e355c05a9e69c2a366b7a097817eabedcbe893465b8fd1504a3415f3ac43a6685b6f5821f06958f0d0e65aa2a39fe16e42bf0d975514c1569a98b30cdbed9",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "7145872d11b9aeab6f0f7444e444a372e9e7ef7c9eb3e49291d6a9fb07b20480c4f0cdb010edd188396162464a7d90580cbd5945c8bbf10fc3adb5d4fbe681bf",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "0c7d862efc1ce85bf7bb3b6c2a17eeaaadfdd55d4c13b9da3a827533facbb1717f03b58c2225b7fd3a424de5a17a5735cb470c4b142ee522edae6f1b3019bd78",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python2",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.17-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 17,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.17-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "affe648dfe4ee31c430839047fb7b39f336add0cb3b401155a8fce4d7c88c884e08ddb485c8f6916abf5e58c31c28c77342b4e3ca18b4b044a8b004942a30057",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python2.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.17-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 17,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.17-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "e057c72ec74ca730aa216177342b91f2cb3f3f7d920da15681a605dcbf5af764552b9bd94e74de34a5daad765edfa54c7c74841c1eff33a111729c680884c2ae",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "d88e355c05a9e69c2a366b7a097817eabedcbe893465b8fd1504a3415f3ac43a6685b6f5821f06958f0d0e65aa2a39fe16e42bf0d975514c1569a98b30cdbed9",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "7145872d11b9aeab6f0f7444e444a372e9e7ef7c9eb3e49291d6a9fb07b20480c4f0cdb010edd188396162464a7d90580cbd5945c8bbf10fc3adb5d4fbe681bf",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+        "type": "Unknown"
+      }
+    ],
+    "PipEnvInformation": [],
+    "/usr/bin/python3.7.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+        "info": {
+          "architecture": 3,
+          "path": "/usr/bin/python3.7",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.5-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 5,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.5-final"
+          },
+          "sysPrefix": "/usr",
+          "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+          "type": "Unknown",
+          "displayName": "Python 3.7.5 64-bit",
+          "__store": true
+        }
+      },
+      "expiry": 1582374082779
+    },
+    "/usr/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit",
+        "hash": "0c7d862efc1ce85bf7bb3b6c2a17eeaaadfdd55d4c13b9da3a827533facbb1717f03b58c2225b7fd3a424de5a17a5735cb470c4b142ee522edae6f1b3019bd78-21e012de39bd552dcb2a38b4b799f91a"
+      },
+      "expiry": 1582374082708
+    },
+    "/usr/bin/python2.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 2.7.17 64-bit",
+        "hash": "affe648dfe4ee31c430839047fb7b39f336add0cb3b401155a8fce4d7c88c884e08ddb485c8f6916abf5e58c31c28c77342b4e3ca18b4b044a8b004942a30057-0851b18a2252d9ef556ce391db0c987e"
+      },
+      "expiry": 1582374082711
+    },
+    "/usr/bin/python3.7.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.5 64-bit",
+        "hash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13-cb546cfd2182e924c42f4e7ecc0d14fc"
+      },
+      "expiry": 1582374082837
+    },
+    "InterpreterAutoSeletionRule-system": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "/usr/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "0c7d862efc1ce85bf7bb3b6c2a17eeaaadfdd55d4c13b9da3a827533facbb1717f03b58c2225b7fd3a424de5a17a5735cb470c4b142ee522edae6f1b3019bd78",
+        "info": {
+          "architecture": 3,
+          "path": "/usr/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/usr",
+          "fileHash": "0c7d862efc1ce85bf7bb3b6c2a17eeaaadfdd55d4c13b9da3a827533facbb1717f03b58c2225b7fd3a424de5a17a5735cb470c4b142ee522edae6f1b3019bd78",
+          "type": "Unknown",
+          "displayName": "Python 3.6.9 64-bit"
+        }
+      },
+      "expiry": 1582374082745
+    },
+    "/usr/bin/python2.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "affe648dfe4ee31c430839047fb7b39f336add0cb3b401155a8fce4d7c88c884e08ddb485c8f6916abf5e58c31c28c77342b4e3ca18b4b044a8b004942a30057",
+        "info": {
+          "architecture": 3,
+          "path": "/usr/bin/python2",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "2.7.17-final",
+            "major": 2,
+            "minor": 7,
+            "patch": 17,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "2.7.17-final"
+          },
+          "sysPrefix": "/usr",
+          "fileHash": "affe648dfe4ee31c430839047fb7b39f336add0cb3b401155a8fce4d7c88c884e08ddb485c8f6916abf5e58c31c28c77342b4e3ca18b4b044a8b004942a30057",
+          "type": "Unknown",
+          "displayName": "Python 2.7.17 64-bit"
+        }
+      },
+      "expiry": 1582374082752
+    },
+    "InterpreterAutoSeletionRule-cachedInterpreters": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "ProposeLSBanner": false,
+    "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/venv",
+        "fileHash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9"
+      },
+      "expiry": 1582278358315
+    },
+    "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/venv",
+        "fileHash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9"
+      },
+      "expiry": 1582278358318
+    },
+    "/home/kosciej/repos/sdu/collab/qumulo/tmp/bin/python3.6.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/qumulo/tmp/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/tmp",
+        "fileHash": "f4a25466cc7b3fc1b2004ffc7eed4f53a52ec181e98631cb630ef8feb2a3763b2a927d01a280bb00c8d6f5ffe71280aa0c9be56603ff1bce7ec0efe790fc10b4"
+      },
+      "expiry": 1579266966141
+    },
+    "/home/kosciej/repos/sdu/collab/qumulo/tmp/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/qumulo/tmp/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/tmp",
+        "fileHash": "f4a25466cc7b3fc1b2004ffc7eed4f53a52ec181e98631cb630ef8feb2a3763b2a927d01a280bb00c8d6f5ffe71280aa0c9be56603ff1bce7ec0efe790fc10b4"
+      },
+      "expiry": 1579266966130
+    },
+    "/home/kosciej/repos/sdu/collab/qumulo/tmp/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/qumulo/tmp/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/tmp",
+        "fileHash": "f4a25466cc7b3fc1b2004ffc7eed4f53a52ec181e98631cb630ef8feb2a3763b2a927d01a280bb00c8d6f5ffe71280aa0c9be56603ff1bce7ec0efe790fc10b4"
+      },
+      "expiry": 1579266966132
+    },
+    "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9"
+      },
+      "expiry": 1582278358431
+    },
+    "/home/kosciej/repos/sdu/collab/qumulo/tmp/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('tmp': venv)",
+        "hash": "f4a25466cc7b3fc1b2004ffc7eed4f53a52ec181e98631cb630ef8feb2a3763b2a927d01a280bb00c8d6f5ffe71280aa0c9be56603ff1bce7ec0efe790fc10b4-6337d03bfb51c6a7f4b7178f33396cec"
+      },
+      "expiry": 1579266993610
+    },
+    "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9-a90666a42c19347d7c7db2ed7e7078e2"
+      },
+      "expiry": 1582278358471
+    },
+    "/home/kosciej/repos/sdu/collab/qumulo/tmp/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "f4a25466cc7b3fc1b2004ffc7eed4f53a52ec181e98631cb630ef8feb2a3763b2a927d01a280bb00c8d6f5ffe71280aa0c9be56603ff1bce7ec0efe790fc10b4",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/repos/sdu/collab/qumulo/tmp/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/tmp",
+          "fileHash": "f4a25466cc7b3fc1b2004ffc7eed4f53a52ec181e98631cb630ef8feb2a3763b2a927d01a280bb00c8d6f5ffe71280aa0c9be56603ff1bce7ec0efe790fc10b4",
+          "envName": "tmp",
+          "type": "Venv",
+          "displayName": "Python 3.6.9 64-bit ('tmp': venv)"
+        }
+      },
+      "expiry": 1579266993620
+    },
+    "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/venv",
+          "fileHash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9",
+          "envName": "venv",
+          "type": "Venv",
+          "displayName": "Python 3.6.9 64-bit ('venv': venv)"
+        }
+      },
+      "expiry": 1582278358577
+    },
+    "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9-0320a01c48e7d6f875bd6e43985752e1"
+      },
+      "expiry": 1582278358622
+    },
+    "/home/kosciej/repos/sdu/collab/collection/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/collection/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/collection/venv",
+        "fileHash": "bfcfed0e99dc16e24c2853057c996647b458bb92d34c791be787002bb3395a201fb9a66237aa600ab9fb2932d9d0f3c82b07ce90599727e5fd7b7c7555719fe3"
+      },
+      "expiry": 1582197119961
+    },
+    "/home/kosciej/repos/sdu/collab/collection/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/collection/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/collection/venv",
+        "fileHash": "bfcfed0e99dc16e24c2853057c996647b458bb92d34c791be787002bb3395a201fb9a66237aa600ab9fb2932d9d0f3c82b07ce90599727e5fd7b7c7555719fe3"
+      },
+      "expiry": 1582197119971
+    },
+    "/home/kosciej/repos/sdu/collab/collection/venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "9471941afe2398c5638bea7ecf0dbda585f36598b7c16a7f71154e0cc0f9074b1cdfd064c46078ec19e4ee275061713d6e8861910808c3b7a95faa66156737e3"
+      },
+      "expiry": 1581687999311
+    },
+    "/home/kosciej/repos/sdu/collab/collection/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "93c340cab5b3bb6f9b358df08f13d2de007c52d0b0dd795c5c6909b1ff76443aa9d6b3a5ea5cb8712c8680972f7b500d7fbd035ff720693aaa3ca83faf8f65f6-fa0bc4708bbe1ec7d018347d076087d8"
+      },
+      "expiry": 1581498990884
+    },
+    "/home/kosciej/repos/sdu/collab/collection/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "93c340cab5b3bb6f9b358df08f13d2de007c52d0b0dd795c5c6909b1ff76443aa9d6b3a5ea5cb8712c8680972f7b500d7fbd035ff720693aaa3ca83faf8f65f6",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/repos/sdu/collab/collection/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/home/kosciej/repos/sdu/collab/collection/venv",
+          "fileHash": "93c340cab5b3bb6f9b358df08f13d2de007c52d0b0dd795c5c6909b1ff76443aa9d6b3a5ea5cb8712c8680972f7b500d7fbd035ff720693aaa3ca83faf8f65f6",
+          "envName": "venv",
+          "type": "Venv",
+          "displayName": "Python 3.6.9 64-bit ('venv': venv)"
+        }
+      },
+      "expiry": 1581498990895
+    },
+    "/home/kosciej/repos/sdu/collab/collection/venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "9471941afe2398c5638bea7ecf0dbda585f36598b7c16a7f71154e0cc0f9074b1cdfd064c46078ec19e4ee275061713d6e8861910808c3b7a95faa66156737e3-86033a05f562b69233dc2c1cd2857709"
+      },
+      "expiry": 1581687999380
+    },
+    "/home/kosciej/repos/sdu/other/commons/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/commons/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/commons/venv",
+        "fileHash": "ed7b5d5d6e717a734194d4ab10f9a6363a859fcbd42b7147efc6c2c67cdb0136ac89d680f589e6d62491c77f0f9e1adabd48c35790f42bbfe74d3fa8c2280929"
+      },
+      "expiry": 1582301818897
+    },
+    "/home/kosciej/repos/sdu/other/commons/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/commons/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/commons/venv",
+        "fileHash": "d9d8fe985f87ba1517260aa6cb23cd9086e68f1f5adf37d89a8c1132b93b75aad4a0ebe116de64d3c6eb3d65217a594560584a4d1e6af3d0847f07a0d19f2d1f"
+      },
+      "expiry": 1581584332911
+    },
+    "/home/kosciej/repos/sdu/other/commons/venv/bin/python3.6.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/commons/venv/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/commons/venv",
+        "fileHash": "d9d8fe985f87ba1517260aa6cb23cd9086e68f1f5adf37d89a8c1132b93b75aad4a0ebe116de64d3c6eb3d65217a594560584a4d1e6af3d0847f07a0d19f2d1f"
+      },
+      "expiry": 1581584332906
+    },
+    "/home/kosciej/repos/sdu/other/commons/venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "ed7b5d5d6e717a734194d4ab10f9a6363a859fcbd42b7147efc6c2c67cdb0136ac89d680f589e6d62491c77f0f9e1adabd48c35790f42bbfe74d3fa8c2280929"
+      },
+      "expiry": 1582301818849
+    },
+    "/home/kosciej/repos/sdu/other/commons/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "d9d8fe985f87ba1517260aa6cb23cd9086e68f1f5adf37d89a8c1132b93b75aad4a0ebe116de64d3c6eb3d65217a594560584a4d1e6af3d0847f07a0d19f2d1f-cac82e126230a593cec73e59ef358891"
+      },
+      "expiry": 1581425477193
+    },
+    "/home/kosciej/repos/sdu/other/commons/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "d9d8fe985f87ba1517260aa6cb23cd9086e68f1f5adf37d89a8c1132b93b75aad4a0ebe116de64d3c6eb3d65217a594560584a4d1e6af3d0847f07a0d19f2d1f",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/repos/sdu/other/commons/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/home/kosciej/repos/sdu/other/commons/venv",
+          "fileHash": "d9d8fe985f87ba1517260aa6cb23cd9086e68f1f5adf37d89a8c1132b93b75aad4a0ebe116de64d3c6eb3d65217a594560584a4d1e6af3d0847f07a0d19f2d1f",
+          "envName": "venv",
+          "type": "Venv",
+          "displayName": "Python 3.6.9 64-bit ('venv': venv)"
+        }
+      },
+      "expiry": 1581425477205
+    },
+    "/home/kosciej/repos/sdu/other/commons/venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "ed7b5d5d6e717a734194d4ab10f9a6363a859fcbd42b7147efc6c2c67cdb0136ac89d680f589e6d62491c77f0f9e1adabd48c35790f42bbfe74d3fa8c2280929-97a33ca9f3dab5202778ab01d9cafde9"
+      },
+      "expiry": 1582301818902
+    },
+    "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+        "fileHash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df"
+      },
+      "expiry": 1579963811174
+    },
+    "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+        "fileHash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df"
+      },
+      "expiry": 1579963811172
+    },
+    "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df-87cc30c3b753cd4fed08499b978486c8"
+      },
+      "expiry": 1579963811305
+    },
+    "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+          "fileHash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df",
+          "envName": "venv",
+          "type": "Venv",
+          "displayName": "Python 3.6.9 64-bit ('venv': venv)"
+        }
+      },
+      "expiry": 1579963811354
+    },
+    "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df"
+      },
+      "expiry": 1579963811290
+    },
+    "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df-ce4cdc083937332450480e9520c8a4b6"
+      },
+      "expiry": 1579963811379
+    },
+    "/home/kosciej/repos/sdu/collab/publish/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+        "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6"
+      },
+      "expiry": 1579604136891
+    },
+    "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+        "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6"
+      },
+      "expiry": 1581167212226
+    },
+    "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b"
+      },
+      "expiry": 1581089872181
+    },
+    "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b"
+      },
+      "expiry": 1581089872179
+    },
+    "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b"
+      },
+      "expiry": 1581089872212
+    },
+    "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+          "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6",
+          "type": "Unknown",
+          "displayName": "Python 3.6.9 64-bit",
+          "__store": true
+        }
+      },
+      "expiry": 1581167212479
+    },
+    "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6-cc59820e4980369103719fa3cfc3686b"
+      },
+      "expiry": 1581167212496
+    },
+    "/home/kosciej/repos/sdu/collab/publish/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6-bfee1b1a9506da2d0a83bcc630f6a246"
+      },
+      "expiry": 1579359275510
+    },
+    "/home/kosciej/repos/sdu/collab/publish/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+          "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6",
+          "envName": "venv",
+          "type": "Venv",
+          "displayName": "Python 3.6.9 64-bit ('venv': venv)"
+        }
+      },
+      "expiry": 1579359275525
+    },
+    "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery-agent/venv",
+        "fileHash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e"
+      },
+      "expiry": 1575467432978
+    },
+    "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery-agent/venv",
+        "fileHash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e"
+      },
+      "expiry": 1575467432985
+    },
+    "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e-5b41ef62804c783cf389f4f89d237267"
+      },
+      "expiry": 1575467433001
+    },
+    "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery-agent/venv",
+          "fileHash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e",
+          "envName": "venv",
+          "type": "Venv",
+          "displayName": "Python 3.6.9 64-bit ('venv': venv)"
+        }
+      },
+      "expiry": 1575467433008
+    },
+    "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e"
+      },
+      "expiry": 1575467433087
+    },
+    "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e-0b20fcc0a18c511a75dd95de868d699b"
+      },
+      "expiry": 1575467433125
+    },
+    "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b-80b297d999e6adb564b681425fb713b3"
+      },
+      "expiry": 1581089886858
+    },
+    "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+          "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b",
+          "envName": "venv",
+          "type": "Venv",
+          "displayName": "Python 3.6.9 64-bit ('venv': venv)"
+        }
+      },
+      "expiry": 1581089886870
+    },
+    "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b"
+      },
+      "expiry": 1581089872241
+    },
+    "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b-e84efe1ad133f54f8d8a0d19c33d5c84"
+      },
+      "expiry": 1581089872307
+    },
+    "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/workspace/venv",
+        "fileHash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0"
+      },
+      "expiry": 1581089647494
+    },
+    "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/workspace/venv",
+        "fileHash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0"
+      },
+      "expiry": 1581089647499
+    },
+    "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0-79786a5c6c42615877fa3e7f4374225b"
+      },
+      "expiry": 1581089670774
+    },
+    "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/home/kosciej/repos/sdu/collab/workspace/venv",
+          "fileHash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0",
+          "envName": "venv",
+          "type": "Venv",
+          "displayName": "Python 3.6.9 64-bit ('venv': venv)"
+        }
+      },
+      "expiry": 1581089670786
+    },
+    "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0"
+      },
+      "expiry": 1581089647541
+    },
+    "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0-f5d210e9cfc5b61b4c590ac1c69b6681"
+      },
+      "expiry": 1581089647604
+    },
+    "/usr/bin/python2.7.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 2.7.17 64-bit",
+        "hash": "e057c72ec74ca730aa216177342b91f2cb3f3f7d920da15681a605dcbf5af764552b9bd94e74de34a5daad765edfa54c7c74841c1eff33a111729c680884c2ae-4856a2ebe50f8e4586d3c59a32654bc7"
+      },
+      "expiry": 1576748013088
+    },
+    "/usr/bin/python2.7.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "e057c72ec74ca730aa216177342b91f2cb3f3f7d920da15681a605dcbf5af764552b9bd94e74de34a5daad765edfa54c7c74841c1eff33a111729c680884c2ae",
+        "info": {
+          "architecture": 3,
+          "path": "/usr/bin/python2.7",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "2.7.17-final",
+            "major": 2,
+            "minor": 7,
+            "patch": 17,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "2.7.17-final"
+          },
+          "sysPrefix": "/usr",
+          "fileHash": "e057c72ec74ca730aa216177342b91f2cb3f3f7d920da15681a605dcbf5af764552b9bd94e74de34a5daad765edfa54c7c74841c1eff33a111729c680884c2ae",
+          "type": "Unknown",
+          "displayName": "Python 2.7.17 64-bit"
+        }
+      },
+      "expiry": 1576748013148
+    },
+    "/home/kosciej/repos/sdu/core/data-api/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/core/data-api/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/core/data-api/venv",
+        "fileHash": "62554db8bf67c022394d9744b1aba65964bc452dbcd44c68a588458e6a0ed4392398eb1b5cf1e1fd3e746f772db8eb2573036b3591619685c00f20eb91bcd323"
+      },
+      "expiry": 1581167212288
+    },
+    "/home/kosciej/repos/sdu/core/data-api/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/core/data-api/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/core/data-api/venv",
+        "fileHash": "62554db8bf67c022394d9744b1aba65964bc452dbcd44c68a588458e6a0ed4392398eb1b5cf1e1fd3e746f772db8eb2573036b3591619685c00f20eb91bcd323"
+      },
+      "expiry": 1581167212285
+    },
+    "/home/kosciej/repos/sdu/core/data-api/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "62554db8bf67c022394d9744b1aba65964bc452dbcd44c68a588458e6a0ed4392398eb1b5cf1e1fd3e746f772db8eb2573036b3591619685c00f20eb91bcd323-e7e8a61d784d8a5b6cc3ecac7b8ab0cc"
+      },
+      "expiry": 1581167212368
+    },
+    "/home/kosciej/repos/sdu/core/data-api/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "62554db8bf67c022394d9744b1aba65964bc452dbcd44c68a588458e6a0ed4392398eb1b5cf1e1fd3e746f772db8eb2573036b3591619685c00f20eb91bcd323",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/repos/sdu/core/data-api/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.6.9-final",
+            "major": 3,
+            "minor": 6,
+            "patch": 9,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.6.9-final"
+          },
+          "sysPrefix": "/home/kosciej/repos/sdu/core/data-api/venv",
+          "fileHash": "62554db8bf67c022394d9744b1aba65964bc452dbcd44c68a588458e6a0ed4392398eb1b5cf1e1fd3e746f772db8eb2573036b3591619685c00f20eb91bcd323",
+          "envName": "venv",
+          "type": "Venv",
+          "displayName": "Python 3.6.9 64-bit ('venv': venv)"
+        }
+      },
+      "expiry": 1581167212454
+    },
+    "/home/kosciej/interview/revolut/python/venv/bin/python3.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/interview/revolut/python/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/interview/revolut/python/venv",
+        "fileHash": "07088d37d744aecfcd5887df44fc9e23e537cc73ba1be6c083cd6da9d173ebddf6ad458ab051f5eb8be4abd2d7593c90e96f7244de7b9ecff20f168867583aac"
+      },
+      "expiry": 1579564556996
+    },
+    "/home/kosciej/interview/revolut/python/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/interview/revolut/python/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/interview/revolut/python/venv",
+        "fileHash": "07088d37d744aecfcd5887df44fc9e23e537cc73ba1be6c083cd6da9d173ebddf6ad458ab051f5eb8be4abd2d7593c90e96f7244de7b9ecff20f168867583aac"
+      },
+      "expiry": 1579564557113
+    },
+    "/home/kosciej/interview/revolut/python/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/interview/revolut/python/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/interview/revolut/python/venv",
+        "fileHash": "07088d37d744aecfcd5887df44fc9e23e537cc73ba1be6c083cd6da9d173ebddf6ad458ab051f5eb8be4abd2d7593c90e96f7244de7b9ecff20f168867583aac"
+      },
+      "expiry": 1579564557049
+    },
+    "/home/kosciej/interview/revolut/python/venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "07088d37d744aecfcd5887df44fc9e23e537cc73ba1be6c083cd6da9d173ebddf6ad458ab051f5eb8be4abd2d7593c90e96f7244de7b9ecff20f168867583aac"
+      },
+      "expiry": 1579564557155
+    },
+    "/home/kosciej/interview/revolut/python/venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.5 64-bit ('venv': venv)",
+        "hash": "07088d37d744aecfcd5887df44fc9e23e537cc73ba1be6c083cd6da9d173ebddf6ad458ab051f5eb8be4abd2d7593c90e96f7244de7b9ecff20f168867583aac-06718e292b907d26430ddd110e19acaf"
+      },
+      "expiry": 1579564557207
+    },
+    "/home/kosciej/interview/revolut/python/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.5 64-bit ('venv': venv)",
+        "hash": "6bb42ba98fd6046103c85e2568aaba6abc1b122237ebb1eada5acd79e5b4d90e8797261fcdcf2ddce85ab846c2a8596e084e170747a51f11fc4ac33711c7f1f7-26f60aa7ec1e7c00c727b33620b81020"
+      },
+      "expiry": 1579563419926
+    },
+    "/home/kosciej/interview/revolut/python/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "6bb42ba98fd6046103c85e2568aaba6abc1b122237ebb1eada5acd79e5b4d90e8797261fcdcf2ddce85ab846c2a8596e084e170747a51f11fc4ac33711c7f1f7",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/interview/revolut/python/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.5-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 5,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.5-final"
+          },
+          "sysPrefix": "/home/kosciej/interview/revolut/python/venv",
+          "fileHash": "6bb42ba98fd6046103c85e2568aaba6abc1b122237ebb1eada5acd79e5b4d90e8797261fcdcf2ddce85ab846c2a8596e084e170747a51f11fc4ac33711c7f1f7",
+          "envName": "venv",
+          "type": "Venv",
+          "displayName": "Python 3.7.5 64-bit ('venv': venv)"
+        }
+      },
+      "expiry": 1579563419935
+    },
+    "/home/kosciej/tmp/venv/bin/python3.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/tmp/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/tmp/venv",
+        "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7"
+      },
+      "expiry": 1581962525518
+    },
+    "/home/kosciej/tmp/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/tmp/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/tmp/venv",
+        "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7"
+      },
+      "expiry": 1581962525601
+    },
+    "/home/kosciej/tmp/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/tmp/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/tmp/venv",
+        "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7"
+      },
+      "expiry": 1581962525532
+    },
+    "/home/kosciej/tmp/venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7"
+      },
+      "expiry": 1581962525634
+    },
+    "/home/kosciej/tmp/venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.5 64-bit ('venv': venv)",
+        "hash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7-4896b60d2345221aa4d7e12712c25d8a"
+      },
+      "expiry": 1581962525708
+    },
+    "/home/kosciej/tmp/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.5 64-bit ('venv': venv)",
+        "hash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7-93b3803c7a60ebb27b372d8e38bd109c"
+      },
+      "expiry": 1580834202382
+    },
+    "/home/kosciej/tmp/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7",
+        "info": {
+          "architecture": 3,
+          "path": "/home/kosciej/tmp/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.5-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 5,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.5-final"
+          },
+          "sysPrefix": "/home/kosciej/tmp/venv",
+          "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7",
+          "envName": "venv",
+          "type": "Venv",
+          "displayName": "Python 3.7.5 64-bit ('venv': venv)"
+        }
+      },
+      "expiry": 1580834202391
+    },
+    "/home/kosciej/vim/ctags/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/vim/ctags/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/vim/ctags/venv",
+        "fileHash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7"
+      },
+      "expiry": 1580557447943
+    },
+    "/home/kosciej/vim/ctags/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/vim/ctags/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/vim/ctags/venv",
+        "fileHash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7"
+      },
+      "expiry": 1580557447966
+    },
+    "/home/kosciej/vim/ctags/venv/bin/python3.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/kosciej/vim/ctags/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/vim/ctags/venv",
+        "fileHash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7"
+      },
+      "expiry": 1580557447968
+    },
+    "/home/kosciej/vim/ctags/venv/bin/python3.7.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7"
+      },
+      "expiry": 1580557448077
+    },
+    "/home/kosciej/vim/ctags/venv/bin/python3.7.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.5 64-bit ('venv': venv)",
+        "hash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7-b1ea0f1b39ef0f89df20124439814493"
+      },
+      "expiry": 1580557448133
+    },
+    "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "b566936c9e854f3eaeef49ef8229b53031bd0453d4653948360938322d2d84190c323bf15622bc4f813b8be73fe91dd908c9267bc7f108651ef3340efc360d5b"
+      },
+      "expiry": 1581086583931
+    },
+    "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.6.9 64-bit ('venv': venv)",
+        "hash": "b566936c9e854f3eaeef49ef8229b53031bd0453d4653948360938322d2d84190c323bf15622bc4f813b8be73fe91dd908c9267bc7f108651ef3340efc360d5b-492cf6046a14d2ac79ac2ed6efcc1a65"
+      },
+      "expiry": 1581086584074
+    }
+  },
+  "coc-python|/home/kosciej/repos/sdu/collab/qumulo": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:23610ec703803d4716021aec1bf99fe7": [],
+    "SelectedPythonPath": "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python3",
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:23610ec703803d4716021aec1bf99fe7": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/venv",
+        "fileHash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/venv",
+        "fileHash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/collab/qumulo": {
+      "architecture": 3,
+      "path": "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.6.9-final",
+        "major": 3,
+        "minor": 6,
+        "patch": 9,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.6.9-final"
+      },
+      "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/venv",
+      "fileHash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9",
+      "type": "VirtualEnv"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/venv",
+        "fileHash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/qumulo/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/qumulo/venv",
+        "fileHash": "7b0bc2005a758e9344990d9807a96f6319e89e16a309e9848093dc778ef050420f9bc9b55967fa28086352ea5d47a3d5e6f0d009271b5254d134df35704416f9",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "INTERPRETERS_CACHE_v3_PipEnvService:7d13c7d5b55328b5039e1b54584dd0ec": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:7d13c7d5b55328b5039e1b54584dd0ec": []
+  },
+  "coc-python|/home/kosciej/repos/sdu/collab/collection": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:9c5ddb2460aa8339c2fcfeae6ed6a606": [],
+    "SelectedPythonPath": "/home/kosciej/repos/sdu/collab/collection/venv/bin/python3",
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:9c5ddb2460aa8339c2fcfeae6ed6a606": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService:9763dfdfb0b5b890fd342b9c91dd54f3": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:9763dfdfb0b5b890fd342b9c91dd54f3": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "277eca8e5c1460b1b1ee698e362575a26a7ba6d2a44a5b9186fa462dab207edadd7eebe2397a6caebba7d4d40dd2d497906ca0c40ab385413e703f282261c4a5",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "277eca8e5c1460b1b1ee698e362575a26a7ba6d2a44a5b9186fa462dab207edadd7eebe2397a6caebba7d4d40dd2d497906ca0c40ab385413e703f282261c4a5",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "277eca8e5c1460b1b1ee698e362575a26a7ba6d2a44a5b9186fa462dab207edadd7eebe2397a6caebba7d4d40dd2d497906ca0c40ab385413e703f282261c4a5",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "INTERPRETERS_CACHE_v3_PipEnvService:8d8bf48bd9729507d05a4376f055548f": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:8d8bf48bd9729507d05a4376f055548f": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/commons/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/commons/venv",
+        "fileHash": "e9530c8d7c70bb337d201882d051928c2a663cab0972288e1d8bc01a68db7a449d434dc9e717d3867f575edd3651c094ab00a3297c4a33d10d1650a114634e91",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/commons/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/commons/venv",
+        "fileHash": "e9530c8d7c70bb337d201882d051928c2a663cab0972288e1d8bc01a68db7a449d434dc9e717d3867f575edd3651c094ab00a3297c4a33d10d1650a114634e91",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/commons/venv/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/commons/venv",
+        "fileHash": "e9530c8d7c70bb337d201882d051928c2a663cab0972288e1d8bc01a68db7a449d434dc9e717d3867f575edd3651c094ab00a3297c4a33d10d1650a114634e91",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ]
+  },
+  "coc-python|/home/kosciej/.config/coc/extensions/node_modules/coc-python": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:197b9d3e29446349943ec80a9ced60c2": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:197b9d3e29446349943ec80a9ced60c2": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/.config/coc/extensions/node_modules/coc-python": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/.vim/.ropeproject": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:6f936029cfc14065910fcc9939f7cb8b": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:6f936029cfc14065910fcc9939f7cb8b": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/.vim/.ropeproject": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/repos/sdu/other/commons": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:8d8bf48bd9729507d05a4376f055548f": [],
+    "SelectedPythonPath": "/home/kosciej/repos/sdu/other/commons/venv/bin/python3",
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:8d8bf48bd9729507d05a4376f055548f": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService:6b61127dc6bbc1c60112dd928079f8c9": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:6b61127dc6bbc1c60112dd928079f8c9": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+        "fileHash": "1fb49741f2c83be38d35629c957c8443afebcdd922c4d3bc2c8f98788ebfc97b7feaf1e0e53d288dcf698b16bd94d2e4755e75bb23deadc875b2a113c9d4e604",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+        "fileHash": "1fb49741f2c83be38d35629c957c8443afebcdd922c4d3bc2c8f98788ebfc97b7feaf1e0e53d288dcf698b16bd94d2e4755e75bb23deadc875b2a113c9d4e604",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ]
+  },
+  "coc-python|/home/kosciej/tmp": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:7b31875886c288f75f280b760bf0a4aa": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:7b31875886c288f75f280b760bf0a4aa": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/tmp/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/tmp/venv",
+        "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/tmp/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/tmp/venv",
+        "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/tmp/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/tmp/venv",
+        "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/tmp": {
+      "architecture": 3,
+      "path": "/home/kosciej/tmp/venv/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/home/kosciej/tmp/venv",
+      "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7",
+      "type": "VirtualEnv"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/tmp/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/tmp/venv",
+        "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/tmp/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/tmp/venv",
+        "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/tmp/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/tmp/venv",
+        "fileHash": "01a5e068818a6b90318c18e3e7c9a58f8e403080050376fbf39216995c48e96054528ce05c9db56ffeb49c3e3ad6bfdd59e3a75fcbee6c76b12aa8895f4c11b7",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "SelectedPythonPath": "/home/kosciej/tmp/venv/bin/python3"
+  },
+  "coc-python|/home/kosciej/repos/sdu/collab/delivery": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:7d13c7d5b55328b5039e1b54584dd0ec": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:7d13c7d5b55328b5039e1b54584dd0ec": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+        "fileHash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+        "fileHash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "SelectedPythonPath": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python3",
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+        "fileHash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+        "fileHash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/collab/delivery": {
+      "architecture": 3,
+      "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.6.9-final",
+        "major": 3,
+        "minor": 6,
+        "patch": 9,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.6.9-final"
+      },
+      "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+      "fileHash": "9ea09b80b58fdf17924f16c876feee8185a7b3bd71977a95ac00de705dd506f387ecac70e4bc12a94558f7354e94beb44cafcc1e852f6f62e4357400548317df",
+      "type": "VirtualEnv"
+    }
+  },
+  "coc-python|/home/kosciej/repos/sdu/core/workflow": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:31bda8cdcfb2492f202320ad177e332d": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:31bda8cdcfb2492f202320ad177e332d": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/core/workflow": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/serwer": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:af94b0e5e376666d2462d3b763f9fb5e": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:af94b0e5e376666d2462d3b763f9fb5e": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/serwer": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/repos/sdu/core/ingestion": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:ed54e21677910b8ee7066fd8f047dd25": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:ed54e21677910b8ee7066fd8f047dd25": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/core/ingestion": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/repos/sdu/core/data-api": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:0ba8fefabc6a3092b75a1ae2d1d2ab9a": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:0ba8fefabc6a3092b75a1ae2d1d2ab9a": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/core/data-api/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/core/data-api/venv",
+        "fileHash": "62554db8bf67c022394d9744b1aba65964bc452dbcd44c68a588458e6a0ed4392398eb1b5cf1e1fd3e746f772db8eb2573036b3591619685c00f20eb91bcd323",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/core/data-api/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/core/data-api/venv",
+        "fileHash": "62554db8bf67c022394d9744b1aba65964bc452dbcd44c68a588458e6a0ed4392398eb1b5cf1e1fd3e746f772db8eb2573036b3591619685c00f20eb91bcd323",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/core/data-api/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/core/data-api/venv",
+        "fileHash": "62554db8bf67c022394d9744b1aba65964bc452dbcd44c68a588458e6a0ed4392398eb1b5cf1e1fd3e746f772db8eb2573036b3591619685c00f20eb91bcd323",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/core/data-api/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/core/data-api/venv",
+        "fileHash": "62554db8bf67c022394d9744b1aba65964bc452dbcd44c68a588458e6a0ed4392398eb1b5cf1e1fd3e746f772db8eb2573036b3591619685c00f20eb91bcd323",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "INTERPRETERS_CACHE_v3_PipEnvService:6b61127dc6bbc1c60112dd928079f8c9": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:6b61127dc6bbc1c60112dd928079f8c9": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+        "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+        "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "SelectedPythonPath": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3",
+    "INTERPRETERS_CACHE_v3_PipEnvService:9c5ddb2460aa8339c2fcfeae6ed6a606": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:9c5ddb2460aa8339c2fcfeae6ed6a606": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/collection/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/collection/venv",
+        "fileHash": "e9676d7d75512207a425ecc112d75d4f4aec89972e5837943bc361179ce4c0157310d45114b6cd36e0e89d20b20b76e25f91512a61925bd0f4aad437c640e6e2",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/collection/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/collection/venv",
+        "fileHash": "e9676d7d75512207a425ecc112d75d4f4aec89972e5837943bc361179ce4c0157310d45114b6cd36e0e89d20b20b76e25f91512a61925bd0f4aad437c640e6e2",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "INTERPRETERS_CACHE_v3_PipEnvService:7d13c7d5b55328b5039e1b54584dd0ec": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:7d13c7d5b55328b5039e1b54584dd0ec": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+        "fileHash": "08d04741073c420805424ea9f3c663c5c5b24ed78a665e54f57990c8503d760edc7c6ec333272934e4a8975e9b487ec72d832976f3a20c51acebc247722b22f9",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+        "fileHash": "08d04741073c420805424ea9f3c663c5c5b24ed78a665e54f57990c8503d760edc7c6ec333272934e4a8975e9b487ec72d832976f3a20c51acebc247722b22f9",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "INTERPRETERS_CACHE_v3_PipEnvService:8d8bf48bd9729507d05a4376f055548f": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:8d8bf48bd9729507d05a4376f055548f": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/commons/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/commons/venv",
+        "fileHash": "6a42cb224107c678d8dcff0e63d7eebd18f44eefa62b50ea79fdb9b6f1e4867fae2796b5b593d234e7a422bf189020ce02cc154bfaeb54e02e9152785af1815e",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/commons/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/commons/venv",
+        "fileHash": "6a42cb224107c678d8dcff0e63d7eebd18f44eefa62b50ea79fdb9b6f1e4867fae2796b5b593d234e7a422bf189020ce02cc154bfaeb54e02e9152785af1815e",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/commons/venv/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/commons/venv",
+        "fileHash": "6a42cb224107c678d8dcff0e63d7eebd18f44eefa62b50ea79fdb9b6f1e4867fae2796b5b593d234e7a422bf189020ce02cc154bfaeb54e02e9152785af1815e",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "INTERPRETERS_CACHE_v3_PipEnvService:cb885a63c82b0c9a8ecfa870c142b9d3": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:cb885a63c82b0c9a8ecfa870c142b9d3": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/core/data-api": {
+      "architecture": 3,
+      "path": "/home/kosciej/repos/sdu/core/data-api/venv/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.6.9-final",
+        "major": 3,
+        "minor": 6,
+        "patch": 9,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.6.9-final"
+      },
+      "sysPrefix": "/home/kosciej/repos/sdu/core/data-api/venv",
+      "fileHash": "62554db8bf67c022394d9744b1aba65964bc452dbcd44c68a588458e6a0ed4392398eb1b5cf1e1fd3e746f772db8eb2573036b3591619685c00f20eb91bcd323",
+      "type": "VirtualEnv"
+    }
+  },
+  "coc-python|/home/kosciej/repos/sdu/collab/delivery-agent": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:c6f20f77499d09c6491dd2e6495020c7": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:c6f20f77499d09c6491dd2e6495020c7": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery-agent/venv",
+        "fileHash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery-agent/venv",
+        "fileHash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "SelectedPythonPath": "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python3",
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/collab/delivery-agent": {
+      "architecture": 3,
+      "path": "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.6.9-final",
+        "major": 3,
+        "minor": 6,
+        "patch": 9,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.6.9-final"
+      },
+      "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery-agent/venv",
+      "fileHash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e",
+      "envName": "venv",
+      "type": "Venv"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery-agent/venv",
+        "fileHash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery-agent/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery-agent/venv",
+        "fileHash": "23c00af58b17de4d6504a3f1fbc331ce3f64b9fb0fc845cc2dff958038e263574a35d784e0189e186e1ad12292f5d32a1be6dc5d8a7e8378b4c75924d1cb493e",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ]
+  },
+  "coc-python|/home/kosciej/repos/sdu/other/e2e-tests": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:9763dfdfb0b5b890fd342b9c91dd54f3": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:9763dfdfb0b5b890fd342b9c91dd54f3": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "SelectedPythonPath": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6",
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/other/e2e-tests": {
+      "architecture": 3,
+      "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.6.9-final",
+        "major": 3,
+        "minor": 6,
+        "patch": 9,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.6.9-final"
+      },
+      "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+      "fileHash": "57b7514e4e06a23748b1477bc4360ef72a71a66f0b063df4b8d7b51972942f75f93c34c8e0a0665692a4edfd397eccf92cbdb70bf7c4e55aa1a532128c2e5e2b",
+      "type": "VirtualEnv"
+    }
+  },
+  "coc-python|/home/kosciej/repos/sdu/core/search": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:3eb9bdc301bb560e1e46ea247bc69a60": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:3eb9bdc301bb560e1e46ea247bc69a60": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/core/search": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/.local/lib/python3.6/site-packages/tenacity": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:7acd4aee0ebdbffe4be9659dd155efe4": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:7acd4aee0ebdbffe4be9659dd155efe4": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/.local/lib/python3.6/site-packages/tenacity": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/repos/sdu/collab/workspace": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:056c6ff946b2a0b6b99062f913fc193c": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:056c6ff946b2a0b6b99062f913fc193c": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/workspace/venv",
+        "fileHash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/workspace/venv",
+        "fileHash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "SelectedPythonPath": "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python3",
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/collab/workspace": {
+      "architecture": 3,
+      "path": "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.6.9-final",
+        "major": 3,
+        "minor": 6,
+        "patch": 9,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.6.9-final"
+      },
+      "sysPrefix": "/home/kosciej/repos/sdu/collab/workspace/venv",
+      "fileHash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0",
+      "type": "VirtualEnv"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/workspace/venv",
+        "fileHash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/workspace/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/workspace/venv",
+        "fileHash": "3232ef641737237ab0e89d49db3c701cc3053c40868676080e3a245af79bbc523123349f13c570bbdc8422e4679b4a746d77bff65260af1bc1ac2645f1efe0f0",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "INTERPRETERS_CACHE_v3_PipEnvService:7d13c7d5b55328b5039e1b54584dd0ec": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:7d13c7d5b55328b5039e1b54584dd0ec": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+        "fileHash": "ba9feffe735adb9562847be3a78ac6569a599658151717c51277628b880efb827902f458430baa891fb64f37c219618d92c9f0625955792d627a3cde4021c1d4",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/delivery/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/delivery/venv",
+        "fileHash": "ba9feffe735adb9562847be3a78ac6569a599658151717c51277628b880efb827902f458430baa891fb64f37c219618d92c9f0625955792d627a3cde4021c1d4",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ]
+  },
+  "coc-python|/home/kosciej/repos/sdu/collab/publish": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:6b61127dc6bbc1c60112dd928079f8c9": [],
+    "SelectedPythonPath": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3",
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:6b61127dc6bbc1c60112dd928079f8c9": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+        "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+        "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/collab/publish": {
+      "architecture": 3,
+      "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.6.9-final",
+        "major": 3,
+        "minor": 6,
+        "patch": 9,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.6.9-final"
+      },
+      "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+      "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6",
+      "type": "VirtualEnv"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+        "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/collab/publish/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/collab/publish/venv",
+        "fileHash": "26b2b8c21d0e8d94ed168de0dedaf704d590d9035d86a2ff98737b180e824cf08a86022a3e6d8197c9a3c87051f80889190b34ca26491889bb0c639701650af6",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ]
+  },
+  "coc-python|/home/kosciej/repos/sdu/core/loading": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:e915c8488de83bc34b8a7302b10ca833": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:e915c8488de83bc34b8a7302b10ca833": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/core/loading": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/vim": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:2e4552541b1fee8c1cfde5d80ca42d25": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:2e4552541b1fee8c1cfde5d80ca42d25": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/vim": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService:a24cf6f54e361d27e3aa09464bbe3127": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:a24cf6f54e361d27e3aa09464bbe3127": []
+  },
+  "coc-python|/home/kosciej/python": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:2de7cbcbd50ee0261c6ab5135d364ab5": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:2de7cbcbd50ee0261c6ab5135d364ab5": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/python": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/.config/nvim": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:d3ec77f9bd40bcb702242163bef75cf6": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:d3ec77f9bd40bcb702242163bef75cf6": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/.config/nvim": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/logs": {
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService": []
+  },
+  "coc-python|/home/kosciej/repos/sdu/other/maintenance-tools": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:cac6b31566ee5dad70ef93ae768e0ccb": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:cac6b31566ee5dad70ef93ae768e0ccb": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/other/maintenance-tools": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/bin": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:7d5c4b8d1c25a93b01bb3ca97629f6dd": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:7d5c4b8d1c25a93b01bb3ca97629f6dd": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/bin": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/curl/qumulo": {
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService:47b7373e7600c92abf3d838d0aa1ea7d": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:47b7373e7600c92abf3d838d0aa1ea7d": []
+  },
+  "coc-python|/home/kosciej/scripts": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:6b63db222c8bb24fb336b383fab57dbf": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:6b63db222c8bb24fb336b383fab57dbf": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/scripts": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/repos/sdu/core/type-instances": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:72fd388b566f087fa71bf3cb90ee5923": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:72fd388b566f087fa71bf3cb90ee5923": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/core/type-instances": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/interview/revolut/python": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:10e17973e1d66609364e05b7b1c2b6f7": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:10e17973e1d66609364e05b7b1c2b6f7": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
+    "SelectedPythonPath": "/usr/bin/python3.7"
+  },
+  "coc-python|/home/kosciej/interview/revolut/python/tests": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:fcfd2ba5a4d5206b50cc145902484bd3": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:fcfd2ba5a4d5206b50cc145902484bd3": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/interview/revolut/python/tests": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/python/codechef": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:f70d7e3e200a0e5c8acaab85ee55300b": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:f70d7e3e200a0e5c8acaab85ee55300b": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/python/codechef": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/python/codechef/hard": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:370518ed2357ba3d51ee47055f9d9d8f": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:370518ed2357ba3d51ee47055f9d9d8f": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/python/codechef/hard": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/python/codechef/medium": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:6f9cc20b49221f3a8891dc74630a21a2": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:6f9cc20b49221f3a8891dc74630a21a2": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/python/codechef/medium": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/python/coc": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:82eafa050881dba846752b979c6897a6": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:82eafa050881dba846752b979c6897a6": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/python/coc": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/python/tmp": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:1eb83c7922cee44cb8612ed55aa06a8c": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:1eb83c7922cee44cb8612ed55aa06a8c": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/python/tmp": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/interview/revolut": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:1fc317f11e8f574f399cfb35640f553e": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:1fc317f11e8f574f399cfb35640f553e": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/interview/revolut": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/vim/ctags": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:877ca6efcbd96fcd427b16da59ea6dbe": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:877ca6efcbd96fcd427b16da59ea6dbe": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/vim/ctags/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/vim/ctags/venv",
+        "fileHash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/vim/ctags/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/vim/ctags/venv",
+        "fileHash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/vim/ctags/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/vim/ctags/venv",
+        "fileHash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/vim/ctags": {
+      "architecture": 3,
+      "path": "/home/kosciej/vim/ctags/venv/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/home/kosciej/vim/ctags/venv",
+      "fileHash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7",
+      "envName": "venv",
+      "type": "Venv"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/vim/ctags/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/vim/ctags/venv",
+        "fileHash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/vim/ctags/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/vim/ctags/venv",
+        "fileHash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/vim/ctags/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.5-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 5,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.5-final"
+        },
+        "sysPrefix": "/home/kosciej/vim/ctags/venv",
+        "fileHash": "4553d69d9ef1fcdca22cb2b4dbcbe6c476282a04c9f068541e9396d3a1ccfba2ed79c967398e55dc3920a13ca8727233e6420585f5770fd76a557cd8c43cefc7",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "SelectedPythonPath": "/home/kosciej/vim/ctags/venv/bin/python3.7"
+  },
+  "coc-python|/home/kosciej/repos/sdu/other/e2e-tests/integration_tests": {
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "6a7f3c8216787d3f5be18a26c1b495c2e9c2da6bd0ef97a95f48fb74785e33c9fa3585b148978abbfd95333b7d44e0e7e3c5c9782296bc0b2cf0093fc90dd61e",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "6a7f3c8216787d3f5be18a26c1b495c2e9c2da6bd0ef97a95f48fb74785e33c9fa3585b148978abbfd95333b7d44e0e7e3c5c9782296bc0b2cf0093fc90dd61e",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "6a7f3c8216787d3f5be18a26c1b495c2e9c2da6bd0ef97a95f48fb74785e33c9fa3585b148978abbfd95333b7d44e0e7e3c5c9782296bc0b2cf0093fc90dd61e",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "INTERPRETERS_CACHE_v3_PipEnvService:9763dfdfb0b5b890fd342b9c91dd54f3": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:9763dfdfb0b5b890fd342b9c91dd54f3": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "6a7f3c8216787d3f5be18a26c1b495c2e9c2da6bd0ef97a95f48fb74785e33c9fa3585b148978abbfd95333b7d44e0e7e3c5c9782296bc0b2cf0093fc90dd61e",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "6a7f3c8216787d3f5be18a26c1b495c2e9c2da6bd0ef97a95f48fb74785e33c9fa3585b148978abbfd95333b7d44e0e7e3c5c9782296bc0b2cf0093fc90dd61e",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "6a7f3c8216787d3f5be18a26c1b495c2e9c2da6bd0ef97a95f48fb74785e33c9fa3585b148978abbfd95333b7d44e0e7e3c5c9782296bc0b2cf0093fc90dd61e",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "SelectedPythonPath": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6"
+  },
+  "coc-python|/home/kosciej/vim/coc_goto": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:c2bae61de4bc7309be30d7d531b96bbc": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:c2bae61de4bc7309be30d7d531b96bbc": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/vim/coc_goto": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/python/test_project": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:e2b7b5e0eaf6816fca37f015e3afe23c": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:e2b7b5e0eaf6816fca37f015e3afe23c": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/python/test_project": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/repos/sdu/other/e2e-tests/integration_tests/collaboration": {
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "SelectedPythonPath": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3",
+    "INTERPRETERS_CACHE_v3_PipEnvService:9763dfdfb0b5b890fd342b9c91dd54f3": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "b566936c9e854f3eaeef49ef8229b53031bd0453d4653948360938322d2d84190c323bf15622bc4f813b8be73fe91dd908c9267bc7f108651ef3340efc360d5b",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "b566936c9e854f3eaeef49ef8229b53031bd0453d4653948360938322d2d84190c323bf15622bc4f813b8be73fe91dd908c9267bc7f108651ef3340efc360d5b",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "b566936c9e854f3eaeef49ef8229b53031bd0453d4653948360938322d2d84190c323bf15622bc4f813b8be73fe91dd908c9267bc7f108651ef3340efc360d5b",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:9763dfdfb0b5b890fd342b9c91dd54f3": [
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "b566936c9e854f3eaeef49ef8229b53031bd0453d4653948360938322d2d84190c323bf15622bc4f813b8be73fe91dd908c9267bc7f108651ef3340efc360d5b",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "b566936c9e854f3eaeef49ef8229b53031bd0453d4653948360938322d2d84190c323bf15622bc4f813b8be73fe91dd908c9267bc7f108651ef3340efc360d5b",
+        "envName": "venv",
+        "type": "Venv"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.6.9-final",
+          "major": 3,
+          "minor": 6,
+          "patch": 9,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.6.9-final"
+        },
+        "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+        "fileHash": "b566936c9e854f3eaeef49ef8229b53031bd0453d4653948360938322d2d84190c323bf15622bc4f813b8be73fe91dd908c9267bc7f108651ef3340efc360d5b",
+        "envName": "venv",
+        "type": "Venv"
+      }
+    ],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/other/e2e-tests": {
+      "architecture": 3,
+      "path": "/home/kosciej/repos/sdu/other/e2e-tests/venv/bin/python3.6",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.6.9-final",
+        "major": 3,
+        "minor": 6,
+        "patch": 9,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.6.9-final"
+      },
+      "sysPrefix": "/home/kosciej/repos/sdu/other/e2e-tests/venv",
+      "fileHash": "b566936c9e854f3eaeef49ef8229b53031bd0453d4653948360938322d2d84190c323bf15622bc4f813b8be73fe91dd908c9267bc7f108651ef3340efc360d5b",
+      "envName": "venv",
+      "type": "Venv"
+    }
+  },
+  "coc-python|/home/kosciej/.config/qutebrowser": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:38a21f489d70215bafff05fff3ad1985": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:38a21f489d70215bafff05fff3ad1985": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/.config/qutebrowser": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/repos/hashcode2020": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:c487c3dbfbed2e3b3b70ef9b6b3b6c13": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:c487c3dbfbed2e3b3b70ef9b6b3b6c13": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/hashcode2020": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/repos/sdu/other/build-tools": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:200ed037d88f2dc455b09e65e88eec84": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:200ed037d88f2dc455b09e65e88eec84": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/repos/sdu/other/build-tools": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/kosciej/work/scripts": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:912f09495fb9b10c7a703d47d56d9180": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:912f09495fb9b10c7a703d47d56d9180": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/kosciej/work/scripts": {
+      "architecture": 3,
+      "path": "/usr/bin/python3.7",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.5-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "f22b39e4013dc4133b7c852221d7599b552689083183a82d24e6dd71b790d77160ea54152e936cfcc28a6e470e9f2a8b22895100dd9af935972759ffde69df13",
+      "type": "Unknown",
+      "displayName": "Python 3.7.5 64-bit"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  }
+}

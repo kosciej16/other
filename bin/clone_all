@@ -1,0 +1,115 @@
+#!/bin/bash
+
+
+usage () {
+    cat <<< "
+clone_all [-c] [-d] [-r] [-o]
+    -c 
+        clone core repositories
+    -b 
+        clone collaboration repositories
+    -o 
+        clone other repositories
+    -r 
+        cut sdu and service from directories name"
+    exit
+}
+
+while getopts "cdor" opt; do
+  case ${opt} in
+    c ) 
+        CORE=true;;
+    d ) 
+        COLLAB=true;;
+    o ) 
+        OTHER=true;;
+    r ) 
+        RENAME=true;;
+    \? )  usage
+      ;;
+  esac
+done
+
+if [ $OPTIND -eq 1 ]; then usage ; fi
+
+COLLAB_DIR="collab"
+CORE_DIR="core"
+OTHER_DIR="other"
+
+collab=(
+    sdu-delivery-service
+    sdu-delivery-agent
+    sdu-qumulo-service
+    sdu-publish-service
+    sdu-workspace-service
+    sdu-collection-service
+    sdu-data-platform-e2e-tests
+)
+
+core=(
+    sdu-workflow-service
+    sdu-loading-service
+    sdu-ingestion-service
+    sdu-search-service
+    sdu-data-api
+    sdu-json-schemas
+    sdu-type-instances
+    sdu-data-platform-e2e-tests
+    sdu-geosyn-test-data
+    sdu-dataplatform-release-pipeline
+    sdu-manifests
+)
+
+other=(
+    sdu-commons
+    sdu-admin-toolkit
+    sdu-auth-service
+    sdu-artifact-repository
+    elf 
+    sonarqube_service
+    sdu-build-tools
+    sdu-maintenance-tools
+    shared-libraries
+)
+
+clone_repo() {
+    mkdir -p ${1}
+    cd ${1}
+    shift
+    local arr=("$@")
+    for repo in ${arr[@]}
+    do
+        git clone "git@github.com:sdu-rds/${repo}.git"
+    done
+    cd -
+}
+
+rename_dir() {
+    if [ -d "$1" ]; then
+        cd $1
+        for repo in *; do
+            tmp=${repo##sdu-}
+            mv "$repo" "${tmp%%-service}" 2> /dev/null
+        done
+        cd -
+    fi
+}
+
+
+if [[ ${COLLAB} = true ]]; then
+    clone_repo $COLLAB_DIR "${collab[@]}"
+fi
+
+if [[ ${CORE} = true ]]; then
+    clone_repo $CORE_DIR "${core[@]}"
+fi
+
+if [[ ${OTHER} = true ]]; then
+    clone_repo $OTHER_DIR "${other[@]}"
+fi
+
+if [[ ${RENAME} = true ]]; then
+    rename_dir $COLLAB_DIR
+    rename_dir $CORE_DIR
+    rename_dir $OTHER_DIR
+fi

@@ -1,0 +1,3 @@
+q_fs3=https://qumulo-pb82.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/StartTransferFromS3
+q_des=https://qumulo-po84.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/DescribeTransferJob
+q_del=https://qumulo-po84.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/DeleteFIles

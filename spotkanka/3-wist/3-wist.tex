@@ -1,0 +1,79 @@
+\documentclass{article}
+%
+\usepackage{bridge_macros}
+\usepackage{tikz}
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+
+%
+\begin{document}
+\section*{Ogólne zasady obrony i wistowania}
+\begin{itemize}
+	\item Dopóki brak dużo lepszych alternatyw - wistuj w kolor partnera.
+	\item Z sekwensu (co najmniej 3 karty po kolei z honorem).
+	\item Najlepiej w nielicytowane przez przeciwników.
+	\item 'Trzecia ręka bije i płacze' - na trzeciej ręce prawie zawsze opłaca się położyć najwyższą kartę.
+	\item Z kolei na drugiej kładziemy najniższą - partner zazwyczaj ma jakieś wsparcie.
+	\item 'Figur na figur' - jeśli rozgrywający zagrywa figurę, a my mamy wyższą, opłaca się ją zagrać.
+\end{itemize}
+\subsection*{Do gry w bez atu}
+\begin{itemize}
+	\item Jak można, to w kolor partnera.
+	\item Wist w najdłuższy kolor - chcemy sobie wyrobić jak najwięcej lew.
+	\item Przy równej długości sugerujemy się tym, gdzie potrzebujemy mniej od partnera.
+	\item Z sekwensów dwukartowych lepiej blotką, niż honorem.
+\end{itemize}
+\subsection*{Do gry w kolor}
+\begin{itemize}
+	\item Jak mamy w jakimś kolorze asa i króla wistujemy w ten kolor bez wahania.
+	\item Jak można, to w kolor partnera.
+	\item Zakazane są wisty spod waleta i spod asa.
+	\item Nie wistujemy w atuty.
+	\item Z sekwensów dwukartowych lepiej honorem, niż blotką.
+	\item Wskazane wisty z \textbf{singla} (jedna karta w kolorze), może partner ma asa, odegra nam i weźmiemy atutem.
+	\item Czasem też z dubla.
+\end{itemize}
+\newpage
+\section*{Szczegółowe zasady wistu odmiennego}
+Wist, którym będziemy się posługiwać nosi nazwę \textbf{odmiennego} i jest to najpopularniejszy system wistowy
+w Polsce. Składa się z kilku prostych zasad:
+\begin{itemize}
+	\item Z dwóch blotek - niższą.
+	\item Z honoru i blotki - wyższą.
+	\item Z trzech kart - środkową.
+	\item Z czterech i więcej kart z honorem - czwartą od góry.
+	\item Z czterech i więcej kart bez honoru - drugą od góry.
+\end{itemize}
+Przykłady (H - honor, tj. (A)s, (K)ról, (D)ama lub (W)alet, x - blotka tj. karta niższa od 10):
+\begin{multicols}{4}
+\setlength{\parindent}{0pt}
+x\encircle{x}\\
+\encircle{H}x\\
+\vfill\null
+\columnbreak
+x\encircle{x}x\\
+H\encircle{x}x\\
+\encircle{K}Dx\\
+A\encircle{W}x\\
+\vfill\null
+\columnbreak
+x\encircle{x}xx\\
+Hxx\encircle{x}\\
+\encircle{K}DWx\\
+\encircle{K}D10x\\
+\encircle{K}Dx\encircle{x}\\
+\encircle{D}W9x\\
+D\encircle{10}9x\\
+KWx\encircle{x}\\
+K\encircle{W}10x\\
+\encircle{W}109x\\
+\vfill\null
+\columnbreak
+Hxx\encircle{x}x\\
+x\encircle{x}xxx\\
+
+
+\end{multicols}
+\end{document}

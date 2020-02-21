@@ -1,0 +1,4 @@
+<div class="help" style="display: block"><p>
+        The <code>pipeline</code> step allows you to define your Pipelines in a more structured way.
+        See <a href="https://github.com/jenkinsci/pipeline-model-definition-plugin/wiki/Getting-Started">the wiki</a> for more information.
+    </p></div>

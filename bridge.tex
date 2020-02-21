@@ -1,0 +1,415 @@
+ 
+\documentstyle[twocolumn]{article}
+%
+\setlength{\textwidth}{7in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{-.4in}
+\setlength{\topmargin}{-.5in}
+\newlength{\br}
+\setlength{\br}{8em}
+%
+\renewcommand{\c}{\(\clubsuit\)}
+\renewcommand{\d}{\(\diamondsuit\)}
+\newcommand{\h}{\(\heartsuit\)}
+\newcommand{\s}{\(\spadesuit\)}
+%
+\newcommand{\hand}[4]{
+ \begin{minipage}[t]{\br}%I chose \br=8em
+ \begin{tabbing}
+ %width of parbox depends on the parameters:
+ %min{\br, max{string #1, ..., string #4}}
+  \(\spadesuit\)  \= #1 \\
+  \(\heartsuit\)  \> #2 \\
+  \(\diamondsuit\)\> #3 \\
+  \(\clubsuit\)   \> #4
+ \end{tabbing}
+ \end{minipage}     }%end \hand
+%
+\newsavebox{\NESW}
+\savebox{\NESW}[4em]{%
+\raisebox{-1.5\baselineskip}%
+{\fbox{\small W
+   \raisebox{2.6ex}{N}
+   \hspace*{-1em}
+   \raisebox{-2.6ex}{S}
+   {E}
+      }
+}          }%end \NESW
+%
+\newcommand{\crdima}[6]{%
+\begin{tabular}[t]{lll}
+ #1 & #3             & #2\\
+ #4 & \usebox{\NESW} & #5\\
+    & #6             &
+\end{tabular}
+}%end \crdima
+%
+\newenvironment{bidding}%
+{\begin{tabbing}
+ xxxxxx\=xxxxxx\=xxxxxx\=xxxxxx \kill
+ West  \>North \>East  \> South\\
+}{\end{tabbing} }%end bidding
+%
+\begin{document}
+\title{Typesetting Bridge\\
+ via \LaTeX}
+\author{C.G. van der Laan\\
+Rekencentrum RUG\\
+9700 AV Groningen\\
+The Netherlands\\
+Earn/Bitnet: cgl@hgrrug5\\
+\date{}}
+\maketitle
+\begin{abstract}
+\LaTeX\ macros and a bidding environment
+for typesetting bridge card distributions and bidding
+sequences are given.
+Examples borrowed from bridge literature are supplied.
+\end{abstract}
+%
+\section{Card deals}
+In bridge literature diagrams of distribution of cards over
+the hands are often given in order to demonstrate bidding
+sequences or to explain play technique.
+In order to do this systematically and to abstract from layout details
+I wrote a macro --- \verb=crdima= --- with six parameters
+\begin{description}
+\item[first parameter:] text, especially who is the dealer and what is the
+     vulnerability. For example: N/None, for North dealer and
+     vulnerability none.
+\item[second parameter:] text, for example indication of play,
+ e.g., number \verb=Play 1= or otherwise, e.g., \\
+ \verb=\begin{minipage}[t]{\br}=\\
+ \verb=    Play:\\demo=\\
+ \verb=\end{minipage}=
+\item[next four parameters:] the four hands in the sequence N, W, E, S.
+     Each hand is a call of the \verb=hand= macro
+with four parameters: the \s, \h, \d, \c\ cards.
+\end{description}
+Example
+\begin{quote}
+\begin{verbatim}
+\crdima{N/None}{%
+  \begin{minipage}[t]{\br}
+     Play:\\demo
+  \end{minipage}}%
+  {\hand{J74}{AJ}{QJT2}{Q874}}%
+  {\hand{A3}{K76}{963}{KJ952}}%
+  {\hand{K86}{T9542}{874}{T3}}%
+  {\hand{QT952}{Q83}{AK5}{A6}}%
+\end{verbatim}
+\end{quote}
+yields
+\begin{quote}
+\crdima{N/None}{%
+  \begin{minipage}[t]{\br}
+     Play:\\demo
+  \end{minipage}}%
+  {\hand{J74}{AJ}{QJT2}{Q874}}%
+  {\hand{A3}{K76}{963}{KJ952}}%
+  {\hand{K86}{T9542}{874}{T3}}%
+  {\hand{QT952}{Q83}{AK5}{A6}}%
+\end{quote}
+%
+{\bf Remarks}\\
+By this levelling I circumvented the limit of the
+number of parameters. Because
+parameter substitution is done by `text'
+replacement there is no `(strong) type checking'
+as in modern high-level programming languages. \\
+There is no check on the correctness of the cards (correct number,
+distribution, multiple occurrence or omission), nor on the correct sequence
+of the parameters. In SGML compliance with the input syntax can be
+imposed with enhanced user convenience and alleviated proofreading, but
+at the expense of elaborate coding, \cite{JG}.
+No test on the
+correctness of the sequence of the hands is ever possible, however.\\
+The \verb=crdima= macro can be used
+to display all phases of the play.
+Hands can be suppressed at discretion of the user
+by empty actual parameters.
+A renounce can be supplied via \verb=--=.
+In the listings of the commands used for the examples
+the \verb=quote= environment command is omitted.
+\\[1ex]
+For tournaments (bridge) plays are often dealt by computer.
+At the end of tournaments players appreciate prints
+of the deals. For that purpose my (Pascal) deal program
+generates ASCII output --- for simple display on the PC ---
+as well as \LaTeX\ input, optionally. This input is printed
+with the aid of \verb=crdima=. Parameter testing is superfluous
+for \LaTeX\ input generated this way.
+%
+\section{Bidding}
+In the context of bidding theory I use a bidding environment.
+The given card deal takes the following ACOL bidding
+\begin{quote}
+\begin{bidding}
+-- \> 1\c\> no \> 1\s\\
+no \> 2\s\> no \> 4\s\\
+a.p.
+\end{bidding}
+\end{quote}
+obtained via
+\begin{quote}
+\begin{verbatim}
+\begin{bidding}
+-- \> 1\c\> no \> 1\s\\
+no \> 2\s\> no \> 4\s\\
+a.p.
+\end{bidding}
+\end{verbatim}
+\end{quote}
+{\bf Remark} The bidding environment is independent of the language
+of the bidding (West etc.\ can easily be adapted),
+the bidding system as well as the number of bid
+rounds.
+\section{Macro texts}
+%
+%\verbinput{tcmac.tex}
+%
+\begin{verbatim}
+\newcommand{\hand}[4]{
+ \begin{minipage}[t]{\br}%I chose \br=8em
+ \begin{tabbing}
+ %width of parbox depends on the parameters:
+ %min{\br, max{string #1, ..., string #4}}
+  \(\spadesuit\)  \= #1 \\
+  \(\heartsuit\)  \> #2 \\
+  \(\diamondsuit\)\> #3 \\
+  \(\clubsuit\)   \> #4
+ \end{tabbing}
+ \end{minipage}     }%end \hand
+%
+\newsavebox{\NESW}
+\savebox{\NESW}[4em]{%
+\raisebox{-1.5\baselineskip}%
+{\fbox{\small W
+   \raisebox{2.6ex}{N}
+   \hspace*{-1em}
+   \raisebox{-2.6ex}{S}
+   {E}
+      }
+}          }%end \NESW
+%
+\newcommand{\crdima}[6]{%
+\begin{tabular}[t]{lll}
+ #1 & #3             & #2\\
+ #4 & \usebox{\NESW} & #5\\
+    & #6             &
+\end{tabular}
+}%end \crdima
+%
+\newenvironment{bidding}%
+{\begin{tabbing}
+ xxxxxx\=xxxxxx\=xxxxxx\=xxxxxx \kill
+ West  \>North \>East  \> South\\
+}{\end{tabbing} }%end bidding
+%
+\end{verbatim}%
+%
+To eliminate data integrity errors
+the listings of the above macros and
+the listings of the commands used in the examples are `included'
+via a transparent verbatim like environment, \cite{HM};
+so the same files were used for execution and listing.
+%
+\section{Some more examples}
+In order to illustrate general bidding theory
+from the point of view of one hand only,
+the \verb=hand= macro can be used.
+The following layout, heavily used in \cite{EC},
+\begin{quote}
+\hand{AKJ42}{AK9}{T832}{T}\hspace{.5\br}
+\begin{minipage}[t]{\br}
+\begin{bidding}
+-- \> 1\s\> no \> 1NT \\
+2\c\> ?
+\end{bidding}
+\end{minipage}
+\end{quote}
+is obtained via
+\begin{quote}
+\begin{verbatim}
+\hand{AKJ42}{AK9}{T832}{T}\hspace{.5\br}
+\begin{minipage}[t]{\br}
+\begin{bidding}
+-- \> 1\s\> no \> 1NT \\
+2\c\> ?
+\end{bidding}
+\end{minipage}
+\end{verbatim}
+\end{quote}
+For issues related to defense play one often displays
+only the dummy hand and your own hand.
+The following example --- layout and text ---
+is from \cite{Br}.
+\begin{quote}
+\crdima{}{}{}{\hand{AJ632}{43}{KQ7}{A85}}%
+           {}{\hand{985}{852}{AJ5}{KQT3}}\\
+\begin{bidding}
+1\s\> no \> 2\h \> no\\
+2NT\> no \> 4\h \> a.p.
+\end{bidding}
+\end{quote}
+\begin{quote}
+Against 4\h\ South starts \c K, taken
+with \c A. Leader continues \h AKQ. On the third
+round of \h's, partner discards \d 9 (indicates
+interest in \s). Leader continues with \d 2,
+how do you continue?
+\end{quote}
+The example is obtained via
+\begin{quote}
+\begin{verbatim}
+\crdima{}{}{}{\hand{AJ632}{43}{KQ7}{A85}}%
+           {}{\hand{985}{852}{AJ5}{KQT3}}\\
+\begin{bidding}
+1\s\> no \> 2\h \> no\\
+2NT\> no \> 4\h \> a.p.
+\end{bidding}
+\end{verbatim}
+\end{quote}
+{\bf Remark} In a similar way W--N, N--E, E--S hands,
+or W--E, N--S hands, or one hand only, with NESW diagram,
+can be displayed simply by a suitable call of \verb=crdima=. \\[2ex]
+%
+Finally, an endplay --- positional squeeze ---
+from \cite{HWK}\ is given.
+\begin{quote}
+\crdima{}{S leads \c A}%
+       {\hand{AJ}{K}{--}{--}}%
+       {\hand{KQ}{A}{--}{--}}%
+       {\hand{7}{9}{T}{--}}%
+       {\hand{2}{4}{--}{A}}
+\end{quote}
+The example is obtained via
+\begin{quote}
+\begin{verbatim}
+\crdima{}{S leads \c A}%
+       {\hand{AJ}{K}{--}{--}}%
+       {\hand{KQ}{A}{--}{--}}%
+       {\hand{7}{9}{T}{--}}%
+       {\hand{2}{4}{--}{A}}
+\end{verbatim}
+\end{quote}
+%
+\section{Variation}
+An elementary, and in a sense more general, crdima macro is
+\begin{quote}
+\begin{verbatim}
+\newcommand{\crdimaele}[9]{%
+\begin{tabular}[t]{lll}
+#1 & #2 & #3\\
+#4 & #5 & #6\\
+#7 & #8 & #9
+\end{tabular}}%end crdimaele
+\end{verbatim}
+\end{quote}
+All the given examples can be handled with \verb=crdimaele=.
+\verb=crdimaele= applied to
+the original deal without NESW diagram reads
+\begin{quote}
+\begin{verbatim}
+\crdimaele{N/None}%
+  {\hand{J74}{AJ}{QJT2}{Q874}}%
+  {\begin{minipage}[t]{\br}
+     Play: demo; no NESW diagram
+  \end{minipage}}%
+  {\hand{A3}{K76}{963}{KJ952}}%
+  {}%
+  {\hand{K86}{T9542}{874}{T3}}%
+  {}%
+  {\hand{QT952}{Q83}{AK5}{A6}}%
+  {}
+\end{verbatim}
+\end{quote}
+with result
+\begin{quote}
+\newcommand{\crdimaele}[9]{%
+\begin{tabular}[t]{lll}
+#1 & #2 & #3\\
+#4 & #5 & #6\\
+#7 & #8 & #9
+\end{tabular}}%end crdimaele
+\crdimaele{N/None}%
+  {\hand{J74}{AJ}{QJT2}{Q874}}%
+  {\begin{minipage}[t]{\br}
+     Play: demo; no NESW diagram
+  \end{minipage}}%
+  {\hand{A3}{K76}{963}{KJ952}}%
+  {}%
+  {\hand{K86}{T9542}{874}{T3}}%
+  {}%
+  {\hand{QT952}{Q83}{AK5}{A6}}%
+  {}
+\end{quote}
+{\bf Remarks} \\
+A NESW diagram is obtained with
+\verb=\usebox{\NESW}= --- or something
+you have designed yourself ---
+as fifth parameter.\\
+An elegant solution to the problem of having a default
+NESW figure which could be overruled by another figure
+is the optional parameter mechanism, which --- helas ---
+is lacking in the macro facility of \LaTeX. The same applies
+to the bidding environment with the default bid sequence
+N E S W. Again via the mechanism of optional parameters
+one could provide another bid sequence order or
+abbreviations suited for other languages.
+For the hand parameters one could think of the mechanism of named
+parameters with complete freedom of the sequence order
+of the parameters: one could easily provide the hands
+in the order N E S W, the deal order.
+%
+\section*{Conclusions}
+The author claims that bridge publications can be typeset easily
+with high quality via \LaTeX\ and the given macros.
+Proofreading of deals not generated by computer remains
+tiresome.\\
+The lack of the facility of optional parameters in the
+\verb=\newcommand= command and the \verb=newenvironment=
+environment is felt as an understandable inelegancy.
+%
+\section*{Acknowledgements}
+The author is grateful to Victor Eijkhout and Nico Poppelier
+for their suggested improvements.
+%
+\begin{thebibliography}{99}
+\bibitem{Br} BRIDGE. Monthly of the NBB (Dutch
+Bridge Union).
+\bibitem{EC} Crowhurst, E.\ (1986):
+ACOL in competition. Pelham. London.
+\bibitem{JG}Grootenhuis, J.\ (priv.\ comm.):
+Kaartverdelingen en biedverloop bij bridgen
+--- Een SGML tutorial. (Dutch).
+\bibitem{HWK}Kelder, J., B.\ van der Velde (1986):
+Dwangposities tegen \'e\'en tegenstander. Becht. A'dam. (Dutch).
+Translated from:\\
+Kelsey, H.W.\ (1985, paperback):\\
+Simple squeezes. Gollancz. London.
+\bibitem{LL} Lamport, L.\ (1986):
+\LaTeX, a document preparation system. Addison-Wesley.
+\bibitem{HM}Mulders, H.P.A.\ (priv.\ comm.):
+\verb=\verbinput=.
+\end{thebibliography}
+{\bf P.S.} \ Dear Ron,\\
+I hope you are not too annoyed with my polishing of the article.
+Agreed, I should have done that before submitting the paper.
+Sorry once again.
+But now the good news. At this moment --- the really (sic!) end of my
+polishing process ---I asked myself the questions: `Is this article
+worth publishing?', `Isn't it so that the macros are that simple such that
+everybody not only could but would write them from scratch?'.
+I for myself wouldn't and certainly didn't.
+I polished and polished and paid attention to as much details as I
+could think of under guidance of: abstraction, adaptability,
+beauty, clearity, compactness, completeness, correctness, efficiency,
+elegance, flexibility, modularity, modesty, relevance, robustness,
+simplicity, transparency, and usefulness. \\
+Best wishes,
+Kees (I wouldn't mind publishing this note as well).
+\end{document}
+%
+ 
+ 

@@ -1,0 +1,7 @@
+{
+  "item": {
+    "s3_location": "s3://files/srn_file!generic_99910a71ea21402fb70ac40776120ae0_1/file_object.generic/pb82-data-api-service-us-east-1-data-resources",
+    "destination": "/glb/am/upx.sepco/data.nobackup//pb82-collaboration-e2e-tests-activity/7f6db289-e3e1-4507-a320-aec7019cfba7/geosyn2/gen_seismic.job",
+  },
+  "job_id": "555230"
+}

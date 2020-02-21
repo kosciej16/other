@@ -1,0 +1,13 @@
+dataget=https://data-api-pb82.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/GetResources
+colget=https://collection-pb82.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/GetCollection
+colup=https://collection-pb82.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/UpdateCollection
+bad=https://collection-pb82.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/GetCollectiona
+bad2=https://collection-pb82.aws-us-east-1.dev-apps.sdu-rds.com/apii/v2/GetCollection/Dupa
+tmp=https://collection-h1.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/GetCollection
+colcr=https://collection-h1.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/CreateCollection
+colls=https://collection-h1.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/ListCollections
+coldl=https://collection-h1.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/DeleteCollection
+worcr=https://workspace-pb82.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/CreateWorkspace
+
+del=https://delivery-pb82.aws-us-east-1.dev-apps.sdu-rds.com/api/v4/GetResources
+auth=https://auth-pb82.aws-us-east-1.dev-apps.sdu-rds.com/api/v2/RuleVerifyResources

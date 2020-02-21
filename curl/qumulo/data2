@@ -1,0 +1,493 @@
+{
+    "JobID":"5556328",
+    "Resources": [
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/small_1.job",
+        "S3Location": {
+          "Key": "qumulo_small_file",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/small_2.job",
+        "S3Location": {
+          "Key": "qumulo_small_file",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/small_3.job",
+        "S3Location": {
+          "Key": "qumulo_small_file",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/small_4.job",
+        "S3Location": {
+          "Key": "qumulo_small_file",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/small_5.job",
+        "S3Location": {
+          "Key": "qumulo_small_file",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+
+
+
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_2_1.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_2",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_2_2.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_2",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_2_3.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_2",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_2_4.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_2",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_2_5.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_2",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+
+
+
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_1.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_2.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_3.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_4.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_5.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_6.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_7.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_8.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_9.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_10.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_11.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_12.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_13.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_14.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/medium_1_15.job",
+        "S3Location": {
+          "Key": "qumulo_medium_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+
+
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/big_1.job",
+        "S3Location": {
+          "Key": "qumulo_big_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/big_2.job",
+        "S3Location": {
+          "Key": "qumulo_big_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/big_3.job",
+        "S3Location": {
+          "Key": "qumulo_big_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/big_4.job",
+        "S3Location": {
+          "Key": "qumulo_big_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    },
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEPv//////////wEaDLKhz84nZBguag8kfCKpAVSPVG76KDpGKb4Ww61X4vmMh4+z6QB6XfHSJ4fFX1cUrphkXtPvJ6S9dcWPQx9cZSYi8RCKSX1SCrHo46YOfdt7XWYB4xv8Hs3XZm6PxbVQdsXBLfjT9xr20u52L4wthwWBVSz0CYgwHJe5yDsL5O+xcpEL9PRCrFa1BmiF/CfnIlszvlgHzlVaW1OEYr754Bp5ra3rz3Lo+dYiYxxxJHqfHLWHhGfaJa8o+rX78AUyLWxS/bNWpX1RH3If1NG8LnR+yqO0nR41L6eTf1QOUEj5s49LqWqM8y86amIuFg==",
+          "AccessKeyId": "ASIAVFN2L3HGUMRVMLVF",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "eXeh6u3HqkNL12ZEOoGTQkqjA50TQtW6IZ8mhU7G"
+        },
+        "Destination": "/qf2/am/vir/nobackup/upx/sepco/data/abcbbb/big_5.job",
+        "S3Location": {
+          "Key": "qumulo_big_file_1",
+          "Bucket": "qumulo-transfer-test-bucket"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    }
+    ]
+}

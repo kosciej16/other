@@ -1,0 +1,482 @@
+#!groovy
+@Library('jakas') _
+import semantive.pipe
+
+def ROLE = 'arn:aws:iam::355262519757:role/iam-sharedservices-terraform-jenkins-dataplatform'
+def AWS_PROFILES = ['sdu-dev-apps', 'sdu-pre-prod', 'sdu-prod']
+
+def ECR_TAGS_FILE_PATHS = [
+    'sdu-dev-apps': 'jenkins/dev-apps_tags.json',
+    'sdu-pre-prod': 'jenkins/pre-prod_tags.json',
+    'sdu-prod':     'jenkins/prod_tags.json',
+]
+
+def terraformConfiguration = [
+    'us-east-1': [
+        devApps: [
+            domain_cert_arn: "arn:aws:acm:us-east-1:355262519757:certificate/7770f1f3-8ff3-41b5-b203-0f84721cfd9a",
+            eks_cluster_name: "useast1devapps-dataplatform",
+        ],
+        preProd: [
+            domain_cert_arn: "arn:aws:acm:us-east-1:144499913329:certificate/4e94f67b-069f-409a-9274-d1f144b481b2",
+            eks_cluster_name: "useast1preprod-dataplatform"
+        ],
+        prod: [
+            domain_cert_arn: "arn:aws:acm:us-east-1:191176410401:certificate/100bfdfa-299e-4ba1-b0c2-cdbd57194866",
+            eks_cluster_name: "useast1prod-dataplatform"
+        ],
+    ]
+]
+
+def deploymentBuckets = [
+    'us-east-1': [
+        devApps: [
+            bucket: 'us-east-1-sdu-collection-service-dev',
+            region: 'us-east-1',
+            awsProfile: 'sdu-dev-apps',
+            bucketTagsFilePath: 'jenkins/dev-apps_tags.json',
+        ],
+        preProd: [
+            bucket: 'us-east-1-sdu-collection-service-pre-prod',
+            region: 'us-east-1',
+            awsProfile: 'sdu-pre-prod',
+            bucketTagsFilePath: 'jenkins/pre-prod_tags.json',
+        ],
+        prod: [
+            bucket: 'us-east-1-sdu-collection-service-prod',
+            region: 'us-east-1',
+            awsProfile: 'sdu-prod',
+            bucketTagsFilePath: 'jenkins/prod_tags.json',
+        ],
+    ]
+]
+
+
+def EXTRA_PARAMETERS = [
+    choice(
+        description: 'Choose deployment region',
+        name: 'AWS_DEFAULT_REGION',
+        choices: ['us-east-1']
+    )
+]
+
+/* setParameters(EXTRA_PARAMETERS) */
+
+def deploymentPackages = [
+    [
+        namePrefix: 'collection-service',
+        s3Folder: 'deployment_packages',
+        output: 'lambdas/packages',
+        requirements: 'lambdas/requirements.txt',
+    ]
+]
+
+
+ppp = new pipe(this)
+node {
+    ppp.prepare_container()
+    /* agent { */
+        /* kubernetes { */
+            /* label "sdu-collection-service-pod-${UUID.randomUUID().toString()}" */
+            /* defaultContainer 'default' */
+            /* yaml """ */
+/* --- */
+/* apiVersion: v1 */
+/* kind: Pod */
+/* metadata: */
+  /* namespace: shared-services */
+  /* annotations: */
+    /* iam.amazonaws.com/role: $ROLE */
+/* spec: */
+  /* containers: */
+    /* - image: python:3.6 */
+      /* name: default */
+      /* tty: true */
+ /* """ */
+        /* } */
+    /* } */
+
+    environment {
+        AWS_REGION = "${params.AWS_DEFAULT_REGION}"
+        AWS_DEFAULT_REGION = "${params.AWS_DEFAULT_REGION}"
+        LAMBDA_HASH = computeDirectoriesHashSum(['lambdas', 'service'])
+        VENV_PATH = sh(
+            script: 'mktemp --directory',
+            returnStdout: true
+        ).trim()
+        COMMIT_HASH = 0
+    }
+
+    /* options { */
+        /* disableConcurrentBuilds() */
+        /* overrideIndexTriggers(false) */
+        /* timeout(time: 1, unit: 'HOURS') */
+    /* } */
+
+
+        stage('Build') {
+            when {
+                expression {
+                    return !deploymentPackagesExist(deploymentPackages, deploymentBuckets[env.AWS_DEFAULT_REGION], env.LAMBDA_HASH, env.VENV_PATH)
+                }
+            }
+
+            parallel {
+                stage('Lambda deployment package') {
+                    steps {
+                        buildDeploymentPackages(
+                            packages: deploymentPackages,
+                            venvPath: env.VENV_PATH,
+                            versionTag: env.LAMBDA_HASH
+                        )
+                    }
+                }
+
+                stage('Python venv') {
+                    steps {
+                        installPythonRequirements(
+                            venvPath: env.VENV_PATH,
+                            dependenciesPaths: [
+                                'lambdas/',
+                                'service/collection_service/'
+                            ]
+                        )
+                    }
+                }
+            }
+        }
+
+        stage('Test') {
+            when {
+                expression {
+                    return !deploymentPackagesExist(deploymentPackages, deploymentBuckets[env.AWS_DEFAULT_REGION], env.LAMBDA_HASH, env.VENV_PATH)
+                }
+            }
+
+            parallel {
+                stage('Terraform validate') {
+                    steps {
+                        validateTerraform()
+                    }
+                }
+
+                stage('Python services') {
+                    steps {
+                        sh ". ${VENV_PATH}/bin/activate && run_pytest.sh"
+                    }
+
+                    post {
+                        always {
+                            saveTestsReports(
+                                testReports: 'tests_results.xml',
+                                coverageReports: 'cov.xml'
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
+        stage('Upload artifacts') {
+            parallel {
+                stage('Store deployment packages') {
+                    when {
+                        expression {
+                            return !deploymentPackagesExist(deploymentPackages, deploymentBuckets[env.AWS_DEFAULT_REGION], env.LAMBDA_HASH, env.VENV_PATH)
+                        }
+                    }
+
+                    steps {
+                        createDeploymentBucketsIfNotExist(
+                            buckets: deploymentBuckets[env.AWS_DEFAULT_REGION],
+                            venvPath: env.VENV_PATH
+                        )
+
+                        storeDeploymentPackageInS3(
+                            packages: deploymentPackages,
+                            buckets: deploymentBuckets[env.AWS_DEFAULT_REGION],
+                            versionTag: env.LAMBDA_HASH
+                        )
+                    }
+                }
+
+                stage('SonarQube report') {
+                    when {
+                        branch 'master'
+                        environment name: 'RUN_SONARQUBE', value: 'true'
+                        expression {
+                            return !deploymentPackagesExist(deploymentPackages, deploymentBuckets[env.AWS_DEFAULT_REGION], env.LAMBDA_HASH, env.VENV_PATH)
+                        }
+                    }
+
+                    environment {
+                        scannerHome = tool 'sonarqubeScanner'
+                    }
+
+                    steps {
+                        container('jnlp') {
+                            withSonarQubeEnv('sonarqube-sdu') {
+                                sh "${scannerHome}/bin/sonar-scanner -Dproject.settings=jenkins/sonar-project.properties"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        stage('Deploy to dev-apps') {
+            parallel {
+                stage('Deploy to h1 environment') {
+                    when {
+                        environment name: 'DEPLOY_TO_H1', value: 'true'
+                    }
+
+                    steps {
+                        withAWSCredentials('sdu-dev-apps') {
+                            sh 'terraform init -backend-config=bucket=sdu-collection-service-dev -backend-config=key=collection-service/terraform.tfstate -backend-config=region=us-east-1 infra/terraform'
+                            sh 'terraform workspace select h1 infra/terraform'
+                            sh """KUBE_TOKEN=`aws-iam-authenticator token -i "useast1devapps-dataplatform" | jq -r '.status.token'` terraform destroy -auto-approve -parallelism=20 -refresh=true -var environment=dev-apps -var lambda_hash=a9b1643bbf94a1d024ff28e3d5fb9fcea7bdc713 -var-file=jenkins/commons.tfvars -var deployment_packages_bucket=sdu-collection-service-dev -var eks_cluster_name=useast1devapps-dataplatform -var domain_cert_arn=arn:aws:acm:us-east-1:355262519757:certificate/7770f1f3-8ff3-41b5-b203-0f84721cfd9a infra/terraform || echo "Removal of old was only partial" """
+                        }
+                        deploy(
+                            venvPath: env.VENV_PATH,
+                            awsProfile: 'sdu-dev-apps',
+                            environment: 'dev-apps',
+                            workspace: 'h1',
+                            serviceName: 'collection',
+                            terraformParallel: 20,
+                            terraformBackendConfig: [
+                                bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['devApps']['bucket'],
+                                key: 'collection-service/terraform.tfstate',
+                                region: "${env.AWS_DEFAULT_REGION}"
+                            ],
+                            terraformConfigFiles: [
+                                'jenkins/commons.tfvars',
+                            ],
+                            terraformExtraVars: [
+                                lambda_hash: env.LAMBDA_HASH,
+                                deployment_packages_bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['devApps']['bucket'],
+                                domain_cert_arn: terraformConfiguration[env.AWS_DEFAULT_REGION]['devApps']['domain_cert_arn'],
+                                eks_cluster_name: terraformConfiguration[env.AWS_DEFAULT_REGION]['devApps']['eks_cluster_name'],
+                                environment: 'dev-apps'
+                            ],
+                            terraformDir: 'infra/terraform',
+                            branchName: env.BRANCH_NAME,
+                            commitHash: env.COMMIT_HASH,
+                            region: env.AWS_DEFAULT_REGION,
+                        )
+                    }
+                }
+
+                stage('Deploy to hg80 and optionally run E2E tests') {
+                    when {
+                        branch 'master'
+                        environment name: 'DEPLOY_TO_HG80', value: 'true'
+                    }
+
+                    steps {
+                        withAWSCredentials('sdu-dev-apps') {
+                            sh 'terraform init -backend-config=bucket=sdu-collection-service-dev -backend-config=key=collection-service/terraform.tfstate -backend-config=region=us-east-1 infra/terraform'
+                            sh 'terraform workspace select hg80 infra/terraform'
+                            sh """KUBE_TOKEN=`aws-iam-authenticator token -i "useast1devapps-dataplatform" | jq -r '.status.token'` terraform destroy -auto-approve -parallelism=20 -refresh=true -var environment=dev-apps -var lambda_hash=a9b1643bbf94a1d024ff28e3d5fb9fcea7bdc713 -var-file=jenkins/commons.tfvars -var deployment_packages_bucket=sdu-collection-service-dev -var eks_cluster_name=useast1devapps-dataplatform -var domain_cert_arn=arn:aws:acm:us-east-1:355262519757:certificate/7770f1f3-8ff3-41b5-b203-0f84721cfd9a infra/terraform || echo "Removal of old was only partial" """
+                        }
+                        deploy(
+                            venvPath: env.VENV_PATH,
+                            awsProfile: 'sdu-dev-apps',
+                            environment: 'dev-apps',
+                            workspace: 'hg80',
+                            serviceName: 'collection',
+                            terraformParallel: 20,
+                            terraformBackendConfig: [
+                                bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['devApps']['bucket'],
+                                key: 'collection-service/terraform.tfstate',
+                                region: "${env.AWS_DEFAULT_REGION}"
+                            ],
+                            terraformConfigFiles: [
+                                'jenkins/commons.tfvars',
+                            ],
+                            terraformExtraVars: [
+                                lambda_hash: env.LAMBDA_HASH,
+                                deployment_packages_bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['devApps']['bucket'],
+                                domain_cert_arn: terraformConfiguration[env.AWS_DEFAULT_REGION]['devApps']['domain_cert_arn'],
+                                eks_cluster_name: terraformConfiguration[env.AWS_DEFAULT_REGION]['devApps']['eks_cluster_name'],
+                                environment: 'dev-apps'
+                            ],
+                            terraformDir: 'infra/terraform',
+                            collaborationPipeline: true,
+                            runE2ETests: params.RUN_E2E_TESTS,
+                            branchName: env.BRANCH_NAME,
+                            commitHash: env.COMMIT_HASH,
+                            region: env.AWS_DEFAULT_REGION,
+                        )
+                    }
+                }
+
+                stage('Deploy to pb82 environment') {
+                    when {
+                        environment name: 'DEPLOY_TO_PB82', value: 'true'
+                    }
+
+                    steps {
+                        withAWSCredentials('sdu-dev-apps') {
+                            sh 'terraform init -backend-config=bucket=sdu-collection-service-dev -backend-config=key=collection-service/terraform.tfstate -backend-config=region=us-east-1 infra/terraform'
+                            sh 'terraform workspace select pb82 infra/terraform'
+                            sh """KUBE_TOKEN=`aws-iam-authenticator token -i "useast1devapps-dataplatform" | jq -r '.status.token'` terraform destroy -auto-approve -parallelism=20 -refresh=true -var environment=dev-apps -var lambda_hash=a9b1643bbf94a1d024ff28e3d5fb9fcea7bdc713 -var-file=jenkins/commons.tfvars -var deployment_packages_bucket=sdu-collection-service-dev -var eks_cluster_name=useast1devapps-dataplatform -var domain_cert_arn=arn:aws:acm:us-east-1:355262519757:certificate/7770f1f3-8ff3-41b5-b203-0f84721cfd9a infra/terraform || echo "Removal of old was only partial" """
+                        }
+                        deploy(
+                            venvPath: env.VENV_PATH,
+                            awsProfile: 'sdu-dev-apps',
+                            environment: 'dev-apps',
+                            workspace: 'pb82',
+                            serviceName: 'collection',
+                            terraformParallel: 20,
+                            terraformBackendConfig: [
+                                bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['devApps']['bucket'],
+                                key: 'collection-service/terraform.tfstate',
+                                region: "${env.AWS_DEFAULT_REGION}"
+                            ],
+                            terraformConfigFiles: [
+                                'jenkins/commons.tfvars',
+                            ],
+                            terraformExtraVars: [
+                                lambda_hash: env.LAMBDA_HASH,
+                                deployment_packages_bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['devApps']['bucket'],
+                                domain_cert_arn: terraformConfiguration[env.AWS_DEFAULT_REGION]['devApps']['domain_cert_arn'],
+                                eks_cluster_name: terraformConfiguration[env.AWS_DEFAULT_REGION]['devApps']['eks_cluster_name'],
+                                environment: 'dev-apps'
+                            ],
+                            terraformDir: 'infra/terraform',
+                            branchName: env.BRANCH_NAME,
+                            commitHash: env.COMMIT_HASH,
+                            region: env.AWS_DEFAULT_REGION,
+                        )
+                    }
+                }
+
+                stage('Deploy to po84 environment') {
+                    when {
+                        environment name: 'DEPLOY_TO_PO84', value: 'true'
+                    }
+
+                    steps {
+                        withAWSCredentials('sdu-dev-apps') {
+                            sh 'terraform init -backend-config=bucket=sdu-collection-service-dev -backend-config=key=collection-service/terraform.tfstate -backend-config=region=us-east-1 infra/terraform'
+                            sh 'terraform workspace select po84 infra/terraform'
+                            sh """KUBE_TOKEN=`aws-iam-authenticator token -i "useast1devapps-dataplatform" | jq -r '.status.token'` terraform destroy -auto-approve -parallelism=20 -refresh=true -var environment=dev-apps -var lambda_hash=a9b1643bbf94a1d024ff28e3d5fb9fcea7bdc713 -var-file=jenkins/commons.tfvars -var deployment_packages_bucket=sdu-collection-service-dev -var eks_cluster_name=useast1devapps-dataplatform -var domain_cert_arn=arn:aws:acm:us-east-1:355262519757:certificate/7770f1f3-8ff3-41b5-b203-0f84721cfd9a infra/terraform || echo "Removal of old was only partial" """
+                        }
+                        deploy(
+                            venvPath: env.VENV_PATH,
+                            awsProfile: 'sdu-dev-apps',
+                            environment: 'dev-apps',
+                            workspace: 'po84',
+                            serviceName: 'collection',
+                            terraformParallel: 20,
+                            terraformBackendConfig: [
+                                bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['devApps']['bucket'],
+                                key: 'collection-service/terraform.tfstate',
+                                region: "${env.AWS_DEFAULT_REGION}"
+                            ],
+                            terraformConfigFiles: [
+                                'jenkins/commons.tfvars',
+                            ],
+                            terraformExtraVars: [
+                                lambda_hash: env.LAMBDA_HASH,
+                                deployment_packages_bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['devApps']['bucket'],
+                                domain_cert_arn: terraformConfiguration[env.AWS_DEFAULT_REGION]['devApps']['domain_cert_arn'],
+                                eks_cluster_name: terraformConfiguration[env.AWS_DEFAULT_REGION]['devApps']['eks_cluster_name'],
+                                environment: 'dev-apps'
+                            ],
+                            terraformDir: 'infra/terraform',
+                            branchName: env.BRANCH_NAME,
+                            commitHash: env.COMMIT_HASH,
+                            region: env.AWS_DEFAULT_REGION,
+                        )
+                    }
+                }
+            }
+        }
+/*
+        BEFORE DEPLOY BACKUP OF TABLES SHOULD BE DONE
+
+        stage('Deploy to pre-prod') {
+            when {
+                branch 'master'
+                environment name: 'DEPLOY_TO_PRE_PROD_INPUT', value: 'pre-prod'
+            }
+
+            steps {
+                withAWSCredentials('sdu-pre-prod') {
+                        sh 'terraform init -backend-config=bucket=sdu-collection-service-pre-prod -backend-config=key=collection-service/terraform.tfstate -backend-config=region=us-east-1 infra/terraform'
+                        sh 'terraform workspace select pre-prod infra/terraform'
+                        sh """KUBE_TOKEN=`aws-iam-authenticator token -i "useast1preprod-dataplatform" | jq -r '.status.token'` terraform destroy -auto-approve -parallelism=20 -refresh=true -var environment=pre-prod -var lambda_hash=a9b1643bbf94a1d024ff28e3d5fb9fcea7bdc713 -var-file=jenkins/commons.tfvars -var deployment_packages_bucket=sdu-collection-service-pre-prod -var eks_cluster_name=useast1preprod-dataplatform -var domain_cert_arn=arn:aws:acm:us-east-1:355262519757:certificate/7770f1f3-8ff3-41b5-b203-0f84721cfd9a infra/terraform || echo "Removal of old was only partial" """
+                    }
+                deploy(
+                    venvPath: env.VENV_PATH,
+                    awsProfile: 'sdu-pre-prod',
+                    environment: 'pre-prod',
+                    workspace: 'pre-prod',
+                    serviceName: 'collection',
+                    terraformParallel: 20,
+                    terraformBackendConfig: [
+                        bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['preProd']['bucket'],
+                        key: 'collection-service/terraform.tfstate',
+                        region: "${env.AWS_DEFAULT_REGION}"
+                    ],
+                    terraformConfigFiles: [
+                        'jenkins/commons.tfvars',
+                    ],
+                    terraformExtraVars: [
+                        lambda_hash: env.LAMBDA_HASH,
+                        deployment_packages_bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['preProd']['bucket'],
+                        domain_cert_arn: terraformConfiguration[env.AWS_DEFAULT_REGION]['preProd']['domain_cert_arn'],
+                        eks_cluster_name: terraformConfiguration[env.AWS_DEFAULT_REGION]['preProd']['eks_cluster_name'],
+                        environment: 'pre-prod'
+                    ],
+                    terraformDir: 'infra/terraform',
+                    branchName: env.BRANCH_NAME,
+                    commitHash: env.COMMIT_HASH,
+                    region: env.AWS_DEFAULT_REGION,
+                )
+            }
+        }
+
+        stage('Deploy to prod') {
+            when {
+                branch 'master'
+                environment name: 'DEPLOY_TO_PROD_INPUT', value: 'prod'
+            }
+
+            steps {
+                withAWSCredentials('sdu-prod') {
+                    sh 'terraform init -backend-config=bucket=sdu-collection-service-prod -backend-config=key=collection-service/terraform.tfstate -backend-config=region=us-east-1 infra/terraform'
+                    sh 'terraform workspace select prod infra/terraform'
+                    sh """KUBE_TOKEN=`aws-iam-authenticator token -i "useast1prod-dataplatform" | jq -r '.status.token'` terraform destroy -auto-approve -parallelism=20 -refresh=true -var environment=prod -var lambda_hash=a9b1643bbf94a1d024ff28e3d5fb9fcea7bdc713 -var-file=jenkins/commons.tfvars -var deployment_packages_bucket=sdu-collection-service-prod -var eks_cluster_name=useast1prod-dataplatform -var domain_cert_arn=arn:aws:acm:us-east-1:355262519757:certificate/7770f1f3-8ff3-41b5-b203-0f84721cfd9a infra/terraform || echo "Removal of old was only partial" """
+                }
+                deploy(
+                    venvPath: env.VENV_PATH,
+                    awsProfile: 'sdu-prod',
+                    environment: 'prod',
+                    workspace: 'prod',
+                    serviceName: 'collection',
+                    terraformParallel: 20,
+                    terraformBackendConfig: [
+                        bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['prod']['bucket'],
+                        key: 'collection-service/terraform.tfstate',
+                        region: "${env.AWS_DEFAULT_REGION}"
+                    ],
+                    terraformExtraVars: [
+                        lambda_hash: env.LAMBDA_HASH,
+                        deployment_packages_bucket: deploymentBuckets[env.AWS_DEFAULT_REGION]['prod']['bucket'],
+                        domain_cert_arn: terraformConfiguration[env.AWS_DEFAULT_REGION]['prod']['domain_cert_arn'],
+                        eks_cluster_name: terraformConfiguration[env.AWS_DEFAULT_REGION]['prod']['eks_cluster_name'],
+                        environment: 'prod'
+                    ],
+                    terraformDir: 'infra/terraform',
+                    branchName: env.BRANCH_NAME,
+                    commitHash: env.COMMIT_HASH,
+                    region: env.AWS_DEFAULT_REGION,
+                )
+            }
+        }
+        */
+}
+

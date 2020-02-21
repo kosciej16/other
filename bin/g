@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $1 == "mh" ] ; then
+    echo "krystian.dowolski@hitachivantara.com" | xclip -selection CLIPBOARD
+elif [ $1 == "ms" ] ; then
+    echo "krystian.dowolski@semantive.com" | xclip -selection CLIPBOARD
+elif [ $1 == "mv" ] ; then
+    echo "krystian.dowolski@vsodir.onmicrosoft.com" | xclip -selection CLIPBOARD
+elif [ $1 == "ph" ] ; then
+    echo "!2#eWqAsD" | xclip -selection CLIPBOARD
+fi

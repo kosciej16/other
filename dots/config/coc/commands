@@ -1,0 +1,6 @@
+workspace.clearWatchman
+document.jumpToNextSymbol
+python.setInterpreter
+python.upgradePythonLanguageServer
+python.sortImports
+editor.action.organizeImport

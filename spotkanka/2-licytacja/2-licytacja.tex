@@ -1,0 +1,80 @@
+ 
+\documentclass{article}
+%
+\usepackage{bridge_macros}
+%
+\begin{document}
+Na czym polega licytacja? Chcemy znaleźć najlepszy kontrakt, czyli taki, który da dużo punktów, ale też taki, który prawdopodobnie wygramy.
+Zbiór najważniejszych zasad:
+\begin{itemize}
+	\item \bf{Końcówki to 3BA, 4\s, 4\h, 5\d, 5\c}
+	\item \bf{Końcówkę gramy mając co najmniej 24 punkty (tzw. PC, A - 4, K - 3, D - 2, W - 1) na linii.}
+	\item \bf{Jeśli mamy tyle punktów i co najmniej 8 kart w kolorze starszym (tzw. fit) gramy końcówkę w ten kolor.}
+	\item \bf{Jeśli mamy tyle punktów i brakuje nam fitu w starszym, sterujemy do kontraktu 3 BA.}
+	\item \bf{Jeśli nie mamy tyle punktów, staramy się znaleźć najlepszy kolor (lub BA) i zatrzymać jak najniżej.}
+\end{itemize}
+Podczas licytacji trzeba odpowiedzieć sobie na dwa pytania:
+\begin{enumerate}
+	\item \bf{Czy chcę grać końcówkę?}
+		\begin{itemize}
+			\item Tak - licytuję w taki sposób, aby partner nie spasował.
+			\item Nie - nie muszę dalej licytować.
+			\item Nie wiem - licytuję dalej, aby dowiedzieć się czegoś więcej.
+		\end{itemize}
+	\item \bf{Czy wiem, w jaki kolor (BA też jest kolorem)?}
+		\begin{itemize}
+			\item Tak - Popieram partnera w tym kolorze.
+			\item Nie - Szukam innego koloru do gry.
+		\end{itemize}
+\end{enumerate}
+
+Poniżej kilka klasycznych licytacji i wyjaśnienie rozumowania.
+\newpage
+\begin{multicols}{2}
+\begin{quote}
+\crdima{}{}{\hand{A10932}{43}{KQ7}{A85}}{}%
+           {}{\hand{KD4}{AK109}{J52}{102}}\\
+\begin{pbidding}
+1\s$^1$\> 4\s$^2$\\
+\end{pbidding}
+\begin{description}[before={\renewcommand\makelabel[1]{\bfseries ##1)}}]
+	\item[1] 5+\s, 12+PC.
+	\item[2] Mam co najmniej 8 pików na linii, mamy więc kolor do gry. Moje 13 + 12 partnera daje końcówkę.
+\end{description}
+\end{quote}
+\noindent\rule{8cm}{0.4pt}
+\begin{quote}
+\crdima{}{}{\hand{53}{AK1082}{AK102}{107}}{}%
+           {}{\hand{AW10}{94}{65}{KD9542}}\\
+\begin{pbidding}
+1\h\> 2\c$^1$\\
+2\d$^2$\> 2BA$^3$\\
+3BA$^4$\\
+\end{pbidding}
+\begin{description}[before={\renewcommand\makelabel[1]{\bfseries ##1)}}]
+	\item[1] Nie mam fitu w kolorze partnera, zgłaszam więc własny. UWAGA! Pamiętam, że wchodząc na poziom dwóch muszę mieć 10 PC.
+	\item[2] Z moimi 14 mamy już na końcówkę, ale jeszcze nie wiem, w co. Zgłaszam drugi kolor.
+	\item[3] Skoro partner ma kara, to grać w BA się nie boję. Tylko dwa, bo samemu mnie nie stać na końcówkę.
+	\item[4] Ale mnie stać.
+\end{description}
+\end{quote}
+\vfill\null
+\columnbreak
+\begin{quote}
+\crdima{}{}{\hand{KDW10}{A754}{Q}{A973}}{}%
+           {}{\hand{A653}{KD98}{632}{6}}\\
+\begin{pbidding}
+1\c$^1$\> 1\h$^2$\\
+3\h$^3$\> 4\h$^4$\\
+\end{pbidding}
+\begin{description}[before={\renewcommand\makelabel[1]{\bfseries ##1)}}]
+	\item[1] Brakuje mi starszej piątki, otwieram więc w dłuższy młodszy. 12+PC.
+	\item[2] Mam 6+ PC, więc licytuję. Zgłaszam najbliższy czterokart.
+	\item[3] Świetnie! Partner ma 4+\h, mam więc fit. Gdybym miał 18 PC zalicytowałbym 4\h (18+6 = 24). Niestety trochę mi brakuje, dlatego licytuję 3\h.
+	\item[4] Kolor mamy. Ale ile PC ma partner? Na pewno jest w przedziale 12-17 , bo otworzył licytację i nie zgłosił końcówki. Gdyby miał dolną granicę (12-14) to zgłosiłbym 2\h. Licyuję więc do jego 15, dodaję swoje 9 i wychodzi mi końcówka! 
+\end{description}
+\end{quote}
+\end{multicols*}
+\newpage
+\end{document}
+%

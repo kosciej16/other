@@ -1,0 +1,3 @@
+#!/bin/bash
+
+aws-mfa --profile default --device arn:aws:iam::393751483396:mfa/krystian.dowolski --duration 43200 --assume-role  arn:aws:iam::355262519757:role/SDU_Data_Platform_Developer --role-session-name dupa

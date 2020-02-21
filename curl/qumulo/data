@@ -1,0 +1,21 @@
+{
+    "JobID":"1000001",
+    "Resources": [
+    {
+        "ResourceID": "srn:file/generic:99910a71ea21402fb70ac40776120ae0:1",
+        "TemporaryCredentials": {
+          "SessionToken": "FwoGZXIvYXdzEHQaDKu9hznWaHw+OVVaRyKpAf9jH9o+cvJk7udAn+GO+hr8Fg2vVjZDfQEZpSg75H78Ght1AgnSBJLiuM7++SGVSKLFF9M0iLmmjMrq0pmoNwJwo181j8n08AZane5Mc8PInxuvuciTGVgJ7ZsWsgatd1XoSYLm+/5A94iHSlTabzz5sUurVzoi317i6BqNkMqBb+LTjOWPKvx+tUpL44yChLQOFeYgtY8jYrMI3q/jmJfMPoxhiAZVtcwo8/iV8QUyLYw25vEq3vduKa3s1xS6zKCGcMv7QO0DakRvE05e68625mzOM8Psl8zulHAn1Q==",
+          "AccessKeyId": "ASIAVFN2L3HGRXLW76PS",
+          "Expiration": "2020-01-09T15:43:26+00:00",
+          "SecretAccessKey": "mN2hvZ3r32t4fK06BzVifaf39IxpICf84yn/eF1E"
+        },
+        "Destination": "/qf2/am/vir/backup/upx/sepco/data/kosciej/test",
+        "S3Location": {
+          "Key": "files/srn_file!generic_99910a71ea21402fb70ac40776120ae0_1/file_object.generic",
+          "Bucket": "pb82-data-api-service-us-east-1-data-resources"
+        },
+        "WPCResourceID": "srn:work-product-component/Generic:c34295242b2e4a0fb33e6b75e0cb297f:1",
+        "WorkspaceID": "srn:admin-data/Workspace:b9dae14d43514ea4926dbca66fa8221f:"
+    }
+    ]
+}
