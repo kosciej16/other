@@ -1,95 +1,14 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" Plugins {{{
-call plug#begin('~/.config/nvim/bundle')
+source ~/.config/nvim/vimrc_parts/plugins.vim
 
-" Plug 'airblade/vim-gitgutter'
-Plug 'alfredodeza/pytest.vim'
-Plug 'altercation/vim-colors-solarized'
-" Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
-" Plug 'chrisbra/Colorizer'
-" Plug 'christoomey/vim-tmux-navigator'
-Plug 'codegram/vim-codereview'
-Plug 'junkblocker/patchreview-vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'davidhalter/jedi-vim'
-" Plug 'direnv/direnv.vim'
-Plug 'easymotion/vim-easymotion'
-" Plug 'edkolev/tmuxline.vim'
-" Plug 'ervandew/supertab'
-" Plug 'fatih/vim-go'
-Plug 'fisadev/vim-isort'
-Plug 'godlygeek/tabular'
-Plug 'hashivim/vim-terraform'
-Plug 'honza/vim-snippets'
-" Plug 'janko-m/vim-test'
-" Plug 'janko/vim-test'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-" Plug 'junegunn/goyo.vim'
-" Plug 'junegunn/gv.vim'
-" Plug 'junegunn/limelight.vim'
-" Plug 'junegunn/vim-emoji'
-" Plug 'junegunn/vim-peekaboo'
-" Plug 'justinmk/vim-dirvish'
-" Plug 'justinmk/vim-sneak'
-" Plug 'kana/vim-textobj-user'
-" Plug 'kevinhui/vim-docker-tools'
-" Plug 'kshenoy/vim-signature'
-Plug 'lervag/vimtex'
-" Plug 'ludovicchabant/vim-gutentags'
-Plug 'majutsushi/tagbar'
-" Plug 'mattn/emmet-vim'
-" Plug 'mattn/vim-textobj-url'
-Plug 'mbbill/undotree'
-Plug 'mileszs/ack.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neomake/neomake'
-" Plug 'rafi/awesome-vim-colorschemes'
-" Plug 'rizzatti/dash.vim'
-Plug 'rking/ag.vim'
-Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
-" Plug 'sheerun/vim-polyglot'
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'SirVer/ultisnips'
-" Plug 'sodapopcan/vim-twiggy'
-Plug 'tfnico/vim-gradle'
-" Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'tpope/vim-abolish'
-" Plug 'tpope/vim-commentary'
-" Plug 'tpope/vim-cucumber'
-" Plug 'tpope/vim-dispatch'
-" Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-fugitive'
-" Plug 'tpope/vim-obsession'
-" Plug 'tpope/vim-projectionist'
-Plug 'tpope/vim-repeat'
-" Plug 'tpope/vim-rhubarb'
-Plug 'tpope/vim-rsi'
-" Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-rhubarb'
-
-Plug 'vim-airline/vim-airline'
-Plug 'FooSoft/vim-argwrap'
-" Plug 'vim-airline/vim-airline-themes'
-" Plug 'w0rp/ale'
-" Plug 'wellle/targets.vim'
-
-" Plug 'inside/vim-search-pulse'
-" Plug 'dense-analysis/ale'
+let mapleader = " "
+" let mapleader = "\<Space>"
 "
-Plug 'mgedmin/python-imports.vim'
-Plug 'lambdalisue/suda.vim'
-Plug 'tell-k/vim-autoflake'
+source ~/.config/nvim/vimrc_parts/ag.vim
+source ~/.config/nvim/vimrc_parts/airline.vim
 
-call plug#end()
-filetype plugin indent on    " required
-" }}}
-"
 " Vimscript file settings ---------------------- {{{
 augroup filetype_vim
     autocmd!
@@ -97,8 +16,6 @@ augroup filetype_vim
 augroup END
 " }}}
 " Basic stuff {{{
-let mapleader = " "
-" let mapleader = "\<Space>"
 syntax on
 set modelines=0
 set number
@@ -110,8 +27,17 @@ set wildignore=*.o,*~,*.pyc
 set laststatus=2
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c\ %{fugitive#statusline()}
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
+if !isdirectory($HOME."/.nvim")
+    call mkdir($HOME."/.nvim", "", 0770)
+endif
+if !isdirectory($HOME."/.nvim/undodir")
+    call mkdir($HOME."/.nvim/undodir", "", 0700)
+endif
 set undofile
-set undodir=~/.vim_runtime/temp_dirs/undodir
+set undodir=~/.config/nvim/undodir
+set undodir=~/.vim/undo-dir
+set undofile
 set noswapfile
 set autoread
 set encoding=utf-8
@@ -148,7 +74,7 @@ vnoremap <C-c> "+y
 vnoremap <C-x> "+d
 " Paste
 inoremap <C-v> <C-r>+
-" let g:deoplete#enable_at_startup = 1
+vnoremap <leader>p "_dP
 " }}}
 " Whitespace {{{
 set textwidth=119
@@ -267,65 +193,15 @@ nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
 nnoremap <silent> <leader>et :e /tmp/som.py<CR>
 nnoremap <silent> <leader>ep :e ~/.config/nvim/ftplugin/python/python.vim<CR>
 nnoremap <silent> <leader>ec :e ~/.config/nvim/coc-settings.json<CR>
-nnoremap <silent> <leader>eq :e ~/other/problems/vim<CR>
 nnoremap <silent> <leader>ei :e ~/.config/nvim/bundle/python-imports.vim/myimports.cfg<CR>
 nnoremap <silent> <leader>e3 :e ~/.config/i3/config<CR>
 nnoremap <silent> <leader>eb :e ~/.config/i3/i3blocks.conf<CR>
-nnoremap <silent> <leader>el :e ~/repos/other/new_comp/steps
+nnoremap <silent> <leader>el :e ~/repos/other/new_comp/steps<CR>
+nnoremap <silent> <leader>eg :e ~/.gitconfig<CR>
+nnoremap <silent> <leader>ek :e ~/.config/khal/config<CR>
+nnoremap <silent> <leader>ek :e ~/.config/khal/config<CR>
 nnoremap <silent> <leader>es :so $MYVIMRC<CR>
-" }}}
-" Ag config {{{
-if executable('ag')
-   " Use ag over grep
-   " set grepprg=ag\ --nogroup\ --nocolor\ --path-to-ignore\ ~/.ignore
-   set grepprg=ag\ --path-to-ignore\ /home/kosciej/.ignore
-   " set grepprg=ag
-endif
-
-" Define "Ag" command
-" command! -nargs=+ -complete=file -bar Ag silent! grep! <args> | !awk '{ if (length($0) < 100) print }' | cwindow | redraw!
-command! -nargs=+ -complete=file -bar Ag  silent! grep! <args> | cwindow | redraw!
-" command! -nargs=+ -complete=file -bar Ag silent! grep! <args>
-vnoremap <leader>a y:grep! <c-r><cr>:cw<cr>
-nnoremap <leader>aa :Ag <c-r><c-w><CR>
-nnoremap <leader>af :Ag %:t:r<CR>
-nnoremap <leader>aw :Ag <c-r>"<CR>
-nnoremap <leader>ae :Ag -a
-nnoremap <leader>ar :<c-r>: -a<CR>
-nnoremap <leader>an :Ag -l <c-r><c-w><CR>
-nnoremap K *N:grep! "\b<c-r><c-w>\b"<cr>:cw<cr>
-
-" Allow quick additions to the spelling dict
-" nnoremap <leader>g :spellgood <c-r><c-w>
-
-
-" bind \ (backward slash) to grep shortcut
-nnoremap \ :Ag<SPACE>
-
-let g:ag_working_path_mode="a"
-let g:ag_max_line_len = 200
-" vnoremap <silent> <leader>a :call VisualSelection('gv', '')<CR>
-" map <leader>cc :botright cope<cr>
-" map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
-" map <leader>n :cn<cr>
-" map <leader>p :cp<cr>
-" don't wrap results
-autocmd FileType qf setlocal nowrap
-" }}}
-" Airline config {{{
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#buffer_idx_mode = 1
-
-nmap <leader>1 <Plug>AirlineSelectTab1
-nmap <leader>2 <Plug>AirlineSelectTab2
-nmap <leader>3 <Plug>AirlineSelectTab3
-nmap <leader>4 <Plug>AirlineSelectTab4
-nmap <leader>5 <Plug>AirlineSelectTab5
-nmap <leader>6 <Plug>AirlineSelectTab6
-nmap <leader>7 <Plug>AirlineSelectTab7
-nmap <leader>8 <Plug>AirlineSelectTab8
-nmap <leader>9 <Plug>AirlineSelectTab9
+nnoremap <silent> <leader>eq :e ~/.config/qutebrowser/config.py<CR>
 " }}}
 " Ctrlp config {{{
 " Setup some default ignores
@@ -634,36 +510,6 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 " }}}
-" smooth scrolling {{{
-set mouse=a
-nnoremap <C-e> 2<C-e>
-nnoremap <C-y> 2<C-y>
-map <ScrollWheelUp> <C-Y>
-map <ScrollWheelDown> <C-E>
-
-function! SmoothScroll(up)
-    if a:up
-        let scrollaction=""
-    else
-        let scrollaction=""
-    endif
-    exec "normal! " . scrollaction
-    redraw
-    let counter=1
-    while counter<&scroll
-        let counter+=1
-        sleep 10m
-        redraw
-        exec "normal! " . scrollaction
-    endwhile
-endfunction
-
-nnoremap <C-u> :call SmoothScroll(1)<Enter>
-nnoremap <C-d> :call SmoothScroll(0)<Enter>
-inoremap <C-U> <Esc>:call SmoothScroll(1)<Enter>i
-inoremap <C-D> <Esc>:call SmoothScroll(0)<Enter>i
-
-" }}}
 " to help learn new macros {{{
 inoremap <ESC> <nop>
 nnoremap <up> <nop>
@@ -773,4 +619,32 @@ execute WatchForChanges("*",autoreadargs)
 ". }}}
 
 " autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'cos', '.idea']
+
+" let vimwiki_list = [{'path': '~/.config/nvim/vimwiki/'}]
+
+
+let wiki_1 = {}
+let wiki_1.path = '~/.config/nvim/vimwiki/personal'
+let wiki_1.syntax = 'markdown'
+let wiki_1.ext = '.md'
+
+let wiki_2 = {}
+let wiki_2.path = '~/.config/nvim/vimwiki/work'
+let wiki_2.syntax = 'markdown'
+let wiki_2.ext = '.md'
+
+let g:vimwiki_list = [wiki_1, wiki_2]
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+let vimwiki_map_prefix = "<leader>v"
+
+
+function Moja()
+    let g:v = expand('%:h:t')
+    let g:n = expand('%:t:r')
+    let s = g:v . '/' .  g:n
+    put =s
+    return g:v . '/' .  g:n
+endfunction
+
+nnoremap ab :call Moja()<CR>
 

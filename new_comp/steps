@@ -1,6 +1,12 @@
 #!/bin/bash
 
-# i3
+REPOS_DIR="$HOME/repos"
+APP_DIR="$HOME/bin/app"
+SCRIPT_DIR="$HOME/bin/scripts"
+CONFIG_DIR="$HOME/.config"
+VIRT_DIR="$HOME/virt"
+STEPS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+DOTS_DIR=${STEPS_DIR}/dots
 
 function i3 () {
     i3_DIR=~/.config/i3
@@ -28,11 +34,65 @@ function logkeys () {
 }
 
 
-function vim () {
-    ROOT_NVIM_DIR="~/.config/nvim"
-#TODO hardlinks
+function nvim () {
+    set -x
+
+    # INSTALL NEOVIM
+    mkdir -p ${APP_DIR}
+    NVIM_APP=${APP_DIR}/nvim 
+    if ! [ -f $NVIM_APP ]; then
+        URL="https://github.com/neovim/neovim/releases/download/stable/nvim.appimage"
+        curl -o ${NVIM_APP} -LO "$URL"
+        chmod +x ${NVIM_APP}
+        grep ${APP_DIR} ~/.profile || echo "export PATH=$PATH:${APP_DIR}" >> ~/.profile
+    fi
+
+    # ADD NVIM AS DEFAULT
+    sudo update-alternatives --install /usr/bin/vim vim ${NVIM_APP} 60
+    sudo update-alternatives --set vim ${NVIM_APP}
+    sudo update-alternatives --install /usr/bin/editor editor ${NVIM_APP} 60
+    sudo update-alternatives --set editor ${NVIM_APP}
+
+    # COPY NEOVIM CONFIGURATION
+    HOST_DIR=${CONFIG_DIR}/nvim
+    LOCAL_DIR=${STEPS_DIR}/nvim
+    ln ${LOCAL_DIR}/init.vim ${HOST_DIR}/init.vim
+    ln ${LOCAL_DIR}/vimrc ~/.vimrc
+    ln -s ${LOCAL_DIR}/vimrc_parts ${HOST_DIR}/vimrc_parts
+    ln -s ${LOCAL_DIR}/colors ${HOST_DIR}/colors
+    ln -s ${LOCAL_DIR}/ftplugin ${HOST_DIR}/ftplugin
+    ln -s ${LOCAL_DIR}/UltiSnips ${HOST_DIR}/UltiSnips
+    ln -s ${LOCAL_DIR}/vimwiki ${HOST_DIR}/vimwiki
+
+    # SETUP PYTHON3 SUPPORT 
+    mkdir -p ${VIRT_DIR}
+    cd ${VIRT_DIR}
+    # need to setup g:python3_host_prog to this venv in init.vim
+    python3.7 -m venv neovim3
+    neovim3/bin/pip install neovim
+
+    # INSTALL PLUGINS
+    $NVIM_APP +PlugInstall +qall > /dev/null
+
+    # COC
+    $NVIM_APP "+CocInstall coc-python" +qall > /dev/null
+    ln ${LOCAL_DIR}/coc-settings.json ${HOST_DIR}/coc-settings.json
 }
 
+
+function python () {
+    # LINTING AND FORMATTING
+    pip install black flake8 pylint isort yapf pyls
+    ln ${DOTS_DIR}/flake8 $HOME/.flake8
+    ln ${DOTS_DIR}/pylintrc $HOME/.pylintrc
+    mkdir -p ${CONFIG_DIR}/yapf
+    ln ${DOTS_DIR}/style ${CONFIG_DIR}/yapf/style
+    ln ${DOTS_DIR}/isort.cfg ${CONFIG_DIR}/.isort.cfg
+
+    # DEBUGGING
+    pip install ipdb pdbpp
+    ln ${DOTS_DIR}/pdbrc.py ${HOME}/.pdbrc.py
+}
 
 function khal () {
     pip install git+git://github.com/pimutils/khal.git
@@ -41,3 +101,19 @@ function khal () {
     ~/virt/vdirsyncer_env/bin/pip install vdirsyncer[google]
     echo 'alias vdirsyncer="~/virt/vdirsyncer_env/bin/vdirsyncer"' >> ~/.bashrc
 }
+
+
+function qutebrowser () {
+    mkdir -p ~/repos
+    cd !$
+    git clone https://github.com/qutebrowser/qutebrowser.git
+    cd qutebrowser
+    echo '~/path/to/qutebrowser/.venv/bin/python3 -m qutebrowser "$@"' > $BIN_DIR
+}
+
+# nvim
+python
+
+
+# hub
+# autojump
