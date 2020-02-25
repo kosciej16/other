@@ -111,6 +111,12 @@ function qutebrowser () {
     echo '~/path/to/qutebrowser/.venv/bin/python3 -m qutebrowser "$@"' > $BIN_DIR
 }
 
+
+function linux () {
+    sudo apt install silversearcher-ag
+
+}
+
 # nvim
 python
 
