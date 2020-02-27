@@ -9,6 +9,8 @@
 == [vim](vim) ==
 
 == [pycharm](pycharm) == 
+
+[gnupg](gnupg)
 dovecot
 
 taskwarrior

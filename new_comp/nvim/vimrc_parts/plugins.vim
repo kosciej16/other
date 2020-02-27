@@ -81,6 +81,8 @@ Plug 'mgedmin/python-imports.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'tell-k/vim-autoflake'
 Plug 'yuttie/comfortable-motion.vim'
+Plug 'rhysd/clever-f.vim'
+Plug 'vimwiki/vimwiki'
 
 
 call plug#end()
