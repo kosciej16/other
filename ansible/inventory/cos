@@ -1,0 +1,1 @@
+docker ansible_host=192.168.0.43 ansible_ssh_user=vm ansible_ssh_private_key_file=/home/kosciej/.ssh/id_rsa

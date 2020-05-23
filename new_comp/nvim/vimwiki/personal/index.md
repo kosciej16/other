@@ -1,8 +1,9 @@
 == [khal](khal) ==
 
 == [neomutt](neomutt) ==
-
-== gdrive api ==
+error gdy j/k i koniec wiadomosci
+linki
+abort key ctrl-c
 
 == [qutebrowser](qutebrowser) ==
 
@@ -10,9 +11,14 @@
 
 == [pycharm](pycharm) == 
 
+[python](python)
+
 [gnupg](gnupg)
 dovecot
 
+== [linux](linux) ==
+
+[ssl](ssl)
 taskwarrior
 timewarrior
 
@@ -22,4 +28,5 @@ tmux
 
 Luke Smith
 Greg Hurell
+
 

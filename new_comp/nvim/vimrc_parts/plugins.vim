@@ -6,6 +6,8 @@ endif
 
 call plug#begin('~/.config/nvim/bundle')
 
+Plug 'jremmen/vim-ripgrep'
+
 " Plug 'airblade/vim-gitgutter'
 Plug 'alfredodeza/pytest.vim'
 Plug 'altercation/vim-colors-solarized'
@@ -13,7 +15,6 @@ Plug 'altercation/vim-colors-solarized'
 " Plug 'christoomey/vim-tmux-navigator'
 Plug 'codegram/vim-codereview'
 Plug 'junkblocker/patchreview-vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'davidhalter/jedi-vim'
 " Plug 'direnv/direnv.vim'
 Plug 'easymotion/vim-easymotion'
@@ -23,6 +24,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'stsewd/isort.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'godlygeek/tabular'
 Plug 'hashivim/vim-terraform'
+Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'honza/vim-snippets'
 " Plug 'janko-m/vim-test'
 " Plug 'janko/vim-test'
@@ -47,7 +49,7 @@ Plug 'mbbill/undotree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'rafi/awesome-vim-colorschemes'
 " Plug 'rizzatti/dash.vim'
-Plug 'rking/ag.vim'
+" Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 " Plug 'sheerun/vim-polyglot'
@@ -72,7 +74,7 @@ Plug 'tpope/vim-rhubarb'
 
 Plug 'vim-airline/vim-airline'
 Plug 'FooSoft/vim-argwrap'
-" Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline-themes'
 " Plug 'wellle/targets.vim'
 
 " Plug 'inside/vim-search-pulse'
@@ -83,6 +85,7 @@ Plug 'tell-k/vim-autoflake'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'rhysd/clever-f.vim'
 Plug 'vimwiki/vimwiki'
+Plug 'pearofducks/ansible-vim'
 
 
 call plug#end()

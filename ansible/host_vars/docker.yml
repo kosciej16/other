@@ -1,0 +1,6 @@
+--- #
+appDir: $HOME/bin/app
+nvimApp: $HOME/bin/app/nvim
+url: https://github.com/neovim/neovim/releases/download/v0.4.3/nvim.appimage
+hostDir: $HOME/.config/nvim
+localDir: "{{playbook_dir}}/nvim"

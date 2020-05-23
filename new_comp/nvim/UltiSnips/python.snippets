@@ -30,6 +30,11 @@ print("LOG")
 endsnippet
 
 
-snippet pb "diagnostic print" b
-print("LOG")
+snippet pb "debugger" b
+import pdb; pdb.set_trace()
+endsnippet
+
+
+snippet s "self" b
+self.$1 = $1
 endsnippet

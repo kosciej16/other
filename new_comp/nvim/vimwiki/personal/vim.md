@@ -27,3 +27,17 @@ You have to install this plugin for it to work:
 
 # enable venv (TODO: switch to pipenv)
 $ pip install pytest-cov
+
+fzf vim plugins files
+
+debugger
+
+
+
+ga - get char code
+:&& = g& - repeat last search
+
+tags - ctags path
+
+:.,+2s/\(\d\)/\=str2nr(submatch(1))+1
+

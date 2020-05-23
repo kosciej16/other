@@ -21,6 +21,11 @@ function i3 () {
     sudo apt install scrot
 }
 
+
+function git () {
+    # .gitconfig, bin/clone_all bin/all .gitconfig-sdu
+}
+
 function logkeys () {
     mkdir -p ${REPOS_DIR}
     cd ${REPOS_DIR}
@@ -37,6 +42,7 @@ function logkeys () {
 
 
 function nvim () {
+    # need to install rg
     set -x
 
     # INSTALL NEOVIM
@@ -96,12 +102,17 @@ function python () {
     ln ${DOTS_DIR}/pdbrc.py ${HOME}/.pdbrc.py
 }
 
+
+function pip () {
+}
+
 function khal () {
-    pip install git+git://github.com/pimutils/khal.git
-    python -m venv ${VIRT_DIR}/vdirsyncer_env
-    ${VIRT_DIR}/vdirsyncer_env/bin/pip install vdirsyncer
-    ${VIRT_DIR}/vdirsyncer_env/bin/pip install vdirsyncer[google]
-    # echo 'alias vdirsyncer="~/virt/vdirsyncer_env/bin/vdirsyncer"' >> ~/.bashrc
+    # .config/{khal,vdirsyncer!!!}/config .config/systemd/user/vdirsyncer.{timer,service}
+    fun pipx
+    pipx install git+git://github.com/pimutils/khal.git
+    pipx install vdirsyncer
+    pipx install vdirsyncer[google]
+    systemctl --user enable vdirsyncer.timer
 }
 
 
@@ -125,15 +136,31 @@ function qutebrowser () {
     # qute-pass userscript uses that
     pip install tldextract
 
+    # install PyQT5 with codec support
+    pip install pyqt5.sip PyQt-builder sip
+    apt install qt5-qmake qt5-default
+    url="https://files.pythonhosted.org/packages/4d/81/b9a66a28fb9a7bbeb60e266f06ebc4703e7e42b99e3609bf1b58ddd232b9/PyQt5-5.14.2.tar.gz"
+    wget $url
+    tar -xf 
+    cd into
+    sudo sip-install
 }
 
+function pipx () {
+    pip install pipx
+}
 
 function linux () {
-    sudo apt install silversearcher-ag xclip rofi
+    # need to install rg
+    sudo apt install xclip rofi
 
     LOCAL_DIR=${STEPS_DIR}/linux
     ln ${LOCAL_DIR}/bashrc $HOME/.bashrc
     ln ${LOCAL_DIR}/profile $HOME/.profile
+    
+    # to rewrite
+    cp .config/systemd/user
+
 }
 
 
@@ -144,10 +171,72 @@ function pass () {
     ln -s ${LOCAL_DIR}/password-store $HOME/.password-store
 }
 
+
+function bspwm () {
+    git clone https://github.com/baskerville/bspwm.git
+    git clone https://github.com/baskerville/sxhkd.git
+    sudo apt-get install xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+    mkdir -p $CONFIG_DIR/.bspwm
+    mkdir -p $CONFIG_DIR/.sxhkd
+
+}
+
+function neomutt () {
+    sudo apt install isync
+    # cp .mbsyncrc
+    # mkdir .mail
+    # cp .config/systemd/user/mbsync.service and mbsync.timer
+    # systemctl --user start mbsync.timer
+    # systemctl --user enable mbsync.timer
+    # notmuch init
+
+    sudo apt install msmtp
+    # cp .msmtprc
+
+    sudo apt install notmuch
+    # cp .notmuch-config
+    # cp .mail/.notmuch/hooks
+    sudo apt install neomutt
+    # cp .config/neomutt/* bez cache
+    # mkdir .config/neomutt/cache
+}
+
+function mutt2task () {
+    # taskopen
+    apt install libjson-perl
+    git clone git@github.com:ValiValpas/taskopen.git
+    cd 
+    make PREFIX=/usr
+    sudo make PREFIX=/usr install
+    wget https://raw.githubusercontent.com/artur-shaik/mutt2task/master/mutt2task.py
+    #elinks
+    apt install elinks
+    chmod
+}
+
+
+function taskwarrior() {
+    sudo apt-get install -y taskwarrior
+    mutt2task
+}
+
+funtion random () {
+    sudo apt install nfs-kernel-server
+    sudo apt install ranger
+}
+
+function rclone () {
+    curl https://rclone.org/install.sh | sudo bash
+}
+
+
+function weechat () {
+    # .weechat/
+    apt install weechat
+}
+
 # nvim
 # python
-
-qutebrowser
 
 # hub
 # autojump
