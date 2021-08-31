@@ -1,19 +1,29 @@
-from sqlalchemy import create_engine
-import a
-from model import User, Base
-from sqlalchemy.orm import sessionmaker
+import pandas as pd
+from model import Model, Session
+import csv
 
-a.f()
-
-engine = create_engine("postgresql://postgres:a@127.0.0.1", echo=True)
-Session = sessionmaker(bind=engine)
+s = Session()
 
 
-print(User.__table__)
+# df = pd.read_csv("input.csv")
+with open("input.csv", newline="") as csvfile:
+    reader = csv.DictReader(csvfile)
+    rows = list(reader)
 
-Base.metadata.drop_all(engine)
-Base.metadata.create_all(engine)
+# print(rows[0])
+print(type(rows[0]))
+# for index, row in df.iterrows():
+#     x = row["DeclaredIncomeAmount"]
+#     print(x)
+#     print(type(x))
+#     row = df.loc[index]
+#     for c in row:
+#         print(c)
+#     x = row["DeclaredIncomeAmount"]
+#     print(x)
+#     print(type(x))
+#     break
 
-
-u = User(username=10)
-print(u.id)
+#     # m = Model(num=int(row["col1"]))
+#     # s.add(m)
+#     # s.commit()

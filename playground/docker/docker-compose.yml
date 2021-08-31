@@ -6,4 +6,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: ["echo", "${zmienna}"]
+    environment:
+      var: "var1"
+      var2: "som"
