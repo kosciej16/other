@@ -1,6 +1,10 @@
 class A:
-    def __init__(self, zmienna):
-        self.zmienna = zmienna
 
     def f(self):
-        return 10 * self.zmienna
+        return 1
+
+    def g(self, param):
+        if param > 10:
+            return param
+
+        return -param

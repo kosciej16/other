@@ -1,0 +1,6 @@
+{
+    "reportGeneralTypeIssues": true,
+    "reportMissingImports": true,
+    "reportUndefinedVariable": false,
+    "strict": ["src2/*"]
+}

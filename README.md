@@ -37,5 +37,5 @@ List pods
 Check pod logs
 `kubectl logs <pod_name>`
 
-Forward pod XXXX port to YYYY in localhost
+Forward pod's XXXX port to YYYY in localhost
 `kubectl port-forward <pod_name> YYYY:XXXX`

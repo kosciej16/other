@@ -1,0 +1,8 @@
+FROM alpine
+
+#author name
+MAINTAINER RAGHU
+#commands to run in the container
+RUN echo "hello Raghu"
+RUN sleep 5
+RUN echo "TASK COMPLETED"

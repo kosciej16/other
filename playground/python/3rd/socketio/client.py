@@ -9,6 +9,17 @@ import socketio
 # r = requests.get("http://127.0.0.1:5000/test")
 
 
+class MyCustomNamespace(socketio.ClientNamespace):
+    def on_connect(self):
+        pass
+
+    def on_disconnect(self):
+        pass
+
+    def on_my_event(self, data):
+        self.emit("my_response", data)
+
+
 # async def req():
 #     async with AsyncClient() as client:
 #         resp = await client.get("http://127.0.0.1:5000/test")
@@ -23,9 +34,13 @@ import socketio
 # print(r)
 # print(r.status_code)
 cl = socketio.Client()
-# cl.connect("http://127.0.0.1:5000/", namespaces=["/test"])
 cl.connect("http://127.0.0.1:5000/")
-cl.emit("kickme")
+# cl.disconnect()
+cl.connect("http://127.0.0.1:5000/", namespaces=["/chat", "/"])
+# cl.connect("http://127.0.0.1:5000/", namespaces=["/test"])
+# cl.register_namespace(MyCustomNamespace("/chat"))
+# cl.register_namespace(MyCustomNamespace("/chat2"))
+# cl.emit("kickme", namespace="/chat")
 # cl.emit("dupa", "asd")
 # cl.emit("do", {"a": "b"})
 # cl.emit("do", {"a": "b"})

@@ -1,0 +1,4 @@
+BEGIN WORK;
+    LOCK TABLE simple IN ACCESS EXCLUSIVE mode;
+    SELECT pg_sleep(30);
+COMMIT WORK

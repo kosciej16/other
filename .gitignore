@@ -7,4 +7,5 @@
 *.bbl
 *.bcf
 *.blg
+*.pyi
 __pychache__

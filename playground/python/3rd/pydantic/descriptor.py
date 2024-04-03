@@ -1,3 +1,6 @@
+from dataclasses import dataclass
+
+
 class Descriptor:
     def __get__(self, obj, objtype=None):
         print("GET")

@@ -1,0 +1,7 @@
+SAMPLE_ID CHROM POS REF ALT
+Sample1 chr1 123 G T
+Sample1 chr2 456 A C
+Sample1 chr3 789 C T
+Sample2 chr1 123 G A
+Sample3 chr2 123 G C
+Sample3 chr3 456 G A

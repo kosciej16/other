@@ -1,33 +1,39 @@
-from typing import Dict
+from typing import reveal_type
 from pydantic import BaseModel
 
 
-class B(BaseModel):
-    a: int
-    b: int
+class Foo(BaseModel):
+    foo: str
 
 
-# class A(Dict[int, B]):
-# pass
-class A(BaseModel):
-    d: Dict[int, B]
-
-    def __getitem__(self, k):
-        return self.d[k]
-
-    def __delitem__(self, k):
-        return self.d[k]
-
-    def __getattr__(self, item):
-        return getattr(self.d, item)
+class Bar(BaseModel):
+    bar: str
 
 
-d = {"1": {"a": 2, "b": 3}}
+class FooWrapper(Foo):
+    action: str = "foo"
 
-a = A(d=d)
 
-print(a[1])
-del a[1]
+class BarWrapper(Bar):
+    action: str = "bar"
 
-for x, y in a.items():
-    print(x, y)
+
+class ActionsRequest(BaseModel):
+    actions: list[FooWrapper | BarWrapper]
+
+
+def test_bulk_actions():
+    foo = {"action": "foo", "foo": "7"}
+    bar = {"action": "bar", "bar": "7"}
+    return ActionsRequest.model_validate({"actions": [foo, bar]})
+
+
+def foo(f: Bar):
+    pass
+
+
+obj = FooWrapper(action="foo", foo="7")
+parent_cls = obj.__class__.__bases__[0]
+el = parent_cls(**obj.model_dump())
+reveal_type(el)
+foo(el)

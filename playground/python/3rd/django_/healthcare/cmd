@@ -1,0 +1,1 @@
+./manage.py graph_models --pygraphviz -g -o my_project_visualized.png iot

@@ -10,27 +10,45 @@ def f():
     print(d)
 
 
-x = dis.dis(f)
+# x = dis.dis(f)
 ###
 
-print(5 in range(10) == True)
+
+def three():
+    print(5 in range(10) is True)
 
 
 ####
-while True:
-    try:
-        raise Exception
-    finally:
-        break
+def exc():
+    while True:
+        try:
+            raise Exception
+        finally:
+            break
+
 
 ####
-x = {1: "a", 2: "b"}
-y = {}
-for k, y[k] in x.items():
-    ...
+def dic():
+    x = {1: "a", 2: "b"}
+    y = {}
+    for k, y[k] in x.items():
+        ...
 
-# print(y)
+    print(y)
 
-print("⅐ↁⅣⅧↂⅪ".isnumeric())
-print("ⅬⅭⅮ⅟Ⅿ³₉ↀ".isnumeric())
-print("-3".isnumeric())
+
+def weird():
+    print("⅐ↁⅣⅧↂⅪ".isnumeric())
+    print("ⅬⅭⅮ⅟Ⅿ³₉ↀ".isnumeric())
+    print("-3".isnumeric())
+
+
+def timestamp():
+    from datetime import datetime
+
+    t = 1698544740
+    assert datetime.fromtimestamp(t) == datetime.fromtimestamp(r - 3600)
+
+
+x, y = 10, x - 1
+# timestamp()

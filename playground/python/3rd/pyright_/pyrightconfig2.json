@@ -1,0 +1,20 @@
+{
+    "include": ["src"],
+    "exclude": ["src/ignoreThisPath/**/*"],
+    "reportTypeshedErrors": false,
+    "reportAssertAlwaysTrue": true,
+    "reportMissingImports": false,
+    "reportMissingTypeStubs": false,
+    "reportMissingModuleSource": true,
+    "reportOptionalSubscript": true,
+    "reportOptionalMemberAccess": true,
+    "reportGeneralTypeIssues": true,
+    "reportPropertyTypeMismatch": true,
+    "strict": ["src/f1.py"],
+    "executionEnvironments": [
+        {
+            "root": "src/specialPath",
+            "dupa": "abc"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+Nested Loop Anti Join  (cost=15699.30..19727.41 rows=1 width=95) (actual rows=21878 loops=1)
+  ->  Nested Loop  (cost=15699.27..19727.35 rows=1 width=103) (actual rows=21878 loops=1)
+        Join Filter: (any_path_filter_files_000002.path = parent.path)
+        Rows Removed by Join Filter: 2189286087
+        ->  Merge Join  (cost=15699.18..16007.53 rows=9704 width=103) (actual rows=2189307965 loops=1)
+              Merge Cond: (file.name = any_path_filter_files_000002.name)
+              ->  Sort  (cost=14899.83..15000.02 rows=200369 width=73) (actual rows=200336 loops=1)
+                    Sort Key: file.name
+                    Sort Method: quicksort  Memory: 34321kB
+                    ->  Seq Scan on file_current_part_59 file  (cost=0.00..11370.87 rows=200369 width=73) (actual rows=200369 loops=1)
+                          Filter: (volume_id = 59)
+              ->  Sort  (cost=799.35..804.82 rows=10943 width=39) (actual rows=2189207891 loops=1)
+                    Sort Key: any_path_filter_files_000002.name
+                    Sort Method: quicksort  Memory: 2478kB
+                    ->  HashAggregate  (cost=433.66..543.09 rows=10943 width=39) (actual rows=21878 loops=1)
+                          Group Key: any_path_filter_files_000002.path, any_path_filter_files_000002.name
+                          Batches: 1  Memory Usage: 2833kB
+                          ->  Seq Scan on _any_path_filter_20231228_021231_000001 any_path_filter_files_000002  (cost=0.00..411.78 rows=21878 width=39) (actual rows=21878 loops=1)
+        ->  Index Scan using dir_current_part_59_pkey on dir_current_part_59 parent  (cost=0.08..0.37 rows=1 width=54) (actual rows=1 loops=2189307965)
+              Index Cond: ((id = file.parent_id) AND (volume_id = 59))
+  ->  Index Scan using job_result_current_part_59_volume_id_fs_entry_id_name_id_key on job_result_current_part_59 job_result_000000  (cost=0.03..0.04 rows=1 width=32) (actual rows=0 loops=21878)
+        Index Cond: ((volume_id = file.volume_id) AND (volume_id = 59) AND (fs_entry_id = file.id) AND (name_id = 90471))
+        Filter: ((((ctime)::timestamp with time zone = (file.ctime)::timestamp with time zone) OR (ctime IS NULL)) AND (((mtime)::timestamp with time zone = (file.mtime)::timestamp with time zone) OR (mtime IS NULL)))

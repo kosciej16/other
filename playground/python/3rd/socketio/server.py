@@ -62,7 +62,7 @@ class MyCustomNamespace(socketio.AsyncNamespace):
         print("on my event")
 
 
-sio.register_namespace(MyCustomNamespace("/test"))
+sio.register_namespace(MyCustomNamespace("/chat"))
 
 
 @app.get("/test")

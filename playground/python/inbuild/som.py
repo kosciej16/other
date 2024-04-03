@@ -1,3 +1,4 @@
+import itertools
 from typing import Optional
 from dataclasses import dataclass
 
@@ -34,5 +35,8 @@ class B(A):
         print("a")
 
 
-a = A()
-a.g()
+# a = A()
+# a.g()
+
+for i in itertools.product(range(10), range(10)):
+    print(i)
