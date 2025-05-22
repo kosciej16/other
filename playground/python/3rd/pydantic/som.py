@@ -1,39 +1,32 @@
-from typing import reveal_type
-from pydantic import BaseModel
+from typing import Annotated
+from pydantic import BaseModel, Field, create_model
 
 
-class Foo(BaseModel):
-    foo: str
+class Team(BaseModel):
+    tn: str | None
+    players: int | None
 
 
-class Bar(BaseModel):
-    bar: str
+class User(BaseModel):
+    id: int
+    name: str
+    team: Team | None = None
+    is_active: bool = True
 
 
-class FooWrapper(Foo):
-    action: str = "foo"
+    def move(self, other):
+        for field in self.model_fields:
+            setattr(self, field, getattr(other, field))
 
 
-class BarWrapper(Bar):
-    action: str = "bar"
+
+class SuperUser(User):
+    p1: int
 
 
-class ActionsRequest(BaseModel):
-    actions: list[FooWrapper | BarWrapper]
 
-
-def test_bulk_actions():
-    foo = {"action": "foo", "foo": "7"}
-    bar = {"action": "bar", "bar": "7"}
-    return ActionsRequest.model_validate({"actions": [foo, bar]})
-
-
-def foo(f: Bar):
-    pass
-
-
-obj = FooWrapper(action="foo", foo="7")
-parent_cls = obj.__class__.__bases__[0]
-el = parent_cls(**obj.model_dump())
-reveal_type(el)
-foo(el)
+u = SuperUser(id=1, name='a', p1=1)
+u2 = SuperUser(id=3, name='b', p1=2, team=Team(tn="xx", players=2))
+print(u)
+u.move(u2)
+print(u)

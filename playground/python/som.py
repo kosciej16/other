@@ -1,13 +1,26 @@
-from dataclasses import dataclass
-from typing import Any, Optional
+from types import CoroutineType
+from typing import Callable, Protocol, overload
+from typing import Any, Awaitable, Callable, TypeVar
 
 
-@dataclass
-class A:
-    a: Optional[Any] = None
-    b: Any = None
+class Child:
+    pass
 
 
-a = A()
-a.a.append(1)
-a.b.append(1)
+class Parent(Child):
+    pass
+
+
+def foo(i: int):
+    pass
+
+
+class PluginCallable(Protocol):
+    def __call__(self, content: int | str) -> None: ...
+
+
+def foo2(p: PluginCallable):
+    pass
+
+
+foo2(foo)

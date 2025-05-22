@@ -1,0 +1,10 @@
+[project]
+name = "app1"
+version = "0.1.0"
+description = "Application 1"
+requires-python = ">=3.12"
+dependencies = [
+    "other @ file:///${PROJECT_ROOT}/../other2"
+    # "kosciej_package",
+    # app-specific dependencies
+]

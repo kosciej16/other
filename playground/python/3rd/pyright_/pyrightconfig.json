@@ -1,6 +1,6 @@
 {
-    "reportGeneralTypeIssues": true,
-    "reportMissingImports": true,
+    "reportGeneralTypeIssues": false,
+    "reportMissingImports": false,
     "reportUndefinedVariable": false,
-    "strict": ["src2/*"]
+    "reportUnannotatedClassAttribute": true
 }

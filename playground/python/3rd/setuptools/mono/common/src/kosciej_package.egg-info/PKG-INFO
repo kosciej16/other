@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: kosciej_package
+Version: 0.1.0
+Summary: Common utilities shared across apps
+Project-URL: repository, https://github.com/yourusername/yourrepo
+Requires-Python: >=3.9

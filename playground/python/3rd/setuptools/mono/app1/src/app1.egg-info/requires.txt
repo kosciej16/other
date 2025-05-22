@@ -1,0 +1,1 @@
+other@ file:///${PROJECT_ROOT}/../other2

@@ -1,0 +1,22 @@
+questions:
+  text_comprehension:
+    desc: |
+      Czy tekst wypowiedzi klienta po transkrypcji ASR jest zrozumiały?
+    type: Literal["NO","YES"]
+  text_adequateness:
+    desc: |
+      W jakim stopniu tekst odpowiedzi klienta odpowiada na postawione pytanie?
+    type: Literal["NONE", "SOME", "FULL"]
+  reasons_clearness:
+    desc: |
+      Przyczyny mogą być wskazane bezpośrednio, albo pośrednio. W jaki sposób wskazane są przyczyny w tekście?
+    type: Literal["NONE", "INDIRECTLY", "DIRECTLY"]
+  reason_main_category:
+    desc: |
+      Określ w nie więcej niż dwóch słowach tylko jedną, głowną przyczynę zadowolenia klienta
+    type: str
+  reason_categories:
+    desc: |
+      Określ w formie krótkich wyrażeń wskazane przez klienta przyczyny jego zadowolenia
+    type: List[str]
+

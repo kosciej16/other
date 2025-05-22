@@ -1,0 +1,26 @@
+[project]
+name = "kosciej_package"
+version = "0.1.0"
+description = "Common utilities shared across apps"
+requires-python = ">=3.9"
+dependencies = [
+]
+
+# [tool.hatch.build.targets.wheel]
+# packages = ["src/common"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pack*"]
+
+[project.urls]
+repository = "https://github.com/yourusername/yourrepo"
+
+# If you want to make it a package
+[tool.hatch.build]
+packages = ["src/common"]
+

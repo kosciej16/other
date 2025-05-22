@@ -12,6 +12,7 @@ from sqlalchemy.sql import and_, text
 from db.models.model import Model
 from db.models.relations import User, Ticket, Parent, Child
 from sqlalchemy.sql import column, select, text
+from uuid import uuid4
 
 
 import logging
@@ -40,6 +41,12 @@ def add(id, other_id, s):
     if id != 4:
         p.child = c
     s.add(p)
+    s.commit()
+    u = User(id=uuid4())
+    s.add(u)
+    s.commit()
+    s.flush()
+    s.add(Ticket(user_id=u.id))
     s.commit()
 
 
@@ -71,7 +78,7 @@ class Person:
     address: str
 
 
-# reset()
+reset()
 c = column("other_id")
 
 

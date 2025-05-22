@@ -1,11 +1,34 @@
-from signal import SIGINT, pthread_kill
+import os
 import sys
 from queue import Queue
-from threading import Condition, Thread
+from signal import SIGINT, pthread_kill
+from threading import Condition, Event, Thread
+import threading
 from time import sleep
 
 
-from threading import Event, Thread
+def dec(a):
+    while True:
+        a.a -= 1
+        print("dec", a.a)
+        sleep(1)
+
+
+def reset(a):
+    while True:
+        if a.a < 2:
+            a.a = 5
+            print("reset", a.a)
+        sleep(1)
+
+
+class A:
+    def __init__(self):
+        self.a = 5
+        t = threading.Thread(target=dec, args=(self,))
+        t.start()
+        t = threading.Thread(target=reset, args=(self,))
+        t.start()
 
 
 class StopRequested(BaseException):
@@ -85,17 +108,17 @@ class MyThread(StoppableThread):
             print("FINISHED")
 
 
-t = MyThread()
-t.start()
+# t = MyThread()
+# t.start()
 # t1 = MyThread()
 # t1.start()
 
 
-print("AAA")
-t.request_stop()
-# t1.request_stop()
-t.join(timeout=10e8)
-print("ABC")
+# print("AAA")
+# t.request_stop()
+# # t1.request_stop()
+# t.join(timeout=10e8)
+# print("ABC")
 # print("JOIN")
 # t1.join()
 # print("JOIN")
@@ -123,15 +146,9 @@ def queue_example():
     print("WATEK")
 
 
-class MyThread(Thread):
-    def __init__(self, id):
-        super().__init__()
-        self.id = id
-
+class MyThread2(Thread):
     def run(self):
-        while True:
-            # print(f"HA {self.id}")
-            sleep(10)
+        sleep(300)
 
 
 class MyManager:
@@ -155,11 +172,27 @@ class MyManager:
                 print(f"NOT ALIVE {t.id}")
 
 
-m = MyManager()
-m.start(1)
-m.start(2)
-print("O")
-m.kill(1)
+def foo():
+    m = MyManager()
+    m.start(1)
+    m.start(2)
+    print("O")
+    m.kill(1)
+
+
+A()
+
+# print(os.getpid())
+# th = MyThread2()
+# th.start()
+# th.name = "your name"
+#
+# th = MyThread2()
+# th.start()
+# th = MyThread2()
+# th.start()
+
+
 # m.start(2)
 # while True:
 #     m.get_alive()

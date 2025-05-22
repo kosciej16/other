@@ -27,6 +27,7 @@ class Child(Base):
     id = Column(Integer, primary_key=True)
     parent_id = Column(Integer)
     other_id = Column(Integer)
+
     parent = relationship(
         "Parent",
         foreign_keys=[parent_id, other_id],

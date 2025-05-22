@@ -1,0 +1,7 @@
+pyproject.toml
+src/kosciej_package.egg-info/PKG-INFO
+src/kosciej_package.egg-info/SOURCES.txt
+src/kosciej_package.egg-info/dependency_links.txt
+src/kosciej_package.egg-info/top_level.txt
+src/pack/__init__.py
+src/pack/my_cls.py

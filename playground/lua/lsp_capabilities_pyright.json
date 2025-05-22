@@ -1,0 +1,364 @@
+{
+  _log_prefix = "LSP[pyright]",
+  _on_attach_cbs = { <function 1> },
+  _on_exit_cbs = { <function 2>, <function 3> },
+  _on_init_cbs = { <function 4> },
+  _trace = "off",
+  attached_buffers = { true },
+  cancel_request = <function 5>,
+  capabilities = <1>{
+    definitionProvider = false,
+    documentSymbolProvider = false,
+    general = {
+      positionEncodings = { "utf-16" }
+    },
+    implementationProvider = false,
+    referencesProvider = false,
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = false
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        dynamicRegistration = true,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit" }
+        }
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = false,
+          deprecatedSupport = false,
+          documentationFormat = { "markdown", "plaintext" },
+          preselectSupport = false,
+          snippetSupport = false
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "editRange", "insertTextFormat", "insertTextMode", "data" }
+        },
+        contextSupport = false,
+        dynamicRegistration = false
+      },
+      declaration = {
+        linkSupport = true
+      },
+      definition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      diagnostic = {
+        dynamicRegistration = false
+      },
+      documentHighlight = {
+        dynamicRegistration = false
+      },
+      documentSymbol = {
+        dynamicRegistration = false,
+        hierarchicalDocumentSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = true
+      },
+      implementation = {
+        linkSupport = true
+      },
+      inlayHint = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "textEdits", "tooltip", "location", "command" }
+        }
+      },
+      publishDiagnostics = {
+        dataSupport = true,
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        }
+      },
+      rangeFormatting = {
+        dynamicRegistration = true
+      },
+      references = {
+        dynamicRegistration = false
+      },
+      rename = {
+        dynamicRegistration = true,
+        prepareSupport = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = false,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = true,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = false
+        },
+        serverCancelSupport = false,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "operator", "decorator" }
+      },
+      signatureHelp = {
+        dynamicRegistration = false,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = false,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        linkSupport = true
+      }
+    },
+    typeDefinitionProvider = false,
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = false
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      configuration = true,
+      didChangeConfiguration = {
+        dynamicRegistration = false
+      },
+      didChangeWatchedFiles = {
+        dynamicRegistration = false,
+        relativePatternSupport = true
+      },
+      inlayHint = {
+        refreshSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = false,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      workspaceEdit = {
+        resourceOperations = { "rename", "create", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  commands = {},
+  config = {
+    _on_attach = <function 6>,
+    autostart = true,
+    capabilities = <table 1>,
+    cmd = { "/home/kosciej/.local/share/nvim/mason/bin/pyright-langserver", "--stdio" },
+    cmd_cwd = "/home/kosciej/tmp",
+    filetypes = { "python" },
+    handlers = <2>{},
+    init_options = vim.empty_dict(),
+    log_level = 2,
+    message_level = 2,
+    name = "pyright",
+    on_attach = <function 1>,
+    on_exit = <function 2>,
+    on_init = <function 4>,
+    settings = <3>{
+      python = {
+        analysis = {
+          autoSearchPaths = true,
+          diagnosticMode = "openFilesOnly",
+          useLibraryCodeForTypes = true
+        }
+      }
+    },
+    single_file_support = true,
+    <metatable> = <4>{
+      __tostring = <function 7>
+    }
+  },
+  dynamic_capabilities = {
+    capabilities = {},
+    client_id = 1,
+    <metatable> = {
+      __index = {
+        get = <function 8>,
+        match = <function 9>,
+        new = <function 10>,
+        register = <function 11>,
+        supports = <function 12>,
+        supports_registration = <function 13>,
+        unregister = <function 14>
+      }
+    }
+  },
+  flags = {},
+  get_language_id = <function 15>,
+  handlers = <table 2>,
+  id = 1,
+  initialized = true,
+  is_stopped = <function 16>,
+  messages = {
+    messages = {},
+    name = "pyright",
+    progress = {},
+    status = {}
+  },
+  name = "pyright",
+  notify = <function 17>,
+  offset_encoding = "utf-16",
+  on_attach = <function 18>,
+  progress = {
+    _idx_read = 0,
+    _idx_write = 0,
+    _items = {},
+    _size = 51,
+    pending = {},
+    <metatable> = {
+      __call = <function 19>,
+      __index = {
+        clear = <function 20>,
+        peek = <function 21>,
+        pop = <function 22>,
+        push = <function 23>
+      }
+    }
+  },
+  request = <function 24>,
+  request_sync = <function 25>,
+  requests = {},
+  rpc = {
+    is_closing = <function 26>,
+    notify = <function 27>,
+    request = <function 28>,
+    terminate = <function 29>
+  },
+  server_capabilities = {
+    callHierarchyProvider = true,
+    codeActionProvider = {
+      codeActionKinds = { "quickfix", "source.organizeImports" },
+      workDoneProgress = true
+    },
+    completionProvider = {
+      completionItem = {
+        labelDetailsSupport = true
+      },
+      resolveProvider = true,
+      triggerCharacters = { ".", "[", '"', "'" },
+      workDoneProgress = true
+    },
+    declarationProvider = {
+      workDoneProgress = true
+    },
+    definitionProvider = {
+      workDoneProgress = true
+    },
+    documentHighlightProvider = {
+      workDoneProgress = true
+    },
+    documentSymbolProvider = {
+      workDoneProgress = true
+    },
+    executeCommandProvider = {
+      commands = {},
+      workDoneProgress = true
+    },
+    hoverProvider = {
+      workDoneProgress = true
+    },
+    referencesProvider = {
+      workDoneProgress = true
+    },
+    renameProvider = {
+      prepareProvider = true,
+      workDoneProgress = true
+    },
+    signatureHelpProvider = {
+      triggerCharacters = { "(", ",", ")" },
+      workDoneProgress = true
+    },
+    textDocumentSync = {
+      change = 2,
+      openClose = true,
+      save = {
+        includeText = false
+      },
+      willSave = false,
+      willSaveWaitUntil = false
+    },
+    typeDefinitionProvider = {
+      workDoneProgress = true
+    },
+    workspace = {
+      workspaceFolders = {
+        changeNotifications = true,
+        supported = true
+      }
+    },
+    workspaceSymbolProvider = {
+      workDoneProgress = true
+    }
+  },
+  settings = <table 3>,
+  stop = <function 30>,
+  supports_method = <function 31>,
+  workspace_did_change_configuration = <function 32>,
+  workspace_folders = { {
+      name = "/home/kosciej/tmp",
+      uri = "file:///home/kosciej/tmp"
+    } },
+  <metatable> = <5>{
+    __index = <table 5>,
+    _add_workspace_folder = <function 33>,
+    _cancel_request = <function 34>,
+    _exec_cmd = <function 35>,
+    _is_stopped = <function 36>,
+    _notification = <function 37>,
+    _notify = <function 38>,
+    _on_attach = <function 39>,
+    _on_error = <function 40>,
+    _on_exit = <function 41>,
+    _remove_workspace_folder = <function 42>,
+    _request = <function 43>,
+    _request_sync = <function 44>,
+    _resolve_handler = <function 45>,
+    _run_callbacks = <function 46>,
+    _server_request = <function 47>,
+    _stop = <function 48>,
+    _supports_method = <function 49>,
+    _text_document_did_open_handler = <function 50>,
+    create = <function 51>,
+    initialize = <function 52>,
+    write_error = <function 53>
+  }
+}

@@ -8,3 +8,10 @@ class Simple(Base):
 
     id = Column(Integer, primary_key=True)
     num = Column(Integer)
+
+
+class Simple2(Base):
+    __tablename__ = "simple2"
+
+    id = Column(Integer, primary_key=True)
+    num = Column(Integer)
